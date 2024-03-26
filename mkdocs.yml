@@ -1,12 +1,16 @@
 site_name: Darwinia Document
+copyright: Copyright &copy; 2018 - 2024 Darwinia Network
 theme:
   name: material
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.top
     - navigation.path
     - navigation.indexes
+    - navigation.footer
     - toc.integrate
     - search.suggest
     - search.highlight
@@ -34,6 +38,19 @@ markdown_extensions:
   - toc:
       title: On this page
       permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/darwinia-network
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/DarwiniaNetwork
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/jbRk7znn4Q
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/DarwiniaNetwork
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/darwinianetwork
 
 nav:
   - Home: 'index.md'
