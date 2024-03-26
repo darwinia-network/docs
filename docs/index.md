@@ -1,17 +1,5 @@
-# Welcome to MkDocs
+Darwinia was primarily focused on blockchain and cross-chain infrastructure development. Over time, it has transformed into a community-driven decentralized entity, supported by an active community dedicated to advancing decentralized technologies. At present, Darwinia operates as a community-managed technology and service provider, concentrating on powering the cross-chain functionalities of decentralized apps.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Powering Your DApp’s Cross-Chain Capabilities
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+At present, Darwinia actively concentrates on a pair of innovative cross-chain service solutions, both aligned with its overarching goal of powering the cross-chain capabilities of decentralized applications. As the landscape evolves, Darwinia remains poised to introduce additional solutions that further this core objective.
