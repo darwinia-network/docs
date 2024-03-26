@@ -1,6 +1,8 @@
+# Pangolin > Sepolia Remix Demo
+
 In this guide, we'll walk you through the process of **sending cross-chain messages from the Darwinia Pangolin testnet to the Ethereum Sepolia testnet** using the Darwinia msgport protocol with Remix. No extensive smart contract development expertise is necessary — as long as you're familiar with deploying and interacting with Solidity smart contracts in Remix, you'll be able to follow along. Let's dive in!
 
-## **Prerequisites**
+## Prerequisites
 
 ### Get Pangolin Test Token
 
@@ -100,12 +102,12 @@ The most thrilling part of the process is invoking the **`send(uint256 toChainI
 
 After setting up the required parameters, proceed to click the transact button to execute the **`send`** method, which will send the cross-chain message to Sepolia. Remember to note down the transaction hash `0x1fb1faa75c25ac00e5edb3fdff20b5d5bb2d4969576fc375a5855d789a2d5511` that appears in the Remix debug panel. We'll use this hash to track the status of the cross-chain operation in the following step.
 
-### Check Message Status
+## Check Message Status
 
 A [msgport scan](https://www.notion.so/Msgport-Scan-20e10e1727de4b07baaee0c7e1e3f627?pvs=21) available to monitor the status of cross-chain messages, offering the ability to index messages by either the transaction hash or the msghash. Typically, querying with the transaction hash is the most convenient approach.
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/a2739a4f-1eb7-4ba9-b2d2-18c34ed5b60d/23a2a2b6-5a41-4f3a-a1d4-f6f85c8094a5/Untitled.png)
 
-### Check In The TestReceiver
+## Check In The TestReceiver
 
 When the message status indicator turns green and shows **success**, it signifies that the cross-chain message process has been completed. At this point, you can verify the **`TestReceive`** contract to confirm that the **`sum`** value has incremented, or you can examine the [contract's events](https://sepolia.etherscan.io/address/0xb115b479ef7cbaeae5a69aae93adb0287adaa32c#events) for confirmation.

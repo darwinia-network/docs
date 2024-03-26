@@ -6,16 +6,17 @@ theme:
   favicon: assets/logo.svg
   features:
     - navigation.tabs
-    - navigation.sections
     - navigation.top
-    - navigation.path
     - navigation.indexes
     - navigation.footer
-    - toc.integrate
+    - navigation.expand
+    - navigation.path
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.copy
+    - header.autohide
+    - toc.integrate
   language: en
   palette:
     # Palette toggle for light mode
@@ -32,12 +33,6 @@ theme:
         name: Switch to light mode
       primary: deep purple
       accent: blue
-
-markdown_extensions:
-  - abbr
-  - toc:
-      title: On this page
-      permalink: true
 
 extra:
   social:

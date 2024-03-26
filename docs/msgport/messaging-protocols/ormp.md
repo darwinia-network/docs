@@ -1,3 +1,5 @@
+# ORMP
+
 ORMP stands for Oracle Relayer Messaging Protocol. It is an omni-chain messaging protocol that can be used to build decentralized applications, or Dapps, that operate across multiple blockchains with minimal effort for developers. It's named after the two important roles involved in message cross-chaining:
 
 - The Oracle
@@ -11,17 +13,17 @@ ORMP stands for Oracle Relayer Messaging Protocol. It is an omni-chain messaging
 
 These two roles play a vital role in the entire process of sending, verifying, and receiving messages.
 
-# Features
+## Features
 
 - The cross-chain application provides the option to choose a different Oracle and Relayer if the user does not trust the ones provided by the official team.
 - Messages are stored in an incremental Merkle tree, and the target chain relies on the tree root to validate the legitimacy of the received message.
 - The protocol does not guarantee the ordering of messages. However, the application has the option to maintain a nonce or a unique identifier to ensure that messages are received in the correct order, if ordering is necessary. This allows for ordered delivery of messages, even if the protocol itself doesn't provide that guarantee.
 
-# Messaging Design
+## Messaging Design
 
 ![ormp.svg](https://prod-files-secure.s3.us-west-2.amazonaws.com/a2739a4f-1eb7-4ba9-b2d2-18c34ed5b60d/4b1bc317-cc31-4c7d-b0e1-03f7ffd8dd0b/ormp.svg)
 
-## Raw Message Structure
+### Raw Message Structure
 
 Cross-chain message passing involves wrapping the source data with additional information and transmitting it via a logic channel over the cross-chain network. The accurate structure of the Message to be transmitted is defined as follows:
 
@@ -46,7 +48,7 @@ Please be aware that within the channel, all messages are organized in an increm
 
 </aside>
 
-## Message Sending Flow
+### Message Sending Flow
 
 1. The cross-chain application, built on the msgport interface **[IMessagePort](https://www.notion.so/Msgport-Interfaces-e2aa3703c34b4016b689ddf5e8ec7ed9?pvs=21)**, invokes the **`send(from, toChainId, to, gasLimit, encoded_call)`** method of the ORMP. This method is a payable method, meaning it requires the payment of a specific fee to execute. The fee structure is further explained below.
 2. Upon receiving the message, the ORMP contracts store it in an Incremental Merkle Tree, emit the `MessageAccepted` event and return msgHash to the sender as the an identifier for that message. 
@@ -54,7 +56,7 @@ Please be aware that within the channel, all messages are organized in an increm
 
 Once these two steps are completed, the message sending process is considered finished.
 
-## Message Relaying Flow
+### Message Relaying Flow
 
 The message relaying consists of two crucial roles: the relayer and the oracle service. These components continuously monitor the on-chain ORMP events to determine if there are new tasks assigned to them.
 
@@ -63,7 +65,7 @@ The message relaying consists of two crucial roles: the relayer and the oracle s
 
 For the message to be executed in the ORMP target chain contracts, it requires both the message payload, proof, and a valid oracle `msg_root`.
 
-## Message Receiving Flow
+### Message Receiving Flow
 
 When the `relay` method of the target chain contract is invoked, it performs the following validations:
 
@@ -74,7 +76,7 @@ When the `relay` method of the target chain contract is invoked, it performs the
 
 If the validation is successful, the message is then sent to the corresponding user application. Unless an exception occurs, the user contract's method is invoked to complete the cross-chain task associated with the message. At this point, we can consider the cross-chain message to have reached its destination.
 
-# Cross-chain Fee
+##  Cross-chain Fee
 
 The fee for cross-chain messaging is paid in the native token of the source chain. The application can retrieve the cross-chain fee by calling the **`fee`** function in the **[IMessagePort](https://www.notion.so/Msgport-Interfaces-e2aa3703c34b4016b689ddf5e8ec7ed9?pvs=21)** interface.
 
@@ -84,11 +86,11 @@ $$
 
 The total cross-chain fee consists of two parts: the oracle fee and the relayer fee. The oracle fee covers the cost of the message root oracle service. The relayer fee includes both the fee for relaying the message and the fee for executing the message on the target chain. If the fee paid exceeds the actual required fee, the excess amount will be refunded to the application.
 
-## OracleFee
+### OracleFee
 
 The fee for an oracle on a specific chain is determined, see the [fee page](https://github.com/darwinia-network/ORMP/blob/main/script/input/1/fee.c.json#L2).
 
-## RelayerFee
+### RelayerFee
 
 The relayer fee is composed of the execution fee and the payload fee, with various factors influencing the calculation as detailed on the [fee page](https://github.com/darwinia-network/ORMP/blob/main/script/input/1/fee.c.json#L10).
 
