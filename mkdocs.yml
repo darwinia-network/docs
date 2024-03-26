@@ -5,6 +5,8 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.path
+    - navigation.indexes
     - toc.integrate
     - search.suggest
     - search.highlight
@@ -26,3 +28,27 @@ theme:
         name: Switch to light mode
       primary: deep purple
       accent: blue
+nav:
+  - Home: 'index.md'
+  - Msgport:
+    - 'Overview': 'msgport/overview.md'
+    - 'Glossary': 'msgport/glossary.md'
+    - 'Msgport Interfaces': 'msgport/interfaces.md'
+    - 'Msgport Workflow': 'msgport/workflow.md'
+    - 'Msgport API': 'msgport/api.md'
+    - 'Msgport Scan': 'msgport/scan.md'
+    - 'Messaging Protocols':
+        - 'ORMP': 'msgport/messaging-protocols/ormp.md'
+        - 'XCMP': 'msgport/messaging-protocols/xcmp.md'
+        - 'LCMP(Deprecated)': 'msgport/messaging-protocols/lcmp.md'
+    - 'Supported Network': 'msgport/networks.md'
+    - 'User Cases':
+        - 'Token/Asset Bridge': 'msgport/user-cases/token-bridge.md'
+        - 'Cross Chain Abstract Account': 'msgport/user-cases/abstract-account.md'
+        - 'Multi Chains DAO Governance': 'msgport/user-cases/multichain-dao-governance.md'
+    - 'Tutorial':
+        - 'Pangolin > Sepolia Remix Demo': 'msgport/tutorial/remix-demo.md'
+        - 'Pangolin > Sepolia Script Demo': 'msgport/tutorial/script-demo.md'
+    - 'FAQ': 'msgport/faq.md'
+    - 'TroubleSome': 'msgport/troublesome.md'
+  - EVM+: 'evm'

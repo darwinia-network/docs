@@ -3,3 +3,12 @@ Darwinia was primarily focused on blockchain and cross-chain infrastructure deve
 ## Powering Your DApp’s Cross-Chain Capabilities
 
 At present, Darwinia actively concentrates on a pair of innovative cross-chain service solutions, both aligned with its overarching goal of powering the cross-chain capabilities of decentralized applications. As the landscape evolves, Darwinia remains poised to introduce additional solutions that further this core objective.
+
+nav:
+    - Section: 
+        - Overview: section/overview.md
+        - Msgport: section/msgport.md
+        - Tutorials: section/tutorials.md
+        - Workflow: section/workflow.md
+        - Community: section/community.md
+        - Legal: section/legal.md
