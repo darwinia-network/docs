@@ -1,6 +1,8 @@
-# **IMessagePort**
+# Msgport Interfaces
 
-The **`IMessagePort`** interface within the Msgport is crafted to simplify the complexities of underlying cross-chain messaging protocols for dApp developers. It offers a standardized interface to send cross-chain messages across various messaging protocols. The interface includes two critical functions:
+## IMessagePort
+
+The `IMessagePort` interface within the Msgport is crafted to simplify the complexities of underlying cross-chain messaging protocols for dApp developers. It offers a standardized interface to send cross-chain messages across various messaging protocols. The interface includes two critical functions:
 
 - **`send()`**: Serves as the gateway for users or applications to dispatch cross-chain messages.
 - **`fee()`**: Retrieves the necessary fee information for utilizing the **`send()`** function.
@@ -35,12 +37,12 @@ interface IMessagePort {
 }
 ```
 
-# **IPortMetadata**
+## IPortMetadata
 
-The **`IPortMetadata`** interface in the Msgport framework is intended to handle essential information regarding each port. It mandates the inclusion of two specific types of data:
+The `IPortMetadata` interface in the Msgport framework is intended to handle essential information regarding each port. It mandates the inclusion of two specific types of data:
 
 - **`name`**: Acts as a globally unique identifier for the port.
-- **`uri`**: Serves as a reference to the location where detailed information about the port is stored, typically pointing to an IPFS link by default. For illustration, consider the **[uri](https://ipfs.io/ipfs/bafybeid56lijczlbza2won2fhdjnf6qb7pmscgn7x3yr45kgvxvfjjh3pm)** associated with the ORMP as an example.
+- **`uri`**: Serves as a reference to the location where detailed information about the port is stored, typically pointing to an IPFS link by default. For illustration, consider the [uri](https://ipfs.io/ipfs/bafybeid56lijczlbza2won2fhdjnf6qb7pmscgn7x3yr45kgvxvfjjh3pm) associated with the ORMP as an example.
 
 This interface enables the Msgport to maintain vital information that applications may need in order to utilize the ports effectively.
 
@@ -59,9 +61,9 @@ interface IPortMetadata {
 }
 ```
 
-# **Application**
+## Application
 
-The **`Application`** contract is typically extended by the receiving application on the destination chain. This extension allows the receiving application to incorporate additional validation checks for the information contained in cross-chain messages. To see this implementation in action, you can examine the provided [runnable demo](https://github.com/darwinia-network/msgport-demo).
+The `Application` contract is typically extended by the receiving application on the destination chain. This extension allows the receiving application to incorporate additional validation checks for the information contained in cross-chain messages. To see this implementation in action, you can examine the provided [runnable demo](https://github.com/darwinia-network/msgport-demo).
 
 ```solidity
 pragma solidity ^0.8.17;

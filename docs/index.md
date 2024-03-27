@@ -1,14 +1,3 @@
-Darwinia was primarily focused on blockchain and cross-chain infrastructure development. Over time, it has transformed into a community-driven decentralized entity, supported by an active community dedicated to advancing decentralized technologies. At present, Darwinia operates as a community-managed technology and service provider, concentrating on powering the cross-chain functionalities of decentralized apps.
+# Powering Your DApp’s Cross-Chain Capabilities
 
-## Powering Your DApp’s Cross-Chain Capabilities
-
-At present, Darwinia actively concentrates on a pair of innovative cross-chain service solutions, both aligned with its overarching goal of powering the cross-chain capabilities of decentralized applications. As the landscape evolves, Darwinia remains poised to introduce additional solutions that further this core objective.
-
-nav:
-    - Section: 
-        - Overview: section/overview.md
-        - Msgport: section/msgport.md
-        - Tutorials: section/tutorials.md
-        - Workflow: section/workflow.md
-        - Community: section/community.md
-        - Legal: section/legal.md
+Darwinia is currently at the forefront of developing innovative cross-chain service solutions, with a strategic focus on **enhancing the cross-chain capabilities of decentralized applications**. As the industry landscape continues to evolve, Darwinia is committed to staying ahead of the curve by introducing new solutions that align with our core mission. Our approach is not only about meeting current needs but also about anticipating future requirements, ensuring that we remain a leader in the field.
