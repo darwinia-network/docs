@@ -18,6 +18,7 @@ theme:
     - search.highlight
     - content.tabs.link
     - content.code.copy
+    - content.code.annotate
     - header.autohide
   language: en
   palette:
@@ -53,6 +54,20 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
+markdown_extensions:
+  # code
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  # lists 
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
 nav:
   - Home: 'index.md'
   - Msgport:
@@ -79,4 +94,3 @@ nav:
   - EVM+: 'evm'
   - RING: 'ring.md'
   - Ecosystem And Developer Incentive Program: 'ecosystem.md'
-  - Support & Links: 'support.md'
