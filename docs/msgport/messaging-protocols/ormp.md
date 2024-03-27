@@ -15,7 +15,7 @@ These two roles play a vital role in the entire process of sending, verifying, a
 
 ## Features
 
-- The cross-chain application provides the option to choose a different Oracle and Relayer if the user does not trust the ones provided by the official team.
+- The cross-chain application provides the option to choose a different Oracle and Relayer if the user does not trust the   ones provided by the official team.
 - Messages are stored in an incremental Merkle tree, and the target chain relies on the tree root to validate the legitimacy of the received message.
 - The protocol does not guarantee the ordering of messages. However, the application has the option to maintain a nonce or a unique identifier to ensure that messages are received in the correct order, if ordering is necessary. This allows for ordered delivery of messages, even if the protocol itself doesn't provide that guarantee.
 
@@ -27,7 +27,7 @@ These two roles play a vital role in the entire process of sending, verifying, a
 
 Cross-chain message passing involves wrapping the source data with additional information and transmitting it via a logic channel over the cross-chain network. The accurate structure of the Message to be transmitted is defined as follows:
 
-```solidity
+```solidity linenums="1"
 struct Message {
     address channel;     // The messages channel to another chain.
     uint256 index;       // The leaf index lives in channel's incremental mekle tree.
@@ -42,17 +42,14 @@ struct Message {
 
 Please be aware that within the channel, all messages are organized in an incremental Merkle tree. The channel is also tasked with receiving and distributing messages, as well as overseeing the management of the message root and its status.
 
-<aside>
-💡 An [incremental Merkle Tree](https://arxiv.org/abs/2105.06009) is a [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree) of fixed depth where each leaf start as a zero value, and non-zero values are added by replacing the zero leaves starting from the left-most leaf to the right-most leaf one-by-one.
+> 💡 An [incremental Merkle Tree](https://arxiv.org/abs/2105.06009) is a [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree) of fixed depth where each leaf start as a zero value, and non-zero values are added by replacing the zero leaves starting from the left-most leaf to the right-most leaf one-by-one.
 **The Incremental Merkle Tree is a gas efficient Merkle Tree.**
-
-</aside>
 
 ### Message Sending Flow
 
-1. The cross-chain application, built on the msgport interface **[IMessagePort](https://www.notion.so/Msgport-Interfaces-e2aa3703c34b4016b689ddf5e8ec7ed9?pvs=21)**, invokes the **`send(from, toChainId, to, gasLimit, encoded_call)`** method of the ORMP. This method is a payable method, meaning it requires the payment of a specific fee to execute. The fee structure is further explained below.
+1. The cross-chain application, built on the msgport interface **[IMessagePort](../interfaces.md#imessageport)**, invokes the **`send(from, toChainId, to, gasLimit, encoded_call)`** method of the ORMP. This method is a payable method, meaning it requires the payment of a specific fee to execute. The fee structure is further explained below.
 2. Upon receiving the message, the ORMP contracts store it in an Incremental Merkle Tree, emit the `MessageAccepted` event and return msgHash to the sender as the an identifier for that message. 
-3. The ORMP contracts then invoke the specified relayer and oracle that have been previously registered with the protocol, emitting the `OracleAssigned` ****and ****`RelayerAssigned` event to signal the start of their respective tasks.
+3. The ORMP contracts then invoke the specified relayer and oracle that have been previously registered with the protocol, emitting the `OracleAssigned` and `RelayerAssigned` event to signal the start of their respective tasks.
 
 Once these two steps are completed, the message sending process is considered finished.
 
@@ -78,7 +75,7 @@ If the validation is successful, the message is then sent to the corresponding u
 
 ##  Cross-chain Fee
 
-The fee for cross-chain messaging is paid in the native token of the source chain. The application can retrieve the cross-chain fee by calling the **`fee`** function in the **[IMessagePort](https://www.notion.so/Msgport-Interfaces-e2aa3703c34b4016b689ddf5e8ec7ed9?pvs=21)** interface.
+The fee for cross-chain messaging is paid in the native token of the source chain. The application can retrieve the cross-chain fee by calling the **`fee`** function in the **[IMessagePort](../interfaces.md#imessageport)** interface.
 
 $$
 Fee = OracleFee + RelayingFee

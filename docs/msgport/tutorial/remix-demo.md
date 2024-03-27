@@ -12,7 +12,7 @@ Before we proceed, it's important to understand that in our cross-chain communic
 
 For ease of understanding, we'll be working with an existing contract on the Sepolia network named **`TestReceive`**. You can find the contract details at **[Sepolia Etherscan](https://sepolia.etherscan.io/address/0xb115b479ef7cbaeae5a69aae93adb0287adaa32c#code)**. The contract has a straightforward design; it includes a variable named **`sum`** and offers a method to increment its value.
 
-```solidity
+```solidity linenums="1" title="TestReceiver.sol"
 
 pragma solidity ^0.8.17;
 
@@ -50,7 +50,7 @@ The contract at address **`0xb115B479ef7cBAEae5a69Aae93ADb0287ADaA32c`** will 
 
 Create a new Solidity file named **`TestSender.sol`** and copy the contract code provided into it. Ensure that it compiles successfully without any errors.
 
-```solidity
+```solidity linenums="1" title="TestSender.sol"
 // SPDX-License-Identifier: GPL-3.0
 
 pragma solidity ^0.8.17;

@@ -1,21 +1,19 @@
-<aside>
-💡 **The LCMP protocol is now deprecated and has been replaced by Darwinia's latest cross-chain innovation,  [ORMP](https://www.notion.so/ORMP-644d05b64d7b4e0d83a7d76bfcbd539b?pvs=21). All products that were built using the LCMP protocol will transition to using ORMP.**
+> 💡 The LCMP protocol is now deprecated and has been replaced by Darwinia's latest cross-chain innovation, [ORMP](../messaging-protocols/ormp.md). All products that were built using the LCMP protocol will transition to using ORMP.
 
-</aside>
 
 # Overview
 
 LCMP, short for Light Client Cross-Chain Messaging Protocol, is a protocol meticulously designed and developed by the Darwinia core team. It is currently being actively utilized within Darwinia's chains. This protocol enables seamless communication between different blockchains by establishing messaging channels between them.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b1aafb9e-ae9f-42bf-9cbe-6ed8500892af/Untitled.png)
+![msgport-lcmp-1](../../images/msgport-lcmp-1.png)
 
 The LCMP protocol consists of two layers, as shown in the diagram above. The first layer, known as the truth layer, incorporates the light client functionality. This layer is responsible for ensuring the integrity and validity of the cross-chain messages. The protocol derives its name from this layer, which plays a crucial role in maintaining the trustworthiness of the communication. The second layer of the LCMP protocol is the message layer. This layer is specifically designed to handle various aspects related to cross-chain messages. It takes care of issues such as message formatting, transaction fees, and other relevant considerations. By addressing these concerns, the message layer streamlines the process of sending and receiving cross-chain messages, enhancing the overall efficiency and effectiveness of the protocol.
 
-# Message Flow
+## Message Flow
 
 To facilitate a comprehensive understanding of the message flow, it is important to establish the assumption that the truth layer is functioning as intended. Without a properly functioning truth layer, it becomes impractical to delve into the intricacies of the message layer. This is because the truth layer plays a critical role in providing essential validation services for the message layer. If the truth layer is compromised or broken, it renders the execution of cross-chain messages on the target chain impossible, even if the messages successfully reach their intended destination.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1a33aed0-d666-4cc4-b610-a19e1cf06cad/Untitled.png)
+![msgport-lcmp-2](../../images/msgport-lcmp-2.png)
 
 Let's break down and expand upon the steps depicted in the diagram:
 
@@ -26,14 +24,14 @@ Let's break down and expand upon the steps depicted in the diagram:
 5. Once the message is executed in the target chain, an event is triggered to inform the relayer. This event serves as a signal for the relayer to confirm the execution result and the latest status back to the source chain. This confirmation process is crucial for the source chain to accurately detect stale or duplicated messages and enables features like message flow control. By confirming the execution result and status, the source chain can maintain an up-to-date view of the cross-chain message's progress and take appropriate actions based on the outcome.
 6. Upon receiving the confirm message from the target chain regarding the initial message, the source chain marks the end of the cross-chain message's lifecycle. This signifies the completion of the message's journey across different chains. At a predetermined time, the source chain clears the stored messages, making space for new incoming messages. This process ensures the efficient handling of subsequent cross-chain messages and helps maintain the scalability and performance of the overall system.
 
-# Message Status
+## Message Status
 
 - `MessageAccepted` - *Message has been accepted and is waiting to be delivered.*
 - `MessagesReceived` - *Messages have been received from the bridged chain.*
 - `MessageDispathed` - *Message has been executed in the target chain.*
 - `MessageDelivered` - *Messages in the inclusive range have been delivered to the bridged chain.*
 
-# Message Fee
+## Message Fee
 
 When discussing cross-chain message protocols, an important aspect to consider is the fee associated with these transactions. The fee calculation process is complex, involving various factors such as the tokens used in the source and target chains, the involvement of third-party entities like relayers, and the mechanism for incentivizing and collecting fees. 
 
@@ -43,7 +41,7 @@ To address these challenges, the Darwinia Core team has designed a sub-protocol 
 
 In the context of calculating fees for cross-chain messages, the Fee Market differs from traditional Oracle solutions. Typically, determining the fee involves considering the token value exchange ratio between the source and target chains in real-time, a task often performed by Oracles. However, the Fee Market mechanism eliminates the need for real-time awareness of token value exchange ratios on the blockchain. Instead, it relies on quotes provided by relayers to generate the final fee for cross-chain transactions. This approach allows for flexibility and adaptability, as relayers play a crucial role in determining the fees based on market conditions. The relayer is the third off-chain role of the message carrier, responsible for delivering messages between the source and target chains. Before delivering a message, the relayer calculates its own costs and expected profits by combining the transaction fees of the source and target chains and finally submits its own quote to the fee market. When the fee market has received enough quotes, it selects a suitable quote as the cross-chain fee at that moment according to the pre-defined rules.
 
-## **Design Principles**
+## Design Principles
 
 - Users use native tokens of the source chain as the only method of cross-chain payment. We believe this approach provides the best user experience, eliminating the need for users to worry about target chain accounts and fees.”
 - The cross-chain fees paid by users are generated by the fee market system and the final price quoted by the fee market is influenced by all relayers involved in the delivery of messages throughout the market.
@@ -55,10 +53,7 @@ In the context of calculating fees for cross-chain messages, the Fee Market diff
 
 ## Tiered Quotation Mechanism
 
-<aside>
-💡 This approach is suitable for scenarios with lower gas fee on the source chain and shorter finality time. It has better versatility, reliability, and robustness. Such networks include Heco, BSC, Polygon and Darwinia.
-
-</aside>
+> 💡 This approach is suitable for scenarios with lower gas fee on the source chain and shorter finality time. It has better versatility, reliability, and robustness. Such networks include Heco, BSC, Polygon and Darwinia.
 
 First, the relayers must register in the fee market system and post their quotes based on the reference price and the expected profit on the blockchain at any time. An off-chain pricing system maintains the reference price. Each relayer should lock a sufficient default margin on the chain to guarantee the faithful execution of the deal.
 
@@ -66,7 +61,7 @@ In this way, a series of quoted prices (price meanings fee per message) come int
 
 In any time, the message delivery and confirmation relayer can be anyone, do not have be the assigned relayer. However, there is an additional bonus for being an assigned relayer as a reward for guarding the cross-chain messaging service. In order to better manage the responsibilities of the n assigned relayers, each assigned relayer is given a time slot (from the creation of the cross-chain message), meaning that the assigned relayer is obliged to deliver the cross-chain message in the allocated time slot. If a message is supposed to be delivered to the target chain in one of the assigned relayer's time slots, but it is not, the assigned relayer is considered to have acted badly and will be penalised for locked assets, or even removed from the set of assigned relayers.
 
-## Reward And Slash Rules
+### Reward And Slash Rules
 
 ### Key Parameters
 
@@ -110,7 +105,7 @@ message fee -                                                                   
                                 ---> slot duty rewards -> assigned duty relayers
 ```
 
-## An example
+### An example
 
 1. Assume that relayers `R1`, `R2`, `R3`, `R4` and `R5` have registered with the fee market and are all running relayer clients capable of delivering messages with quote prices of `P1=10`, `P2=20`, `P3=30`, `P4=40` and `P5=50` and are registered with a locked asset of `300`.
 2. Assume that the total number of assigned relayers specified by the fee market system is `3` (default). In this case, the fee market will generate a cross-chain fee of `30` (10 < 20 < 30 < 40 < 50) and the set of assigned relayers is `R1, R2, R3`.
@@ -180,7 +175,7 @@ The slash, reward analysis is divided into two cases.
         - To message delivery relayer: `(30 + 40 * 3) * MessageRelayersRewardRatio = 120`
         - To message confirm relayer: `(30 + 40 * 3) * MessageRelayersRewardRatio = 30`
 
-# Implementations
+## Implementations
 
 Here are the two implementations of the LCMP that we discussed:
 
