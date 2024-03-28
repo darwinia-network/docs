@@ -102,6 +102,7 @@ nav:
   - EVM+: 
     - Overview: 'evm/overview.md'
     - Chains And Explorers:
+          - Overview: 'evm/chains/overview.md'
           - Darwinia Chain: 'evm/chains/darwinia.md'
           - Crab Chain: 'evm/chains/crab.md'
           - Pangolin Chain: 'evm/chains/pangolin.md'

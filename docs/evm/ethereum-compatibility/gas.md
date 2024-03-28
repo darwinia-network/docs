@@ -1,6 +1,8 @@
+# Gas Compatibility
+
 One concern for smart contract developers is the gas mechanism. If there is a large gap in gas between Ethereum and the Darwinia platform, it can result in unexpected errors when migrating Ethereum applications to Darwinia. This can be a frustrating experience for dapp builders aiming to create Ethereum-compatible applications on the Darwinia platform. However, we have found a way to minimize the gas gap by keeping the op code gas the same as the Ethereum official implementation. So far, we haven't encountered any EVM code gas compatibility issues in the long run. That being said, there are still some differences between Darwinia and Ethereum in this aspect. This page will provide a detailed explanation of these differences.
 
-# BlockGasLimit
+## BlockGasLimit
 
 In Ethereum, the number of pending transactions that can be included in the next block depends on the amount of gas each transaction consumes. When miners create new blocks, the total gas limit of all transactions in the block must be less than the block's gas limit. Since the London hard fork, each block has a target size of 15 million gas units, but the actual size of a block can vary depending on network demand. The maximum size of a block, known as the block gas limit, is set to **30 million** gas units.
 
@@ -12,7 +14,7 @@ Similarly, the Darwinia platform also has a block gas limit that determines the 
 
 **It is important to note that the BlockGasLimit in the Darwinia Platform is lower than the corresponding value in Ethereum.** This means that when building applications on the Darwinia Platform, developers need to be mindful of the lower gas limit and ensure that their code and transactions stay within this limit. Failure to do so may result in transactions being rejected or not being included in blocks. It is recommended to thoroughly test and optimize gas usage in order to ensure the smooth functioning of applications on the Darwinia Platform.
 
-# GasPrice
+## GasPrice
 
 In Ethereum, there is a concept of a minimum gas price known as the "gas price floor" or "base fee". This base fee is dynamically adjusted for each block based on network congestion. It serves as the minimum amount of Ether (ETH) that users must pay for each unit of gas consumed in a transaction. If you offer a gas price lower than the base fee, your transaction will still be accepted and included in the memory pool, but it may face challenges in being included in a block. Miners prioritize transactions based on their gas prices, with higher gas price transactions being more attractive to miners as they offer higher potential rewards.
 
