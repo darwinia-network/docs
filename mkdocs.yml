@@ -38,6 +38,7 @@ theme:
       accent: custom
 
 extra:
+  generator: false
   homepage: https://darwinia.network
   social:
     - icon: fontawesome/brands/github
