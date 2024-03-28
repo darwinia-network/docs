@@ -114,6 +114,7 @@ nav:
           - Gas Compatibility: 'evm/ethereum-compatibility/gas.md'
           - EVM Tracing: 'evm/ethereum-compatibility/evm-tracing.md'
           - Precompiled Contracts:
+              - Overview: 'evm/ethereum-compatibility/precompiles/overview.md'
               - Ethereum: 'evm/ethereum-compatibility/precompiles/ethereum.md'
               - Staking: 'evm/ethereum-compatibility/precompiles/staking.md'
               - Deposit: 'evm/ethereum-compatibility/precompiles/deposit.md'
