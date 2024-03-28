@@ -1,4 +1,6 @@
-## **Important Parameters**
+# Staking Module
+
+## Important Parameters
 
 The important parameters to be aware of when understanding the darwinia staking module are as follows:
 

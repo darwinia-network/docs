@@ -1,4 +1,6 @@
-## **Important Parameters**
+# Deposit Module
+
+## Important Parameters
 
 The important parameters to be aware of when understanding the darwinia deposit module are as follows:
 

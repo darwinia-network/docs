@@ -1,3 +1,5 @@
+# Glossary
+
 ## Block
 
 A collection of data, such as transactions, that together indicate a state transition of the blockchain.
@@ -10,7 +12,7 @@ An application that allows a user to explore the different blocks on a blockchai
 
 A node that maintains a parachain by collecting parachain transactions and producing state transition proofs for the validators.
 
-## **Commission**
+## Commission
 
 Collators and nominators get paid from block production on the network, where collators can set a variable commission rate, which is initially subtracted from the total rewards that collator is entitled to (for that period), where the commission determines the rate of distribution for the remaining rewards set out for the nominators that are backing that collator.
 
@@ -38,9 +40,9 @@ Users participate in staking, and the rights and interests obtained by bonding R
 
 Power share is the percentage of Power held in total Power. The greater the power share, the greater the influence of the decision made on the entire chain.
 
-## **Preimage**
+## Preimage
 
-The on-chain proposals do not require the entire image of extrinsics and data (for instance the WASM code, in case of upgrades) to be submitted, but would rather just need that image's hash. That **preimage** can be submitted and stored on-chain against the hash later, upon the proposal's
+The on-chain proposals do not require the entire image of extrinsics and data (for instance the WASM code, in case of upgrades) to be submitted, but would rather just need that image's hash. That preimage can be submitted and stored on-chain against the hash later, upon the proposal's
 dispatch.
 
 ## Relay Chain
@@ -51,7 +53,7 @@ The chain that coordinates consensus and communication between parachains (and e
 
 A session is a period of time that has a constant set of validators. Validators can only join or exit the validator set at a session change. It is measured in block numbers. 
 
-## **Session key**
+## Session key
 
 A session key is actually several keys kept together that provide the various signing functions required by network authorities/validators in pursuit of their duties.
 
