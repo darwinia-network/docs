@@ -54,6 +54,11 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 markdown_extensions:
   # code
   - pymdownx.highlight:
@@ -67,6 +72,9 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+  # math
+  - pymdownx.arithmatex:
+      generic: true
 
 nav:
   - Home: 'index.md'

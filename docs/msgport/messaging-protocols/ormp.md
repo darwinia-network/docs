@@ -21,7 +21,7 @@ These two roles play a vital role in the entire process of sending, verifying, a
 
 ## Messaging Design
 
-![ormp.svg](https://prod-files-secure.s3.us-west-2.amazonaws.com/a2739a4f-1eb7-4ba9-b2d2-18c34ed5b60d/4b1bc317-cc31-4c7d-b0e1-03f7ffd8dd0b/ormp.svg)
+![msgport-ormp-1](../../images/msgport-ormp-1.png)
 
 ### Raw Message Structure
 
@@ -80,6 +80,7 @@ The fee for cross-chain messaging is paid in the native token of the source chai
 $$
 Fee = OracleFee + RelayingFee
 $$
+
 
 The total cross-chain fee consists of two parts: the oracle fee and the relayer fee. The oracle fee covers the cost of the message root oracle service. The relayer fee includes both the fee for relaying the message and the fee for executing the message on the target chain. If the fee paid exceeds the actual required fee, the excess amount will be refunded to the application.
 
