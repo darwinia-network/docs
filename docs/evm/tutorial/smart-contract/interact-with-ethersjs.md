@@ -1,15 +1,12 @@
-<aside>
-💡 Familiarity with Linux/Javascript is essential.
+# Overview
 
-</aside>
+> 💡 Familiarity with Linux/Javascript is essential.
 
-# **Overview**
+Similar to Web3.js, the [Ethers.js](https://docs.ethers.org/v5/) library offers a comprehensive suite of tools for interacting with Ethereum nodes using JavaScript. In addition, Darwinia provides an Ethereum-compatible API that supports JSON RPC invocations, making it fully compatible with the Ethers.js library. This compatibility enables developers to utilize the Ethers.js library to interact with a Darwinia node in a manner similar to interacting with an Ethereum node. This allows developers to leverage their existing knowledge and tools to build applications on the Darwinia network seamlessly.
 
-[Web3.js](https://web3js.org/) is a comprehensive library that enables developers to communicate with Ethereum nodes using various protocols such as HTTP or WebSocket in JavaScript. Darwinia offers an [Ethereum-Compatible API](https://www.notion.so/JSON-RPC-API-c96e3afedb0b4fb8a902527ffdb5ce6c?pvs=21) that supports JSON RPC calls similar to Ethereum. As a result, developers can utilize the Web3.js library to interact with a Darwinia node in the same way they would interact with an Ethereum node. This compatibility simplifies the process of building applications that interact with Darwinia using familiar Ethereum tools and libraries.
+## Prerequisites
 
-# **Prerequisites**
-
-## Install Solidity Compiler
+### Install Solidity Compiler
 
 The solc compiler is a JavaScript library used to retrieve the code and ABI metadata of a Solidity smart contract by compiling it. This allows developers to access the necessary information for interacting with the smart contract programmatically. Run the following command to install:
 
@@ -30,28 +27,25 @@ solc, the solidity compiler commandline interface
 Version: 0.8.17+commit.8df45f5f.Linux.g++
 ```
 
-## Install Web3.js
+### Install Ethers.js
 
-In this tutorial, we will explore the usage of web3.js by deploying a contract and performing various contract functionalities. The tutorial involves multiple script files, so let's create a new JavaScript project called **`example-with-web3js`** to organize and manage the code effectively. This project will serve as a workaround for implementing the web3.js functionality.
+In this tutorial, we will explore the usage of Ethers.js by deploying a contract and performing various contract functionalities. The tutorial involves multiple script files, so let's create a new JavaScript project called `example-with-ethersjs` to organize and manage the code effectively. This project will serve as a workaround for implementing the Ethers.js functionality.
 
 ```bash
-mkdir example-with-web3js && cd example-with-web3js && npm init --y
+mkdir example-with-ethersjs && cd example-with-ethersjs && npm init --y
 ```
 
 Install the Web3.js by runing the following command:
 
 ```bash
-npm install web3@1.10.2
+npm install ethers@5.7.2
 ```
 
-# Contract Interaction
+## Contract Interaction
 
-<aside>
-💡 The network provider used in this tutorial is the Pangolin Testnet. However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
+> 💡 The network provider used in this tutorial is the Pangolin Testnet. However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
 
-</aside>
-
-## Prepare Contract
+### Prepare Contract
 
 Create a smart contract file by running this command:
 
@@ -59,9 +53,9 @@ Create a smart contract file by running this command:
 touch storage.sol
 ```
 
-To showcase the interaction with the smart contract, we have prepared a simple Solidity smart contract. You can find the contract code pasted into the **`storage.sol`** file. This contract will serve as the basis for demonstrating how to interact with it using web3.js.
+To showcase the interaction with the smart contract, we have prepared a simple Solidity smart contract. You can find the contract code pasted into the **`storage.sol`** file. This contract will serve as the basis for demonstrating how to interact with it using ethers.js.
 
-```solidity
+```solidity linenums="1" title="storage.sol"
 // SPDX-License-Identifier: GPL-3.0
 
 pragma solidity >=0.8.2 <0.9.0;
@@ -88,11 +82,11 @@ contract Storage {
 }
 ```
 
-This contract is straightforward and easy to understand. It consists of two functionalities: storing a number and retrieving the updated number. Let's proceed to learn how to interact with this contract using web3.js.
+This contract is straightforward and easy to understand. It consists of two functionalities: storing a number and retrieving the updated number. Let's proceed to learn how to interact with this contract using ethers.js.
 
-## Generate Contract Metadata
+### Generate Contract Metadata
 
-When interacting with a contract using Web3.js, it is essential to have the contract metadata. The toolchain relies on this metadata information to properly interact with the contract. To generate the metadata and store it in a **`metadata.json`** file, you can run the following command:
+When interacting with a contract using Ethers.js, it is essential to have the contract metadata. The toolchain relies on this metadata information to properly interact with the contract. To generate the metadata and store it in a **`metadata.json`** file, you can run the following command:
 
 ```bash
 solc storage.sol --combined-json abi,bin,hashes --pretty-json > metadata.json
@@ -143,7 +137,7 @@ The output of `cat metadata.json`:
 }
 ```
 
-## Deploy Storage Contract
+### Deploy Storage Contract
 
 Create a deploy script by running this command:
 
@@ -153,9 +147,9 @@ node deploy.js
 
 And paste the following content into it:
 
-```jsx
-const  Web3 = require("web3");
-const contractMetadata = require("./metadata.json");
+```jsx linenums="1" title="deploy.js"
+const ethers = require("ethers");
+const contractMetadata = require("../example-with-ethersjs/metadata.json");
 
 // The test account
 const accountFrom = {
@@ -163,7 +157,8 @@ const accountFrom = {
     privateKey: "0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc",
 }
 
-const web3 = new Web3('https://pangolin-rpc.darwinia.network');
+const provider = new ethers.providers.JsonRpcProvider('https://pangolin-rpc.darwinia.network');
+const wallet = new ethers.Wallet(accountFrom.privateKey, provider);
 const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 const bin = contractMetadata.contracts["storage.sol:Storage"].bin;
 
@@ -171,27 +166,10 @@ const deploy = async () => {
     console.log(`Attempting to deploy from account ${accountFrom.address}`);
 
     // Construct the contract instance
-    const contract = new web3.eth.Contract(abi);
-    // Create the deploy contract raw transaction
-    let rawTransaction = contract.deploy({
-        data: bin,
-    });
-
-    // Sign the raw transaction with the private key
-    const createTransaction = await web3.eth.accounts.signTransaction(
-        {
-            from: accountFrom.address,
-            data: rawTransaction.encodeABI(),
-            gas: await rawTransaction.estimateGas(),
-            gasPrice: await web3.eth.getGasPrice()
-        },
-        accountFrom.privateKey
-    );
-
-    const createReceipt = await web3.eth.sendSignedTransaction(
-        createTransaction.rawTransaction
-    );
-    console.log(`Contract deployed at address: ${createReceipt.contractAddress}`);
+    const contract = new ethers.ContractFactory(abi, bin, wallet);
+    
+    let storage = await contract.deploy();
+    console.log(`Contract deployed at address: ${storage.address}`);
 };
 
 deploy();
@@ -207,12 +185,12 @@ The output like this:
 
 ```bash
 Attempting to deploy from account 0x6Bc9543094D17f52CF6b419FB692797E48d275d0
-Contract deployed at address: 0x677163264bcb88A6f8F71E2B7D88F51d54325AB1
+Contract deployed at address: 0xE175242B7509e32a18973Ab622Ea3349a6C47429
 ```
 
-`0x677163264bcb88A6f8F71E2B7D88F51d54325AB1` is the address of the deployed storage contract, as a unique identifier for that contract. It will be used later to store and retrieve the number.
+`0xE175242B7509e32a18973Ab622Ea3349a6C47429` is the address of the deployed storage contract, as a unique identifier for that contract. It will be used later to store and retrieve the number.
 
-## Store Number
+### Store Number
 
 Create a store script by running this command:
 
@@ -222,9 +200,9 @@ touch store.js
 
 Please paste the following content into the `store.js` file, *ensuring that you have updated the **`contractAddress`** in the script with the address of the contract you deployed.*
 
-```jsx
-const  Web3 = require("web3");
-const contractMetadata = require("./metadata.json");
+```jsx linenums="1" title="store.js"
+const ethers = require("ethers");
+const contractMetadata = require("../example-with-ethersjs/metadata.json");
 
 // The test account
 const accountFrom = {
@@ -232,21 +210,19 @@ const accountFrom = {
     privateKey: "0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc",
 }
 
-const web3 = new Web3('https://pangolin-rpc.darwinia.network');
+const provider = new ethers.providers.JsonRpcProvider('https://pangolin-rpc.darwinia.network');
+const wallet = new ethers.Wallet(accountFrom.privateKey, provider);
 const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 
 // The contract address deployed in last step
-const contractAddress = '0x677163264bcb88A6f8F71E2B7D88F51d54325AB1';
+const contractAddress = '0xE175242B7509e32a18973Ab622Ea3349a6C47429';
 const store = async () => {
-    web3.eth.accounts.wallet.add(accountFrom.privateKey);
+    // Construct the contract instance=
+    let storageContract = new ethers.Contract(contractAddress, abi, wallet);
 
-    // Construct the contract instance
-    let storageContract = new web3.eth.Contract(abi, contractAddress);
-    storageContract.options.from = accountFrom.address;
-    storageContract.options.gas = 4_000_000;
-    
     // Call store to update the number to 3
-    let receipt = await storageContract.methods.store(3).send();
+    let transaction = await storageContract.store(3);
+    let receipt = await transaction.wait();
     console.log(`Tx successful with hash: ${receipt.transactionHash}`);
 };
 
@@ -265,7 +241,7 @@ The output:
 Tx successful with hash: 0x524f2647157635978feff15754400f36d93d2e4bc5f0b0119da0a671b666cd74
 ```
 
-## Retrieve Number
+### Retrieve Number
 
 Create a retrieve script by running this command:
 
@@ -275,20 +251,20 @@ touch retrieve.js
 
 Please paste the following content into the `retrieve.js` file, *ensuring that you have updated the **`contractAddress`** in the script with the address of the contract you deployed.*
 
-```jsx
-const  Web3 = require("web3");
-const contractMetadata = require("./metadata.json");
+```jsx linenums="1" title="retrieve.js"
+const ethers = require("ethers");
+const contractMetadata = require("../example-with-ethersjs/metadata.json");
 
-const web3 = new Web3('https://pangolin-rpc.darwinia.network');
+const provider = new ethers.providers.JsonRpcProvider('https://pangolin-rpc.darwinia.network');
 const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 
 // The contract address deployed in last step
-const contractAddress = '0x677163264bcb88A6f8F71E2B7D88F51d54325AB1';
+const contractAddress = '0xE175242B7509e32a18973Ab622Ea3349a6C47429';
 const retrieve = async () => {
     // Construct the contract instance
-    let storageContract = new web3.eth.Contract(abi, contractAddress);
+    let storageContract = new ethers.Contract(contractAddress, abi, provider);
     // Call retrieve
-    let number = await storageContract.methods.retrieve().call();
+    let number = await storageContract.retrieve();
     console.log(`The current number stored is: ${number}`);
 };
 
@@ -302,3 +278,7 @@ node retrieve.js
 ```
 
 The output:
+
+```bash
+The current number stored is: 3
+```

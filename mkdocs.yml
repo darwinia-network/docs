@@ -136,11 +136,11 @@ nav:
           - Multisig Wallet: 'evm/tutorial/multisig-wallet.md'
           - Create DAO Guide: 'evm/tutorial/create-dao.md'
           - Smart Contract Guide:
-              - Interact With Web3.js: 'evm/tutorial/smart-contract/web3js.md'
-              - Interact With Ethers.js: 'evm/tutorial/smart-contract/ethersjs.md'
-              - Interact With Hardhat: 'evm/tutorial/smart-contract/hardhat.md'
-              - Interact With Foundry: 'evm/tutorial/smart-contract/foundry.md'
-              - Verify Contract: 'evm/tutorial/smart-contract/verify-contract.md'
+              - Interact With Web3.js: 'evm/tutorial/smart-contract/interact-with-web3js.md'
+              - Interact With Ethers.js: 'evm/tutorial/smart-contract/interact-with-ethersjs.md'
+              - Interact With Hardhat: 'evm/tutorial/smart-contract/interact-with-hardhat.md'
+              - Interact With Foundry: 'evm/tutorial/smart-contract/interact-with-foundry.md'
+              - Verify Smart Contract: 'evm/tutorial/smart-contract/verify-contract.md'
               - Awesome Tutorial: 'evm/tutorial/smart-contract/awesome-tutorial.md'
           - Chain Guide:
               - Chain Database Snapshot: 'evm/tutorial/chain/snapshot.md'

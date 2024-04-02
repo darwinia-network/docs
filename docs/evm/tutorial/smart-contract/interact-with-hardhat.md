@@ -1,13 +1,10 @@
-<aside>
-💡 Familiarity with Linux/Javascript is essential.
+# Overview
 
-</aside>
-
-# **Overview**
+> 💡 Familiarity with Linux/Javascript is essential.
 
 [Hardhat](https://hardhat.org/) is a powerful Ethereum development environment designed to assist developers in managing and automating the repetitive tasks associated with building smart contracts and decentralized applications (DApps). Notably, Hardhat has the capability to directly interact with Darwinia's Ethereum API, enabling developers to deploy their smart contracts onto the Darwinia network. This compatibility allows developers to leverage Hardhat's features and tools when working with Darwinia, streamlining the development process and facilitating the creation of robust and reliable applications.
 
-# **Setting up a project**
+## Setting up a project
 
 In this tutorial, we will explore the usage of hardhat by deploying a contract and performing various contract functionalities. The tutorial involves multiple script files, so let's create a new JavaScript project called `example-with-hardhat` to organize and manage the code effectively. This project will serve as a workaround for implementing the hardhat functionality.
 
@@ -60,14 +57,12 @@ These are the default paths for a Hardhat project.
 - `test/` is where your tests should go.
 - `scripts/` is where simple automation scripts go.
 
-# Contract Interaction
+## Contract Interaction
 
-<aside>
-💡 The network provider used in this tutorial is the Pangolin Testnet. However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
+> 💡 The network provider used in this tutorial is the Pangolin Testnet. However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
 
-</aside>
 
-## Prepare And Compile Contract
+### Prepare And Compile Contract
 
 Create a smart contract file under the `contracts` by running this command:
 
@@ -77,7 +72,7 @@ touch storage.sol
 
 To showcase the interaction with the smart contract, we have prepared a simple Solidity smart contract. You can find the contract code pasted into the **`storage.sol`** file. This contract will serve as the basis for demonstrating how to interact with it using hardhat.
 
-```solidity
+```solidity linenums="1" title="storage.sol"
 // SPDX-License-Identifier: GPL-3.0
 
 pragma solidity >=0.8.2 <0.9.0;
@@ -118,11 +113,11 @@ The output looks like this and the compiled artifacts will be saved in the `art
 Compiled 1 Solidity file successfully
 ```
 
-## Update Hardhat Config
+### Update Hardhat Config
 
 Before working with the contracts, there are a few basic configurations that need to be set up. Replace the default **`hardhat.config`** file with the following content. This configuration includes the Pangolin network RPC information and adds a test account:
 
-```jsx
+```jsx linenums="1" title="hardhat.config"
 require("@nomicfoundation/hardhat-toolbox");
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -140,11 +135,11 @@ module.exports = {
 
 By updating the **`hardhat.config`** file with this content, you will have the necessary configurations in place to interact with the Pangolin network and use the test account for testing purposes.
 
-## Deploy Storage Contract
+### Deploy Storage Contract
 
 And paste the following content into it the `deploy.js` under scripts:
 
-```jsx
+```jsx linenums="1" title="deploy.js"
 const hre = require("hardhat");
 
 async function main() {
@@ -175,7 +170,7 @@ Contract deployed at address: 0x46c66F6c65C7550a1CF94754979a1A52dB6C26c9
 
 `0x46c66F6c65C7550a1CF94754979a1A52dB6C26c9` is the address of the deployed storage contract, as a unique identifier for that contract. It will be used later to store and retrieve the number.
 
-## Using Hardhat Console
+### Using Hardhat Console
 
 Hardhat comes built-in with an interactive JavaScript console. You can use it by running `npx hardhat console`:
 
@@ -194,7 +189,7 @@ const Storage = await ethers.getContractFactory('Storage');
 const storage = await Storage.attach('0x46c66F6c65C7550a1CF94754979a1A52dB6C26c9');
 ```
 
-### **Store Number**
+### Store Number
 
 ```bash
 # In the harhat console
@@ -245,3 +240,7 @@ await storage.retrieve();
 ```
 
 The output:
+
+```bash
+3n
+```
