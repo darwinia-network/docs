@@ -8,7 +8,7 @@ To build the documentation locally, you will need to have Python and pip install
 
 1. Clone this repository.
 2. Navigate to the root directory of the cloned repository.
-3. Run `pip install mkdocs-material` to install the necessary dependencies.
+3. Run `pip install mkdocs-material mkdocs-git-revision-date-localized-plugin` to install the necessary dependencies.
 4. Run `mkdocs serve` to start the local development server.
 5. Open your web browser and navigate to `http://127.0.0.1:8000` to view the documentation.
 
