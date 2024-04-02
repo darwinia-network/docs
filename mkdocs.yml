@@ -2,8 +2,8 @@ site_name: Darwinia Document
 copyright: Copyright &copy; 2018 - 2024 Darwinia Network
 theme:
   name: material
-  logo: assets/darwinia.png
-  favicon: assets/background.png
+  logo: resource/pics/darwinia-logo.png
+  favicon: resource/pics/background.png
   font:
       text: Open Sans
       code: Roboto Mono
@@ -53,10 +53,10 @@ extra:
       link: https://medium.com/darwinianetwork
 
 extra_css:
-  - stylesheets/extra.css
+  - resource/stylesheets/extra.css
 
 extra_javascript:
-  - javascripts/mathjax.js
+  - resource/script/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
