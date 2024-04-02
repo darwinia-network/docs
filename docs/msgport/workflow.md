@@ -27,7 +27,7 @@ After verifying that the Darwinia Msgport aligns with your project's objectives,
 
 Integrating Msgport into the receiver application on the target chain is a straightforward process. Simply extend your contract to implement the [Application](../msgport/interfaces.md#application) interface, and then incorporate your business logic into the contract as usual. Below is a demo code snippet for your reference.
 
-```solidity linenums="1"
+```solidity linenums="1" title="TestReceiver.sol"
 pragma solidity ^0.8.17;
 
 import "lib/darwinia-msgport/src/user/Application.sol";
@@ -77,7 +77,7 @@ The fee structure for Msgport is implemented through the [Msgport API](https://g
 
 With the preliminary setup out of the way, you're all set to send your cross-chain message. The process is quite simple—refer to the demo code below for guidance.
 
-```solidity linenums="1"
+```solidity linenums="1" title="TestSender.sol"
 pragma solidity ^0.8.17;
 
 import "lib/darwinia-msgport/src/interfaces/IMessagePort.sol";
