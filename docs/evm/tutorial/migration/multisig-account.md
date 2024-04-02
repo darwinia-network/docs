@@ -1,15 +1,11 @@
 # Migrate Multisig Account
 
-Owner: bear.wang@itering.io
+> 🙋‍♂️ This article specifically addresses the migration of multisig accounts. If you are looking for information on user interfaces for general accounts or a corresponding migration tutorial, please click [here](https://www.notion.so/Migrate-Generate-Account-66167771afba4768b6878907eb4e86bd?pvs=21).
 
-<aside>
-🙋‍♂️ This article specifically addresses the migration of multisig accounts. If you are looking for information on user interfaces for general accounts or a corresponding migration tutorial, please click [here](https://www.notion.so/Migrate-Generate-Account-66167771afba4768b6878907eb4e86bd?pvs=21).
-
-</aside>
 
 This tutorial will walk you through the steps of migrating your accounts from `Darwinia 1.0` to the current Darwinia using the [Multisig Account Migration Dapp](https://migration.darwinia.network/#/multisig-home?network=Darwinia). It's important to note that this tutorial is also applicable for the Crab chain.
 
-# Get started with the dashboard
+## Get started with the dashboard
 
 To get started with the dashboard, navigate to [migration.darwinia.network.](https://migration.darwinia.network/#/multisig-home?network=Darwinia) You’ll be prompted to connect to [polkadot{.js} extension](https://polkadot.js.org/extension/), [Talisman wallet](https://www.talisman.xyz/), [Subwallet](https://subwallet.app/), or [NovaWallet](https://novawallet.io/).
 
@@ -21,7 +17,7 @@ After granting the necessary permissions, you will be redirected to the main das
 
 ![Untitled](Migrate%20Multisig%20Account%202309e46d50d6419ba4c18f58bea890d9/Untitled%202.png)
 
-# How to migrate
+## How to migrate
 
 <aside>
 💡 Please note that you can use [Gnosis Safe Multisig - IPFS](https://ipfs.io/ipfs/QmfRD4GuqZobNi2NT2C77a3UTQ452ffwstr4fjEJixUgjf/#/wallets) to restore the current Darwinia multisig account that you previously created and perform multisig operations on the current Darwinia.
