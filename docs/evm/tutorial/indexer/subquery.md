@@ -1,17 +1,8 @@
 # SubQuery
 
-Owner: bear.wang@itering.io
-
-<aside>
-💡 Familiarity with Linux/Javascript is essential.
-
-</aside>
-
-## Overview
-
 [SubQuery](https://www.subquery.network/) is a highly regarded blockchain indexing service that is widely utilized within the Polkadot ecosystem. In this guide, we will offer a straightforward approach to indexing the transfer event using the SubQuery tool.
 
-## **Prerequisites**
+## Prerequisites
 
 ### Install Subql
 
@@ -49,7 +40,7 @@ Select the network family as **Substrate** and the network as **Darwinia**, then
 
 The output:
 
-![Untitled](SubQuery%2024d26214bead4a86a0afcc7b6d05da23/Untitled.png)
+![evm-tutorial-indexer-subquery-1](../../../images/evm-tutorial-indexer-subquery-1.png)
 
 The `ll example-with-subquery/`is:
 
@@ -162,7 +153,7 @@ query {
 
 The indexing result is displayed in the right pane, as shown below:
 
-![Untitled](SubQuery%2024d26214bead4a86a0afcc7b6d05da23/Untitled%201.png)
+![evm-tutorial-indexer-subquery-2](../../../images/evm-tutorial-indexer-subquery-2.png)
 
 ### Stop Indexing
 
@@ -181,5 +172,3 @@ WARN[0000] The "SUB_COMMAND" variable is not set. Defaulting to a blank string.
  ✔ Container example-with-subquery-subquery-node-1   Stopped                                                                                                                                                                                                                                0.5s 
  ✔ Container example-with-subquery-postgres-1        Stopped
 ```
-
-## Summary
