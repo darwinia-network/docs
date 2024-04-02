@@ -1,35 +1,21 @@
 # Run Collator Node
 
-Owner: Darwinia
-
-<aside>
-👉🏻 Familiarity with Linux/Mac command line is essential.
-
-</aside>
-
-# Overview
-
 Darwinia Collators play a crucial role in the Darwinia Network as they are responsible for block production and ensuring block liveness. These Collators collect transactions from users on the parachain and generate state transition proofs for Relay Chain validators. In essence, they provide blocks to validators on the relay chain for finalization.
 
 To learn more about Collators and their functions, you can click [here](https://wiki.polkadot.network/docs/learn-collator). This resource will provide you with detailed information on the topic.
 
-<aside>
-👉🏻 The steps outlined below are based on Darwinia, and the steps for Crab are similar.
+> 👉🏻 The steps outlined below are based on Darwinia, and the steps for Crab are similar.
 
-</aside>
-
-# Run Collator Node
-
-### Recommended Hardware
+## Recommended Hardware
 
 - **RAM:**  8 GB:
 - **Storage(SSD)**: 800 GB
 
-### Download Snapshot
+## Download Snapshot
 
-It's important to note that there is a faster method to expedite the syncing process**.** You can achieve this by downloading the snapshot blockchain data and moving it to the current node database location and greatly speeding up the node sync process. Click [here](https://www.notion.so/Chain-Database-Snapshot-f0f695e8d4444cf69e1c8dac51d49558?pvs=21) for more detailed instructions.
+It's important to note that there is a faster method to expedite the syncing process**.** You can achieve this by downloading the snapshot blockchain data and moving it to the current node database location and greatly speeding up the node sync process. Click [here](./snapshot.md) for more detailed instructions.
 
-### Start The Collator Node
+## Start The Collator Node
 
 1. Open a terminal shell on your computer
 2. Create a work dirctory
@@ -161,26 +147,24 @@ It's important to note that there is a faster method to expedite the syncing pro
     ```
     
 
-### Set Session Key And Commission Rate
+## Set Session Key And Commission Rate
 
 1. Once your node has finished syncing, ensure that it is still running.
 2. Open the [staking app](https://staking.darwinia.network/#/?network=darwinia) in your browser and connect it to your wallet account. You have the option to choose between MetaMask or WalletConnect, as both wallets are now supported.
     
-    ![Untitled](Run%20Collator%20Node%20af6bce360d5b49ddacc56e4587510210/Untitled.png)
+    ![evm-tutorial-collator-node-1](../../../images/evm-tutorial-collator-node-1.png)
     
 3. Click on the `Join Collator` button and follow these steps:
     1. Enter the session key that was generated earlier and click on `Set Session Key` to prompt the wallet for submitting an Ethereum transaction.
     2. Enter the desired commission amount and click on `Set Commission` to prompt the wallet for submitting an Ethereum transaction.
 
-![Untitled](Run%20Collator%20Node%20af6bce360d5b49ddacc56e4587510210/Untitled%201.png)
-
-![Untitled](Run%20Collator%20Node%20af6bce360d5b49ddacc56e4587510210/Untitled%202.png)
+![evm-tutorial-collator-node-2](../../../images/evm-tutorial-collator-node-2.png)
+![evm-tutorial-collator-node-3](../../../images/evm-tutorial-collator-node-3.png)
 
 1. To verify that your account is in the collator waiting pool, click on the `Select a collator` button.
     
-    ![Untitled](Run%20Collator%20Node%20af6bce360d5b49ddacc56e4587510210/Untitled%203.png)
-    
-    ![Untitled](Run%20Collator%20Node%20af6bce360d5b49ddacc56e4587510210/Untitled%204.png)
+    ![evm-tutorial-collator-node-4](../../../images/evm-tutorial-collator-node-4.png)
+    ![evm-tutorial-collator-node-5](../../../images/evm-tutorial-collator-node-5.png)
     
 
 ## To be a real collator

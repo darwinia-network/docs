@@ -1,17 +1,8 @@
 # Run Relay Chain Testnet
 
-Owner: bear.wang@itering.io
-
-<aside>
-💡 Familiarity with Linux/Mac command line is essential.
-
-</aside>
-
-# **Overview**
-
 The Darwinia network is built upon the vision of the Polkadot. More specifically, the Darwinia chain functions as a parachain within the Polkadot Network, while the Crab chain operates as a parachain within the Kusama network. If you are not familiar with the relationship between the relay chain and the parachain, please read [Architecture Of Polkadot](https://wiki.polkadot.network/docs/learn-architecture) first. Sometimes, it becomes necessary to run a relay chain testnet to debug the interaction between the relay chain and parachain. This tutorial provides step-by-step instructions on setting up the environment to run a local relay chain testnet with registered parachains.
 
-# **Start the relay chain node**
+## Start the relay chain node
 
 Before you can start block production for a parachain, you need to start a relay chain for them to connect to.
 
@@ -178,7 +169,7 @@ Before you can start block production for a parachain, you need to start a relay
     This log indicates that the relay chain has started to produce blocks and is working as intended.
     
 
-# Start the parachain node
+## Start the parachain node
 
 With the local relay chain running, you are ready to start the parachain collator node and export information about its runtime and genesis state.
 
@@ -400,7 +391,7 @@ With the local relay chain running, you are ready to start the parachain collato
     Notice that this command uses a different base path ( `/tmp/para/charlie`), collator key (`--charlie`), and ports.  It is important to mention that you must specify the correct bootnodes options for both the parachain and the relay chain.
     
 
-# **Register with the local relay chain**
+## Register with the local relay chain
 
 With the local relay chain and collator node running, you are ready to register the parachain on the local relay chain. In a live public network, registration typically involves a [parachain auction](https://wiki.polkadot.network/docs/en/learn-auction). For this tutorial and local testing, you can use a Sudo transaction and the Polkadot/Substrate Portal. Using a Sudo transaction enables you to bypass the steps required to acquire a parachain or parathread slot.
 
@@ -410,7 +401,7 @@ To register the parachain:
 2. Open the [Polkadot/Substrate Portal](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/parachains/parathreads) in a browser.
 3. Connect to a local relay chain node, and click **Developer** and select **Sudo**.
     
-    ![Screenshot from 2023-08-15 16-52-24.png](Run%20Relay%20Chain%20Testnet%2058df644b055648c984de3d33ccc2ba9a/Screenshot_from_2023-08-15_16-52-24.png)
+    ![evm-tutorial-relaychain-node-1](../../../images/evm-tutorial-relaychain-node-1.png)
     
 4. Select **paraSudoWrapper**, then select **sudoScheduleParaInitialize(id, genesis)** to initialize the reserved paraID at the start of the next relay chain session.
     
@@ -421,18 +412,18 @@ To register the parachain:
     - `validationCode`: Click **file upload** and upload the WebAssembly runtime you exported for the parachain For this tutorial, select the `genesis-wasm` file.
     - `paraKind`: Select **Yes**.
     
-    ![Screenshot from 2023-08-15 17-01-04.png](Run%20Relay%20Chain%20Testnet%2058df644b055648c984de3d33ccc2ba9a/Screenshot_from_2023-08-15_17-01-04.png)
+    ![evm-tutorial-relaychain-node-2](../../../images/evm-tutorial-relaychain-node-2.png)
     
 5. Click **Submit Sudo**.
 6. Review the transaction details, then click **Sign and Submit** to authorize the transaction.
     
     After you submit the transaction, click **Network** and select **Explorer**. Check the list of recent events for successful `sudo.Sudid` *and* `paras.PvfCheckAccepted` and click the event to see details about the transaction.
     
-    ![Screenshot from 2023-08-15 17-01-55.png](Run%20Relay%20Chain%20Testnet%2058df644b055648c984de3d33ccc2ba9a/Screenshot_from_2023-08-15_17-01-55.png)
+    ![evm-tutorial-relaychain-node-3](../../../images/evm-tutorial-relaychain-node-3.png)
     
 7. Click **Network** and select **Parachains** and wait for a new epoch to start.
     
-    ![Screenshot from 2023-08-15 17-03-54.png](Run%20Relay%20Chain%20Testnet%2058df644b055648c984de3d33ccc2ba9a/Screenshot_from_2023-08-15_17-03-54.png)
+    ![evm-tutorial-relaychain-node-4](../../../images/evm-tutorial-relaychain-node-4.png)
     
     The terminal where the parachain node is running also displays details similar to the following:
     

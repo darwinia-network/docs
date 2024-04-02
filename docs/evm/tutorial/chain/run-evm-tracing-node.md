@@ -1,14 +1,5 @@
 # Run Evm Trace Node
 
-Owner: bear.wang@itering.io
-
-<aside>
-👉🏻 Familiarity with Linux/Mac command line is essential.
-
-</aside>
-
-# Overview
-
 As you may be aware, Darwinia chains are EVM compatible, which means that the RPC behavior should be consistent with an Ethereum node. The majority of RPC usage aligns with the official Ethereum RPC, with the exception of the EVM tracing APIs. The key distinction is that the EVM tracing functionality is offered by a dedicated node. This tutorial will demonstrate how to run a dedicated node to enable EVM tracing functionality.
 
 ## Run Evm Trace Node
@@ -17,13 +8,6 @@ As you may be aware, Darwinia chains are EVM compatible, which means that the RP
 
 - **RAM:** 8 GB:
 - **Storage(SSD)**: 800 GB
-
-## Run Evm Tracing Node
-
-<aside>
-💡 The following steps are specific to Pangolin, but the steps for other networks are similar.
-
-</aside>
 
 ### Prepare the tracing binary and overridden wasms
 

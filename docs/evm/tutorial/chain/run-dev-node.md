@@ -1,17 +1,6 @@
 # Run Development Testnet
 
-Owner: bear.wang@itering.io
-
-<aside>
-👉🏻 Familiarity with Linux/Mac command line is essential.
-
-</aside>
-
-# **Overview**
-
-While there is an established test network, namely the Pangolin network, which serves as an ideal sandbox for your applications, eliminating any concern about initiating and connecting nodes, among other things. The official test network is designed to fulfill application developers' requirements. However, there may be scenarios where you want to perform low-level tasks. In such cases, creating your own development network can significantly enhance your development, testing, or debugging efficiency. This guide will walk you through the process of establishing a single-node development network.
-
-# Run development node
+While there is an established test network, namely the [Pangolin network](../../chains/pangolin.md), which serves as an ideal sandbox for your applications, eliminating any concern about initiating and connecting nodes, among other things. The official test network is designed to fulfill application developers' requirements. However, there may be scenarios where you want to perform low-level tasks. In such cases, creating your own development network can significantly enhance your development, testing, or debugging efficiency. This guide will walk you through the process of establishing a single-node development network.
 
 ## Compile darwinia node
 
@@ -106,6 +95,5 @@ To start the local Substrate node:
 
 Once the node is up and producing new blocks, you can connect to the Polkadot app to explore more advanced features, such as token transfer and more.
 
-![Untitled](Run%20Development%20Testnet%20cc490170048e4584809233d6aebb8c57/Untitled.png)
-
-![Untitled](Run%20Development%20Testnet%20cc490170048e4584809233d6aebb8c57/Untitled%201.png)
+![evm-tutorial-dev-node-1](../../../images/evm-tutorial-dev-node-1.png)
+![evm-tutorial-dev-node-2](../../../images/evm-tutorial-dev-node-2.png)
