@@ -11,7 +11,8 @@ The existing architecture of Polkadot consists of a relay chain node and a parac
 
 ## Usage
 
-> 💡 The tutorial is originally based on the Darwinia chain, but it is also applicable to the Crab chain. To use the tutorial for the Crab chain, you just need to choose the correct snapshot resource.
+!!! note
+    The tutorial is originally based on the Darwinia chain, but it is also applicable to the Crab chain. To use the tutorial for the Crab chain, you just need to choose the correct snapshot resource.
 
 ### Install [zstd](https://github.com/facebook/zstd)
 
@@ -44,8 +45,9 @@ To sync the relay chain in warp mode, just add this at the end of the node comma
 -- --sync warp
 ```
 
-> 💡 `WARN main sync: [Relaychain] Can't use warp sync mode with a partially synced database. Reverting to full sync mode.` 
-> If you encounter this log message in your console output, it indicates that you cannot interrupt the sync process of the relay chain node until it reaches the latest finalized block. If you attempt to do so, you will need to purge the already synced database and start the sync process again.
+!!! Tip
+    `WARN main sync: [Relaychain] Can't use warp sync mode with a partially synced database. Reverting to full sync mode.`
+    If you encounter this log message in your console output, it indicates that you cannot interrupt the sync process of the relay chain node until it reaches the latest finalized block. If you attempt to do so, you will need to purge the already synced database and start the sync process again.
 
 
 ### Start Node

@@ -1,6 +1,7 @@
 # Overview
 
-> 💡 Familiarity with Linux/Javascript is essential.
+!!! note
+    Familiarity with Linux/Javascript is essential.
 
 [Hardhat](https://hardhat.org/) is a powerful Ethereum development environment designed to assist developers in managing and automating the repetitive tasks associated with building smart contracts and decentralized applications (DApps). Notably, Hardhat has the capability to directly interact with Darwinia's Ethereum API, enabling developers to deploy their smart contracts onto the Darwinia network. This compatibility allows developers to leverage Hardhat's features and tools when working with Darwinia, streamlining the development process and facilitating the creation of robust and reliable applications.
 
@@ -59,7 +60,8 @@ These are the default paths for a Hardhat project.
 
 ## Contract Interaction
 
-> 💡 The network provider used in this tutorial is the Pangolin Testnet. However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
+!!! note
+    The network provider used in this tutorial is the Pangolin Testnet. However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
 
 
 ### Prepare And Compile Contract

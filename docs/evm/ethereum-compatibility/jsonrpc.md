@@ -1,6 +1,7 @@
 To enable a software application to interact with the blockchain, JSON RPC is the preferred method. Darwinia provides an [Ethereum-compatible JSON RPC endpoint](../chains/darwinia.md#network-info), allowing developers to seamlessly interact with the Darwinia node just as they would with [Ethereum API](https://ethereum.github.io/execution-apis/api-documentation). While these APIs strive for high compatibility with Ethereum, it's important to acknowledge that there may be variations, particularly in relation to the consensus mechanism. The details of these differences will be explained in the accompanying guide.
 
-> 💡 ✅ means the method is fully compatible with the Ethereum, and ❌ means it is not.
+!!! note
+    ✅ means the method is fully compatible with the Ethereum, and ❌ means it is not.
 
 ## Supported API Methods
 

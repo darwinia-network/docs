@@ -28,7 +28,8 @@ tar xvf darwinia-x86_64-linux-gnu.tar.bz2
 
 ### Run An Archive Node
 
-> 💡 Note: Most of the arguments are the same between different networks. However, please note that the `-chain`, `-base-path` and `-chain` after `--` refer to the relay chain in the last line.
+!!! note
+    Most of the arguments are the same between different networks. However, please note that the `-chain`, `-base-path` and `-chain` after `--` refer to the relay chain in the last line.
 
 - For Darwinia Chain
     

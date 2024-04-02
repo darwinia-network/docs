@@ -1,6 +1,7 @@
 # Overview
 
-> 💡 Familiarity with Linux/Rust is essential.
+!!! note
+    Familiarity with Linux/Rust is essential.
 
 [Foundry](https://github.com/foundry-rs/foundry) is a Rust-based Ethereum development environment that provides various tools for managing dependencies, compiling projects, running tests, deploying contracts, and interacting with blockchains from the command line. It can also directly interact with the Darwinia Ethereum API, allowing developers to deploy smart contracts into Darwinia.
 
@@ -41,7 +42,8 @@ In addition to these three folders, a git project will also be created along wit
 
 ## Contract Interaction
 
-> 💡 The network provider used in this tutorial is the Pangolin Testnet. However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
+!!! note
+    The network provider used in this tutorial is the Pangolin Testnet. However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
 
 ### Prepare And Compile Contract
 

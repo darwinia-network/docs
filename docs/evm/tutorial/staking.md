@@ -14,21 +14,6 @@ Upon accepting permissions and changing the network to `Darwinia`, you will be r
 
 Token holders can delegate a collator candidate by staking tokens and adding to the collator's stake. In return, the collator will share the rewards received from producing blocks amongst all of their delegators. For more information on reward distribution, check out our documentation on [staking reward distribution](https://medium.com/darwinianetwork/faqs-for-darwinia-2-0-staking-mechanism-adjustments-f330b549f168).
 
-> 
-> 💡 Please Note: You will be able to stake `RING`, `KTON`, and `Deposit` on `Darwinia`.
->
-> - Symbol: `RING`
-> - Spec: Native
-> - Decimals: `18`
-> - Smart Contract Address(`Darwinia`): n/a
->
-> ---
->
-> - Symbol: `KTON`
-> - Spec: `ERC20`
-> - Decimals: `18`
-> - Smart Contract Address(`Darwinia`): `0x0000000000000000000000000000000000000402`
-
 
 To obtain the `Deposit`, you need to lock your `RING` for a certain period of time.
 

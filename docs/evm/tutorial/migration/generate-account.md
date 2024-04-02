@@ -1,7 +1,8 @@
 # Migrate Generate Account
 
 
-> 🙋‍♂️ This article only covers the migration of general accounts. For guidance on migrating a multisig account, please consult [this tutorial](./multisig-account.md).
+!!! info
+    This article only covers the migration of general accounts. For guidance on migrating a multisig account, please consult [this tutorial](./multisig-account.md).
 
 
 This tutorial will walk you through the steps of migrating your accounts from `Darwinia 1.0` to the current Darwinia using the [Account Migration Dapp](https://migration.darwinia.network/#/?network=Darwinia). It's important to note that this tutorial is also applicable for the Crab chain.
@@ -23,9 +24,11 @@ For the purpose of account migration operations, we will use the following accou
 1. Verify that you selected the account you want to migrate from.
 2. Enter the EVM account you would like to migrate to.
     
-    🙋‍♂️ a. Please ensure that you **have the private key** for this EVM account. And this account is not from any third-party platform.
+    !!! note
+        Please ensure that you **have the private key** for this EVM account. And this account is not from any third-party platform.
     
-    b. Please confirm that the EVM account you are using is a new address that has not been previously used on Darwinia 1.0. If the account already exists on Darwinia 1.0, don't worry 🤗 - the migrate button will not be clickable and you will receive a prompt indicating that `the EVM account is not free` and that you need to fill in another account.
+    !!! note
+        Please confirm that the EVM account you are using is a new address that has not been previously used on Darwinia 1.0. If the account already exists on Darwinia 1.0, don't worry 🤗 - the migrate button will not be clickable and you will receive a prompt indicating that `the EVM account is not free` and that you need to fill in another account.
     
     ![evm-tutorial-migrate-general-3](../../../images/evm-tutorial-migrate-general-3.png)
     
@@ -47,7 +50,7 @@ That’s it! Now you’ve successfully migrated the account. Please don’t forg
 
 ### Transferrable
 
-> 💡 The current version of [Subscan](https://darwinia.subscan.io/) supports Darwinia data queries except staking.
+The current version of [Subscan](https://darwinia.subscan.io/) supports Darwinia data queries except staking.
 
 ![evm-tutorial-migrate-general-8](../../../images/evm-tutorial-migrate-general-8.png)
 ![evm-tutorial-migrate-general-9](../../../images/evm-tutorial-migrate-general-9.png)

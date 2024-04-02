@@ -67,21 +67,25 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 markdown_extensions:
-  # code
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  # lists 
-  - def_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
-  # math
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.details
+  - def_list
+  - attr_list
+  - md_in_html
+  - admonition
 
 plugins:
   - search
@@ -139,10 +143,10 @@ nav:
           - Commitment Token: 'evm/darwinia-staking/commitment-token.md'
           - Staking Module: 'evm/darwinia-staking/staking.md'
           - Deposit Module: 'evm/darwinia-staking/deposit.md'
+    - Governance: 'evm/governance.md'
     - Tutorial:
           - Transfer Token Guide: 'evm/tutorial/transfer-token.md'
           - Staking Guide: 'evm/tutorial/staking.md'
-          - Governance: 'evm/governance.md'
           - USDT Guide: 'evm/tutorial/usdt.md'
           - Multisig Wallet: 'evm/tutorial/multisig-wallet.md'
           - Create DAO Guide: 'evm/tutorial/create-dao.md'

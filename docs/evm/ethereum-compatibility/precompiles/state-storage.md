@@ -1,6 +1,7 @@
 # StateStorage Precompile
 
-> 💡 Understanding the storage layout in the Substrate framework is crucial for effectively utilizing this precompile.
+!!! note
+    Understanding the storage layout in the Substrate framework is crucial for effectively utilizing this precompile.
 
 As you may be aware, the underlying technology of Darwinia is built on the Substrate framework. Within this framework, certain features are implemented as runtime pallets. Unlike Ethereum, where the chain state data is typically stored in the EVM account storage, in Substrate, these pallets store the chain state data within their own pallet storage.
 

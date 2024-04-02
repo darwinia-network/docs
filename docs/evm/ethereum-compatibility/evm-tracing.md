@@ -13,7 +13,8 @@ These APIs enable developers to examine and analyze the execution details of the
 
 ## The Underlying Technology
 
-> 💡 The PureStake team has made significant contributions to the Polkadot ecosystem by introducing tracing capabilities comparable to those of Geth and OpenEthereum. Building on this progress, Darwinia Network has adopted a similar approach for EVM tracing within the Darwinia ecosystem. This decision was based on the fact that it currently represents the most effective solution available for Polkadot.
+!!! note
+    The PureStake team has made significant contributions to the Polkadot ecosystem by introducing tracing capabilities comparable to those of Geth and OpenEthereum. Building on this progress, Darwinia Network has adopted a similar approach for EVM tracing within the Darwinia ecosystem. This decision was based on the fact that it currently represents the most effective solution available for Polkadot.
 
 It is worth noting that the EVM tracing features in Darwinia are specifically provided by a dedicated type of node. This design decision is made to ensure that the tracing feature is only enabled when needed, avoiding unnecessary overhead for production nodes.
 

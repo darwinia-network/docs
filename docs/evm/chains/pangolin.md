@@ -5,7 +5,8 @@ The Pangolin acts as the primary test network for all Darwinia chains, officiall
 
 ## Faucet
 
-> Note: 50 tokens per day for each address.
+!!! note
+    50 tokens per day for each address.
 
 To obtain the test token, go to the [faucet-testnet](https://discord.com/channels/456092011347443723/1115885903605411850) channel on Discord and send `/faucet pangolin address` to get test tokens.
 

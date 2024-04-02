@@ -40,10 +40,8 @@ The important parameters to be aware of when understanding the darwinia staking 
     - claim the stakes from the pallet/contract account.
 - `collect(commission: Perbill)`
     
-    <aside>
-    💡 **Please note that the staking commission design on the Darwinia network differ significantly from the Polkadot. See [DIP-1](https://dips.darwinia.network/DIPs/dip-1.html) for details.**
-    
-    </aside>
+    !!! note
+        Please note that the staking commission design on the Darwinia network differ significantly from the Polkadot. See [DIP-1](https://dips.darwinia.network/DIPs/dip-1.html) for details.
     
     - Declare the desire to collect. Effects will be felt at the beginning of the next session.
     - Params:

@@ -2,8 +2,8 @@
 
 Darwinia cross-chain solution can provide cross-chain messaging services for token bridges and help them realize the transfer of tokens of different standards (such as ERC-20, ERC-721, etc.) between blockchains. For example, [Helix Bridge](https://helixbridge.app/)’s [LN Bridge](https://docs.helixbridge.app/helixbridge/liquidate_node) leverages [Darwinia Msgport](../overview.md) to deliver proofs when LnProvider failed to pay out assets to users.
 
-> The advantage of using `Darwinia Msgport` is that it is very easy to switch between different low-level message layers without making big changes to the code. — Helix Bridge
-> 
+!!! Quote
+    The advantage of using `Darwinia Msgport` is that it is very easy to switch between different low-level message layers without making big changes to the code. — Helix Bridge
 
 ## Helix LN Bridge
 

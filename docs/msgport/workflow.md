@@ -14,7 +14,8 @@ On the other hand, if the network is not currently supported, your first course 
 
 ## Messaging workflow
 
-> For those interested in gaining a more in-depth understanding of how Msgport operates, there is a [runnable demo available](https://github.com/darwinia-network/msgport-demo) for reference. This can be a valuable resource to see the message port in action.
+!!! note
+    For those interested in gaining a more in-depth understanding of how Msgport operates, there is a [runnable demo available](https://github.com/darwinia-network/msgport-demo) for reference. This can be a valuable resource to see the message port in action.
 
 ### Find the Port Contract Address
 

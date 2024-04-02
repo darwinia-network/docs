@@ -2,7 +2,8 @@
 
 [OpenGov](https://wiki.polkadot.network/docs/learn-polkadot-opengov-index) represents a governance model that is both decentralized and fair, allowing users to engage directly in decision-making and voting. This model is the most recent addition to the governance approaches within the Polkadot ecosystem. Aimed at facilitating easy participation for the Darwinia community, OpenGov has been integrated into the Darwinia network as of [Release v6.6.0](https://github.com/darwinia-network/darwinia/releases/tag/v6.6.0).
 
-> Matching the importance level of proposals with the required timeline and level of participation is a core change in OpenGov.
+!!! note
+    Matching the importance level of proposals with the required timeline and level of participation is a core change in OpenGov.
 
 Substrate-based blockchains use origins to represent privileges. Different origins have different permissions. Some important operations need to be executed by origins with higher privileges, while less important operations can be executed by origins with lower privileges. The definition of origins in Gov1 is relatively simple. Additionally, when a collective (like a council) agrees on something, they gain a higher level of origin to execute that operation.
 
@@ -13,7 +14,8 @@ In OpenGov, any token holder can submit a proposal, and different origins will b
 OpenGov defines different referendum tracks determined by origin, which are completely independent of each other.
 
 
-> 💡 Track: Origin-specific proposal processing pipeline. Tracks are specific to Origin. The number of referendums that can be conducted simultaneously on tracks of different origins is different. Tracks of the Root Origin can only conduct one referendum at a time. Proposals in different tracks can be processed together with proposals in other tracks.
+!!! note
+    Track: Origin-specific proposal processing pipeline. Tracks are specific to Origin. The number of referendums that can be conducted simultaneously on tracks of different origins is different. Tracks of the Root Origin can only conduct one referendum at a time. Proposals in different tracks can be processed together with proposals in other tracks.
 
 
 In OpenGov, multiple referendums can take place simultaneously (on different tracks) and anyone can initiate a referendum at any time, and there is no longer a launch period in which a proposal must gain support before entering the public voting stage when submitting a proposal.

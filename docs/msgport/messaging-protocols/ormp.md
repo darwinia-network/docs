@@ -42,8 +42,9 @@ struct Message {
 
 Please be aware that within the channel, all messages are organized in an incremental Merkle tree. The channel is also tasked with receiving and distributing messages, as well as overseeing the management of the message root and its status.
 
-> 💡 An [incremental Merkle Tree](https://arxiv.org/abs/2105.06009) is a [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree) of fixed depth where each leaf start as a zero value, and non-zero values are added by replacing the zero leaves starting from the left-most leaf to the right-most leaf one-by-one.
-**The Incremental Merkle Tree is a gas efficient Merkle Tree.**
+!!! note
+    An [incremental Merkle Tree](https://arxiv.org/abs/2105.06009) is a [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree) of fixed depth where each leaf start as a zero value, and non-zero values are added by replacing the zero leaves starting from the left-most leaf to the right-most leaf one-by-one.
+    **The Incremental Merkle Tree is a gas efficient Merkle Tree.**
 
 ### Message Sending Flow
 

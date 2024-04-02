@@ -1,4 +1,5 @@
-> 💡 The LCMP protocol is now deprecated and has been replaced by Darwinia's latest cross-chain innovation, [ORMP](../messaging-protocols/ormp.md). All products that were built using the LCMP protocol will transition to using ORMP.
+!!! Warning
+    The LCMP protocol is now deprecated and has been replaced by Darwinia's latest cross-chain innovation, [ORMP](../messaging-protocols/ormp.md). All products that were built using the LCMP protocol will transition to using ORMP.
 
 
 # Overview

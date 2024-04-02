@@ -4,7 +4,8 @@ Darwinia Collators play a crucial role in the Darwinia Network as they are respo
 
 To learn more about Collators and their functions, you can click [here](https://wiki.polkadot.network/docs/learn-collator). This resource will provide you with detailed information on the topic.
 
-> 👉🏻 The steps outlined below are based on Darwinia, and the steps for Crab are similar.
+!!! note
+    The steps outlined below are based on Darwinia, and the steps for Crab are similar.
 
 ## Recommended Hardware
 
