@@ -1,3 +1,6 @@
+
+![home](./images/home.png)
+
 # Powering Your DApp’s Cross-Chain Capabilities
 
 Darwinia is currently at the forefront of developing innovative cross-chain service solutions, with a strategic focus on **enhancing the cross-chain capabilities of decentralized applications**. As the industry landscape continues to evolve, Darwinia is committed to staying ahead of the curve by introducing new solutions that align with our core mission. Our approach is not only about meeting current needs but also about anticipating future requirements, ensuring that we remain a leader in the field.
