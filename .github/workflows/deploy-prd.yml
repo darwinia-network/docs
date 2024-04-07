@@ -33,7 +33,7 @@ jobs:
           vercel_group: itering
           preview_output: true
           project_name: darwinia-docs
-          dist_path: docs/site
+          dist_path: site
           prod_mode: true
           script_run: false
           enable_cache: true
