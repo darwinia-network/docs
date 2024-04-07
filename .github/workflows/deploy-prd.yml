@@ -23,7 +23,7 @@ jobs:
 
       - name: build
         run: |
-          pip install mkdocs-material
+          pip install mkdocs-material mkdocs-git-revision-date-localized-plugin
           mkdocs build
 
       - uses: ./.github/actions/smart-vercel
@@ -33,6 +33,7 @@ jobs:
           vercel_group: itering
           preview_output: true
           project_name: darwinia-docs
+          dist_path: docs/site
           prod_mode: true
           script_run: false
           enable_cache: true
