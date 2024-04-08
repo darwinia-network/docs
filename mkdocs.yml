@@ -102,11 +102,13 @@ nav:
     - Msgport API: 'msgport/api.md'
     - Msgport Scan: 'msgport/scan.md'
     - Messaging Protocols:
+        - Overview: 'msgport/messaging-protocols/overview.md'
         - ORMP: 'msgport/messaging-protocols/ormp.md'
         - XCMP: 'msgport/messaging-protocols/xcmp.md'
         - LCMP: 'msgport/messaging-protocols/lcmp.md'
     - Supported Network: 'msgport/networks.md'
     - User Cases:
+        - Overview: 'msgport/user-cases/overview.md'
         - Token/Asset Bridge: 'msgport/user-cases/token-bridge.md'
         - Cross Chain Abstract Account: 'msgport/user-cases/abstract-account.md'
         - Multi Chains DAO Governance: 'msgport/user-cases/multichain-dao-governance.md'
