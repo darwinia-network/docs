@@ -102,6 +102,7 @@ nav:
     - Msgport API: 'msgport/api.md'
     - Msgport Scan: 'msgport/scan.md'
     - Messaging Protocols:
+        - Overview: 'msgport/messaging-protocols/overview.md'
         - ORMP: 'msgport/messaging-protocols/ormp.md'
         - XCMP: 'msgport/messaging-protocols/xcmp.md'
         - LCMP: 'msgport/messaging-protocols/lcmp.md'
