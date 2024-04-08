@@ -1,0 +1,42 @@
+name: Deploy staging
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/checkout@v2
+        with:
+          repository: darwinia-network/devops
+          path: .github
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: build
+        run: |
+          pip install mkdocs-material mkdocs-git-revision-date-localized-plugin
+          mkdocs build
+
+      - uses: ./.github/actions/smart-vercel
+        name: Deploy to Vercel
+        id: smart-vercel
+        with:
+          vercel_token: ${{ secrets.VERCEL_TOKEN }}
+          vercel_group: itering
+          preview_output: true
+          project_name: darwinia-docs
+          dist_path: site
+          alias_domain: "darwinia-docs-stg"
+          script_run: false
+          enable_cache: true
+          enable_notify_slack: true
+          slack_channel: darwinia-document
+          slack_webhook: ${{ secrets.SLACK_INCOMING_WEBHOOK_URL }}
