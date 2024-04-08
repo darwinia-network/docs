@@ -2,6 +2,9 @@
 
 The Pangolin acts as the primary test network for all Darwinia chains, officially maintained to ensure that new and innovative features are thoroughly tested before they are deployed to the main production network.
 
+## Connect Wallet
+
+[Connect automatically](https://chainlist.org/chain/43){ .md-button .md-button--primary }
 
 ## Faucet
 

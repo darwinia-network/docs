@@ -4,6 +4,10 @@ Darwinia chain is an EVM-compatible blockchain based on [Substrate](https://subs
 
 Darwinia is now a [parachain of Polkadot](https://polkadot.subscan.io/parachain/2046).
 
+## Connect Wallet
+
+[Connect automatically](https://chainlist.org/chain/46){ .md-button .md-button--primary }
+
 ## Network Info
 
 - Network Name: Darwinia2
