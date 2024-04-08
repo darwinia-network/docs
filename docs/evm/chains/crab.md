@@ -2,6 +2,10 @@ Crab is a canary chain with real economic value for Darwinia chain, and its posi
 
 Crab is now a [parachain of Kusama](https://kusama.subscan.io/parachain/2229).
 
+## Connect Wallet
+
+[Connect automatically](https://chainlist.org/chain/44){ .md-button .md-button--primary }
+
 ## Network Info
 
 - Network Name: Crab
