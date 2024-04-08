@@ -1,6 +1,6 @@
 # Ecosystem Collaboration
 
-Welcome to the Darwinia ecosystem! We're here to help developers build amazing decentralized applications (dApps) that can interact with our blockchain. Our ecosystem is filled with tools and resources to make this possible. Check out what's already been built on our network at [this site](https://apps.darwinia.network/). We encourage you to join us and start building your own dApps!
+Welcome to the Darwinia ecosystem! We're here to help developers build amazing decentralized applications (dApps) that can interact with our blockchain. Our ecosystem is filled with tools and resources to make this possible. Check out what's already been built on our network at [Darwinia Ecosystem App Site](https://apps.darwinia.network/). We encourage you to join us and start building your own dApps!
 
 ## Roadmap
 
@@ -8,7 +8,7 @@ The roadmap for the ecosystem is outlined at [Darwinia Roadmap](https://itering.
 
 ## Community Collaboration
 
-We wholeheartedly believe in the power of collaboration and warmly invite additional decentralized applications (dApps) to join our rapidly expanding Darwinia ecosystem. Developers from all backgrounds are encouraged to embark on this exciting journey of shaping the future of decentralized applications within the Darwinia network. To facilitate this, we have launched the Community Developer Incentive Program. This program consists of:
+We wholeheartedly believe in the power of collaboration and warmly invite additional decentralized applications (dApps) to join our rapidly expanding Darwinia ecosystem. To facilitate this, we have launched the Community Developer Incentive Program. This program consists of:
 
 - [**The Immunefi Bounty Program**](https://immunefi.com/bounty/darwinia/) offers rewards for finding potential flaws in our products.
 - [**RFP (Request For Proposals)**](https://github.com/darwinia-network/collaboration/issues) provides a selection of potential projects or tasks for members of the ecosystem, allowing them to choose based on their interests and expertise.
