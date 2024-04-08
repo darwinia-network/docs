@@ -10,7 +10,7 @@ Before we proceed, it's important to understand that in our cross-chain communic
 
 ### The TestReceiver Contract
 
-For ease of understanding, we'll be working with an existing contract on the Sepolia network named **`TestReceive`**. You can find the contract details at **[Sepolia Etherscan](https://sepolia.etherscan.io/address/0xb115b479ef7cbaeae5a69aae93adb0287adaa32c#code)**. The contract has a straightforward design; it includes a variable named **`sum`** and offers a method to increment its value.
+For ease of understanding, we'll be working with an existing contract on the Sepolia network named **`TestReceive`**. You can find the contract details at [Sepolia Etherscan](https://sepolia.etherscan.io/address/0xb115b479ef7cbaeae5a69aae93adb0287adaa32c#code). The contract has a straightforward design; it includes a variable named **`sum`** and offers a method to increment its value.
 
 ```solidity linenums="1" title="TestReceiver.sol"
 
@@ -79,7 +79,7 @@ contract TestSender {
 
 ### Deploy The TestSender
 
-After successfully compiling **`TestSender.sol`**, the next step is to deploy it on the Pangolin testnet. Switch your wallet to the Pangolin network, if you need information on how to do this, consult the **[network details](https://docs.darwinia.network/pangolin-chain-1e9ac8b09e874e8abd6a7f18c096ca6a#47cab1dccc194ab8b83631cbf5aaaf24)**. The contract requires a parameter for the constructor **`address port`**, which is the address of the ORMP port, a constant across all networks. Enter **`0x0000000005d961F950adA391C1511c92bbc64D9F`** as the parameter and click the deploy button to deploy the contract on the Pangolin testnet. To monitor the transaction status, you may also visit the [Pangolin Subscan](https://pangolin.subscan.io/).
+After successfully compiling **`TestSender.sol`**, the next step is to deploy it on the Pangolin testnet. Switch your wallet to the Pangolin network, if you need information on how to do this, consult the [network details](../../evm/chains/pangolin.md#network-info). The contract requires a parameter for the constructor **`address port`**, which is the address of the ORMP port, a constant across all networks. Enter **`0x0000000005d961F950adA391C1511c92bbc64D9F`** as the parameter and click the deploy button to deploy the contract on the Pangolin testnet. To monitor the transaction status, you may also visit the [Pangolin Subscan](https://pangolin.subscan.io/).
 
 
 ![msgport-tutorial-remix-2](../../images/msgport-tutorial-remix-2.png)
