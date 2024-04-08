@@ -1,12 +1,16 @@
-# Ecosystem
+# Ecosystem Collaboration
 
-Welcome to the Darwinia network ecosystem! Here at Darwinia, our top priority is creating an environment where developers can thrive and unleash their creativity to build cross-chain innovative solutions. Our dedication to developer support has led to the successful launch and operation of numerous decentralized applications (dApps) on our network. You can explore the current collection of Darwinia ecosystem dApps and tools on [this site](https://apps.darwinia.network/). We encourage you to submit your own dApps and be a part of our vibrant community.
+Welcome to the Darwinia ecosystem! We're here to help developers build amazing decentralized applications (dApps) that can interact with our blockchain. Our ecosystem is filled with tools and resources to make this possible. Check out what's already been built on our network at [this site](https://apps.darwinia.network/). We encourage you to join us and start building your own dApps!
 
-## Community Developer Incentive Program
+## Roadmap
 
-We wholeheartedly believe in the power of collaboration and warmly invite additional decentralized applications (dApps) to join our rapidly expanding Darwinia ecosystem. Developers from all backgrounds are encouraged to embark on this exciting journey of shaping the future of decentralized applications within the Darwinia network. To facilitate this, we have launched the Community Developer Incentive Program. This program consists of two parts: the Grant Program and the Bounty Program:
+The roadmap for the ecosystem is outlined at [Darwinia Roadmap](https://itering.notion.site/9617e154ec884b07a7cee9a056374e42?v=0c3e4d9f257646c486a32a0425ee3a93). It provides a clear vision for the future of the Darwinia ecosystem and should be consulted by developers looking to join and contribute to this exciting project.
 
-- [The Grant Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md) provides opportunities for developers to receive funding for their projects.
-- [The Immunefi Bounty Program](https://immunefi.com/bounty/darwinia/) offers rewards for finding potential flaws in our products.
+## Community Collaboration
+
+We wholeheartedly believe in the power of collaboration and warmly invite additional decentralized applications (dApps) to join our rapidly expanding Darwinia ecosystem. Developers from all backgrounds are encouraged to embark on this exciting journey of shaping the future of decentralized applications within the Darwinia network. To facilitate this, we have launched the Community Developer Incentive Program. This program consists of:
+
+- [**The Immunefi Bounty Program**](https://immunefi.com/bounty/darwinia/) offers rewards for finding potential flaws in our products.
+- [**RFP (Request For Proposals)**](https://github.com/darwinia-network/collaboration/issues) provides a selection of potential projects or tasks for members of the ecosystem, allowing them to choose based on their interests and expertise.
 
 By participating in these programs, community developers can play a vital role in shaping the evolution and growth of the Darwinia ecosystem. We look forward to collaborating with talented developers like you to drive innovation and build a thriving community of decentralized applications.
