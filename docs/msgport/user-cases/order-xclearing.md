@@ -7,36 +7,19 @@ For example, [Helix Bridge](https://helixbridge.app/) leverages [Msgport](../ove
 !!! Quote
     The advantage of using `Msgport` is that it is very easy to switch between different low-level message layers without making big changes to the code. — Helix Bridge
 
-## Helix Bridge
+## Helix Bridge Introduction
 
-Compared to other traditional token bridges, Helix Bridge offers very low cross-chain fees because it only requires actual cross-chain messages in very rare scenarios. The actual cross-chain messages are implemented on `Msgport`.
+Compared to traditional token bridges, Helix Bridge stands out for its exceptionally low cross-chain fees, enabled by its capacity for batch clearing through Msgport after accumulating several orders.
 
-Helix Bridge protocol establishes a liquidity provider role called the **LnProvider** (Liquidity Node Provider). When a user transfers tokens between two chains, the LnProvider receives tokens on one chain and transfers an equivalent amount of tokens to the user on the other chain. 
+The Helix Bridge protocol introduces a permissionless system for liquidity relayers to place orders. When users swap tokens between two chains, they select an order from a liquidity relayer offering favorable terms, including fees and transfer limits. The tokens are then sent to the Helix Bridge contract, where they await being fullfilled by relayer on target chain. Upon detecting a swap event, the liquidity relayer's node initiates the transfer of an equivalent amount of tokens to the user on the target chain, using a clearing contract that records the order match. To clear and withdraw funds from the source chain, the liquidity relayer merely needs to send a message through Msgport from the target chain to clear their matched orders.
+
+Should a liquidity relayer fail to fulfill the order promptly, a "slasher" can step in to complete the order. This action is recorded in the clearing contracts. Slashers can trigger a claim against the liquidity relayer's penalty reserve by sending penalty-related clearing messages. Settlement occurs when the liquidity relayer attempts to withdraw from the penalty reserve, also through a message-sending process.
 
 ![msgport-token-bridge-1](../../images/msgport-token-bridge-1.png)
 
-## When cross-chain occur?
-
-In fact, Helix Bridge's token cross-chain functionality doesn't require the transmission of actual cross-chain messages. Instead, token cross-chain transfers are handled off-chain by liquidity providers, which is the primary reason for its exceptionally low cross-chain fees. Cross-chain messages are only needed to prove the non-functioning of an liquidity provider when it fails to perform as expected. The protocol will then use this proof to slash the non-functioning liquidity provider. This is because every liquidity provider must first register on the protocol and make a collateral.
-
-> The Slasher monitors liquidity provider and steps in when they fail, using the messaging channel to apply penalties. The Slasher can receive rewards for its actions.
-
-When a user initiates a cross-chain transfer on LN Bridge and the LnProvider fails to transfer tokens to the user on the target chain, that's when cross-chain messaging comes in.
-
-There are two scenarios:
-
-- If the liquidity provider fails to transfer tokens to the user, and **the collateral is on the target chain**.
-    
-    The user can submit the transfer proof to the target chain through the `Darwinia Msgport`. The target chain combines the proof with evidence that the LnProvider failed to transfer the tokens, and extracts collateral from the LnProvider to compensate the user.
-    
-- If the liquidity provider fails to transfer tokens to the user, and **the collateral is on the source chain**.
-    
-    The user can use `Msgport` to send proof of the failed transfer to the source chain. The source chain can then combine this proof with the original transfer proof to verify the LnProvider's failure. Once the source chain has verified the liquidity provider's failure, it can extract collateral from the LnProvider to compensate the user.
-    
 ## Summary
-
-Helix Bridge operates without requiring actual cross-chain messages for token transfers, instead using off-chain handling by liquidity providers. These providers manage token exchanges between chains, with cross-chain messages only needed if an liquidity provider fails to perform. While cross-chain messages are only needed when an liquidity provider fails to perform, the security of cross-chain messaging is vital for the reliability of Helix Bridge. `Msgport` serves as the final guard of the Helix Bridge Protocol.
+Msgport plays a pivotal role in Helix Bridge by enabling efficient batch clearing and communication for liquidity relayers, leading to significantly reduced cross-chain fees. It allows for the seamless execution of orders and the swift resolution of disputes through the intervention of "slashers" when orders are not fulfilled as expected. Beyond token swaps, the flexibility and efficiency of Msgport can be extended to a wide range of use cases in cross chain orders senarios.
 
 ## Reference
 
-[1] https://docs.helixbridge.app/helixbridge/liquidate_node
+[1] https://docs.helixbridge.app/helixbridge/liquidity_node_v3
