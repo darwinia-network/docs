@@ -109,9 +109,10 @@ nav:
     - Supported Network: 'msgport/networks.md'
     - User Cases:
         - Overview: 'msgport/user-cases/overview.md'
-        - Token/Asset Bridge: 'msgport/user-cases/token-bridge.md'
-        - Cross Chain Abstract Account: 'msgport/user-cases/abstract-account.md'
-        - Multi Chains DAO Governance: 'msgport/user-cases/multichain-dao-governance.md'
+        - Order XClearing: 'msgport/user-cases/order-xclearing.md'
+        - XToken: 'msgport/user-cases/xtoken.md'
+        - XAccount: 'msgport/user-cases/xaccount.md'
+        - XDAO: 'msgport/user-cases/xdao.md'
     - Tutorial:
         - Pangolin > Sepolia Remix Demo: 'msgport/tutorial/remix-demo.md'
         - Pangolin > Sepolia Script Demo: 'msgport/tutorial/script-demo.md'
