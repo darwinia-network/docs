@@ -4,10 +4,10 @@ Welcome to the Msgport Use Cases Chapter! This section is meticulously crafted t
 
 When discussing use cases in the context of cross-chain technologies, the prefix "X" or "x" is often used to denote "cross-chain" aspects of a feature or tool. This nomenclature helps in quickly identifying functionalities that are designed to work across different blockchain networks, facilitating interoperability and seamless integration. 
 
-As we traverse this landscape, we'll delve into various scenarios that showcase the power of cross-chain technology, including but not limited to:
+As we explore this area, we'll look into different scenarios that highlight the capabilities of cross-chain technology, among others:
 
 - [Order XClearing](./order-xclearing.md): 
-Helixbridge, a third-party Token Bridge that enables users to conduct cross-chain swaps with liquidity relayers, acting as permissionless order takers and makers. Msgport will assist HelixBridge in the cross-chain clearing for both makers and takers. 
+Helix Bridge, a third-party Token Bridge that enables users to conduct cross-chain swaps with liquidity relayers, acting as permissionless order takers and makers. Msgport will assist HelixBridge in the cross-chain clearing for both makers and takers. 
 
 - [XToken](./order-xclearing.md): XToken is a cross-chain token issuance and mapping tool.
 
