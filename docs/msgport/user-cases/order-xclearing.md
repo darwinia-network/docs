@@ -22,4 +22,4 @@ Msgport plays a pivotal role in Helix Bridge by enabling efficient batch clearin
 
 ## Reference
 
-[1] https://docs.helixbridge.app/helixbridge/liquidity_node_v3
+1. https://docs.helixbridge.app/helixbridge/liquidity_node_v3
