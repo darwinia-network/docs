@@ -5,7 +5,11 @@ XToken is a cross-chain token issuance and mapping tool. It can be used by issue
 Msgport can be utilized by XToken to facilitate cross-chain issuance after the original token has been locked on the source chain, or to carry out cross-chain unlocking after the xToken has been burned on the target chain.
 
 References:
+
 1. [XToken](https://xtoken.helixbridge.app/)
+
 2. [XToken Docs](https://docs.helixbridge.app/helixbridge/mapping_token)
+
 3. [XToken Contracts](https://github.com/helix-bridge/contracts/tree/master/helix-contract/contracts/xtoken)
+
 4. [XToken Monorepo](https://github.com/helix-bridge/xtoken-monorepo)
