@@ -7,7 +7,7 @@ When discussing use cases in the context of cross-chain technologies, the prefix
 As we explore this area, we'll look into different scenarios that highlight the capabilities of cross-chain technology, among others:
 
 - [Order XClearing](./order-xclearing.md): 
-Helix Bridge, a third-party Token Bridge that enables users to conduct cross-chain swaps with liquidity relayers, acting as permissionless order takers and makers. Msgport will assist HelixBridge in the cross-chain clearing for both makers and takers. 
+Helix Bridge is a third-party token bridge designed to facilitate cross-chain swaps between users and liquidity relayers, operating on a permissionless basis for both order takers and makers. Through the integration of Msgport, Helix Bridge enhances its cross-chain clearing capabilities, ensuring efficient and seamless cross chain transactions for all participants involved.
 
 - [XToken](./order-xclearing.md): XToken is a cross-chain token issuance and mapping tool.
 
