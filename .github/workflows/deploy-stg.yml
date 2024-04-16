@@ -20,6 +20,11 @@ jobs:
           pip3 install poetry
           poetry run poetry install --no-root
           poetry run mkdocs build
+      - name: Setup Vercel environment
+        uses: actions/checkout@v4
+        with:
+          repository: darwinia-network/devops
+          path: .github
       - name: Deploy to Vercel
         uses: ./.github/actions/smart-vercel
         id: smart-vercel
