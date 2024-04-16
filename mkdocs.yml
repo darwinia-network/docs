@@ -150,8 +150,8 @@ nav:
           - XAccount Operations: "msgport/use-cases/xaccount.md"
           - XDAO Functions: "msgport/use-cases/xdao.md"
       - Tutorials:
-          - Using Remix on Pangolin > Sepolia: "msgport/tutorial/remix-demo.md"
-          - Script-Based Setup on Pangolin > Sepolia: "msgport/tutorial/script-demo.md"
+          - Hello Message > Sepolia: "msgport/tutorial/remix-demo.md"
+          - Script Message Demo > Sepolia: "msgport/tutorial/script-demo.md"
       - FAQs: "msgport/faq.md"
       - Troubleshooting: "msgport/troublesome.md"
   - EVM+:
