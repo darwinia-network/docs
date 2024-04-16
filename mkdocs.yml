@@ -136,7 +136,7 @@ nav:
       - Interfaces: "msgport/interfaces.md"
       - Workflow: "msgport/workflow.md"
       - API Documentation: "msgport/api.md"
-      - Security Scan: "msgport/scan.md"
+      - Message Scan: "msgport/scan.md"
       - Messaging Protocols:
           - Overview: "msgport/messaging-protocols/overview.md"
           - ORMP Protocol: "msgport/messaging-protocols/ormp.md"
