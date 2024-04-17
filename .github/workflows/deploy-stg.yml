@@ -1,4 +1,4 @@
-name: Deploy staging
+name: Deploy staging preview
 
 on:
   push:
@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Fetch latest code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
