@@ -1,4 +1,4 @@
-name: Deploy develop
+name: Deploy PR preview
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy
+    name: Deploy pages
     runs-on: ubuntu-latest
     steps:
       - name: Fetch latest code
