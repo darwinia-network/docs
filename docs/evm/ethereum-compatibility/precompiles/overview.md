@@ -18,6 +18,7 @@ In the comprehensive Darwinia Ecosystem, each network serves a distinct purpose,
 | `0x0000000000000000000000000000000000000401` | [Dispatch](../precompiles/dispatch.md) |
 | `0x0000000000000000000000000000000000000402` | [Commitment Token](../precompiles/commitment-token.md) |
 | `0x0000000000000000000000000000000000000403` | [USDT](../precompiles/usdt.md) |
+| `0x0000000000000000000000000000000000000404` | PINK |
 | `0x0000000000000000000000000000000000000600` | [Deposit](../precompiles/deposit.md) |
 | `0x0000000000000000000000000000000000000601` | [Staking](../precompiles/staking.md) |
 | `0x0000000000000000000000000000000000000800` | BLS12-381 |
