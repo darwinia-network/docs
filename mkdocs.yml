@@ -175,6 +175,7 @@ nav:
               - Deposit Precompile: "evm/ethereum-compatibility/precompiles/deposit.md"
               - KTON Precompile: "evm/ethereum-compatibility/precompiles/commitment-token.md"
               - USDT Precompile: "evm/ethereum-compatibility/precompiles/usdt.md"
+              - PINK Precompile: "evm/ethereum-compatibility/precompiles/pink.md"
               - State Storage Precompile: "evm/ethereum-compatibility/precompiles/state-storage.md"
               - Dispatch Precompile: "evm/ethereum-compatibility/precompiles/dispatch.md"
               - Conviction Voting Precompile: "evm/ethereum-compatibility/precompiles/conviction-voting.md"

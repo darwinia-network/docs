@@ -7,8 +7,6 @@ In order to improve the compatibility of USDT with Ethereum-based tools and work
 !!! Warning
     As of 2023-11-21, the USDT functionality is only enabled for testing purposes in the Pangolin Testnet. We have plans to enable this in the Darwinia in the future.
 
-</aside>
-
 ## Contract Info
 
 - The default contract address:  0x0000000000000000000000000000000000000403
