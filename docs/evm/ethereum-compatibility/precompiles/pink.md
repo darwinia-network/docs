@@ -1,7 +1,6 @@
 # PINK Precompile
 
-<!-- TODO -->
-Add pink token introduction
+TODO: Add pink token introduction
 
 ## Contract Info
 
