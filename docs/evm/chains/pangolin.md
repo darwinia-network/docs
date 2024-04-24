@@ -1,6 +1,6 @@
-# Pangolin Testnet
+# Pangolin Chain
 
-The Pangolin acts as the primary test network for all Darwinia chains, officially maintained to ensure that new and innovative features are thoroughly tested before they are deployed to the main production network.
+The Pangolin acts as the primary test network for Darwinia, officially maintained to ensure that new and innovative features are thoroughly tested before they are deployed to the main production network.
 
 ## Connect Wallet
 
@@ -15,13 +15,13 @@ To obtain the test token, go to the [faucet-testnet](https://discord.com/channel
 
 ## Network Info
 
-- Network Name: Pangolin
-- Token Info: 
-    - Symbol: PRING
-    - Decimal: 18
-- ChainId: **43**
+- Network Name: **Pangolin2**
+- Token Info:
+    - Symbol: **PRING**
+    - Decimal: **`18`**
+- ChainId: **`43`**
 - Block Explorers:
-    - Subscan: [https://pangolin.subscan.io](https://pangolin.subscan.io)
+    - [**Subscan**](https://pangolin.subscan.io)
 - HTTPS RPC Endpoints:
     - **`https://pangolin-rpc.darwinia.network`**
 - Websocket RPC Endpoints:

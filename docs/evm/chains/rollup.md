@@ -1,12 +1,12 @@
 # Rollup Testnet
 
-The Darwinia team, in partnership with [AltLayer](https://altlayer.io/), a renowned provider of Rollup-as-a-Service (RaaS), have developed a highly compatible Ethereum Op Stack rollup testnet, powered by [Avail DA](https://www.availproject.org/), a cutting-edge solution in the realm of blockchain data services. This innovative testnet offers the latest rollup technology in this sector, and we encourage you to give it a try.
+The Darwinia team has collaborated with [AltLayer](https://altlayer.io/), a leading Rollup-as-a-Service (RaaS) provider, to create an advanced Ethereum Op Stack rollup testnet. This new testnet is supported by [Avail DA](https://www.availproject.org/), which represents the forefront of blockchain data services. We invite you to experience the latest in rollup technology by trying out this state-of-the-art testnet.
 
 ## Network Info
 
 - ChainID: **20240207**
-- Settlement Layer: Sepolia Testnet
-- Rollup Stack Type: Op Stack
+- Settlement Layer: **Sepolia Testnet**
+- Rollup Stack Type: **Op Stack**
 - Block Explorer: [https://itering-testnet-explorer.alt.technology](https://itering-testnet-explorer.alt.technology)
 - HTTPS RPC Endpoints:
     - **`https://itering-testnet.alt.technology/`**

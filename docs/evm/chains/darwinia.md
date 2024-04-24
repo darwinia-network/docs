@@ -1,6 +1,8 @@
 # Darwinia Chain
 
-Darwinia chain is an EVM-compatible blockchain based on [Substrate](https://substrate.dev/) framework with cross-chain components.
+Darwinia is an EVM-compatible blockchain based on [Substrate](https://substrate.dev/) framework with cross-chain components.
+
+It is designed to provide secure and scalable interoperability between different blockchains within the Polkadot ecosystem.
 
 Darwinia is now a [parachain of Polkadot](https://polkadot.subscan.io/parachain/2046).
 
@@ -10,14 +12,14 @@ Darwinia is now a [parachain of Polkadot](https://polkadot.subscan.io/parachain/
 
 ## Network Info
 
-- Network Name: Darwinia2
+- Network Name: **Darwinia2**
 - ChainId: **46**
-- Token Info: 
-    - Symbol: [RING](https://coinmarketcap.com/currencies/darwinia-network/)
+- Token Info:
+    - Symbol: [**RING**](https://coinmarketcap.com/currencies/darwinia-network/)
     - Decimal: 18
 - Block Explorers:
-    - Subscan: [https://darwinia.subscan.io](https://darwinia.subscan.io/)
-    - Subview**:** [https://darwinia.subview.xyz](https://darwinia.subview.xyz/)
+    - [Subscan](https://darwinia.subscan.io/)
+    - [Subview](https://darwinia.subview.xyz/)
 - HTTPS RPC Endpoints:
     - **`https://rpc.darwinia.network`**
     - **`https://darwinia-rpc.darwiniacommunitydao.xyz`**

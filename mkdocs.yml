@@ -156,7 +156,7 @@ nav:
       - Troubleshooting: "msgport/troublesome.md"
   - EVM+:
       - Overview: "evm/overview.md"
-      - Chains and Explorers:
+      - Chains:
           - Overview: "evm/chains/overview.md"
           - Darwinia Chain: "evm/chains/darwinia.md"
           - Crab Chain: "evm/chains/crab.md"
