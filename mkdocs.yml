@@ -162,7 +162,8 @@ nav:
           - Crab Chain: "evm/chains/crab.md"
           - Pangolin Chain: "evm/chains/pangolin.md"
           - Rollup Testnet: "evm/chains/rollup.md"
-      - Available Wallets: "evm/wallets.md"
+      - Available Wallets:
+          - Overview: "evm/wallets.md"
       - Ethereum Compatibility:
           - Account System: "evm/ethereum-compatibility/account-system.md"
           - JSON-RPC APIs: "evm/ethereum-compatibility/jsonrpc.md"
@@ -182,7 +183,8 @@ nav:
           - Commitment Token: "evm/darwinia-staking/commitment-token.md"
           - Staking Pallet: "evm/darwinia-staking/staking.md"
           - Deposit Pallet: "evm/darwinia-staking/deposit.md"
-      - Governance: "evm/governance.md"
+      - Governance:
+          - Overview: "evm/governance.md"
       - Tutorials:
           - Token Transfer: "evm/tutorial/transfer-token.md"
           - Staking Guide: "evm/tutorial/staking.md"
