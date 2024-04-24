@@ -1,8 +1,8 @@
-site_name: Darwinia Document
+site_name: Darwinia Docs
 copyright: Copyright &copy; Darwinia Network
-repo_url: https://github.com/darwinia-network/document
-repo_name: darwinia-network/document
-edit_uri: https://github.com/darwinia-network/document/edit/main/docs
+repo_url: https://github.com/darwinia-network/docs
+repo_name: darwinia-network/docs
+edit_uri: https://github.com/darwinia-network/docs/edit/main/docs
 theme:
   name: material
   logo: resource/pics/darwinia-logo.png
