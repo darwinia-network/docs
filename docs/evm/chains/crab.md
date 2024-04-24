@@ -1,6 +1,8 @@
-Crab is a canary chain with real economic value for Darwinia chain, and its positioning is similar to Polkadot’s Kusama Network. To expect chaos is a reasonable assumption!
+# Crab Chain
 
-Crab is now a [parachain of Kusama](https://kusama.subscan.io/parachain/2229).
+Crab serves as Darwinia's canary network with genuine economic significance, akin to how Kusama functions for Polkadot. Anticipating chaos is par for the course!
+
+Crab is now a [parachain of Kusama](https://kusama.subscan.io/parachain/2105).
 
 ## Connect Wallet
 
@@ -8,14 +10,14 @@ Crab is now a [parachain of Kusama](https://kusama.subscan.io/parachain/2229).
 
 ## Network Info
 
-- Network Name: Crab
+- Network Name: **Crab2**
+- ChainId: **`44`**
 - Token Info
-    - Symbol: [CRAB](https://coinmarketcap.com/currencies/darwinia-crab-network)
-    - Decimal: 18
-- ChainId: **44**
+    - Symbol: [**CRAB**](https://coinmarketcap.com/currencies/darwinia-crab-network)
+    - Decimal: **`18`**
 - Block Explorers:
-    - Subscan: [https://crab.subscan.io](https://crab.subscan.io/)
-    - Subview: [https://crab.subview.xyz](https://crab.subview.xyz/)
+    - [**Subscan**](https://crab.subscan.io/)
+    - [**Subview**](https://crab.subview.xyz/)
 - HTTPS RPC Endpoints:
     - **`https://crab-rpc.darwinia.network`**
     - **`https://crab-rpc.darwiniacommunitydao.xyz`**
