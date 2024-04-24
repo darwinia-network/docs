@@ -182,13 +182,14 @@ nav:
           - Commitment Token: "evm/darwinia-staking/commitment-token.md"
           - Staking Pallet: "evm/darwinia-staking/staking.md"
           - Deposit Pallet: "evm/darwinia-staking/deposit.md"
-      - Governance Overview: "evm/governance.md"
+      - Governance: "evm/governance.md"
       - Tutorials:
           - Token Transfer: "evm/tutorial/transfer-token.md"
           - Staking Guide: "evm/tutorial/staking.md"
           - USDT Operations: "evm/tutorial/usdt.md"
           - Multisig Wallet Setup: "evm/tutorial/multisig-wallet.md"
           - Creating a DAO: "evm/tutorial/create-dao.md"
+          - Governance: "evm/tutorial/governance.md"
           - Smart Contracts:
               - Interacting with Web3.js: "evm/tutorial/smart-contract/interact-with-web3js.md"
               - Interacting with Ethers.js: "evm/tutorial/smart-contract/interact-with-ethersjs.md"
