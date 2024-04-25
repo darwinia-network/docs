@@ -131,7 +131,6 @@ plugins:
 nav:
   - Home: "index.md"
   - Learn Darwinia:
-      - Overview: "learn/overview.md"
       - Chains:
           - Overview: "learn/chains/overview.md"
           - Darwinia Chain: "learn/chains/darwinia.md"
@@ -169,8 +168,8 @@ nav:
           - Multisig Wallet: "build/getting-started/multisig-wallet.md"
           - Creating a DAO: "build/getting-started/create-dao.md"
           - Darwinia 1.0 Migration:
-            - Account Generation: "build/getting-started/migration/generate-account.md"
-            - Multisig Account Setup: "build/getting-started/migration/multisig-account.md"
+            - Migrate Generate Account: "build/getting-started/migration/generate-account.md"
+            - Migrate Multisig Account: "build/getting-started/migration/multisig-account.md"
       - Build In Darwinia:
           - Smart Contracts:
             - Interacting with Web3.js: "build/smart-contract/interact-with-web3js.md"

@@ -1,3 +1,0 @@
-# Overview
-
-The Darwinia EVM+ is a sophisticated smart contract platform built upon Polkadot's Ethereum compatibility layer, [Frontier](https://github.com/paritytech/frontier). It provides EVM compatibility and harnesses Polkadot's robust security features. Additionally, it utilizes the powerful capabilities of Msgport to interface with all EVM-compatible chains. As a Polkadot Parachain, it inherently supports the [XCMP protocol](https://wiki.polkadot.network/docs/learn-xcm), enabling seamless messaging across different parachains within the Polkadot ecosystem. Combining these elements, the Darwinia EVM+ effectively act as a conduit, linking Polkadot parachains with the broader EVM universe.
