@@ -185,5 +185,5 @@ nav:
           - Running an Archive Node: "build/chain/run-archive-node.md"
           - Running an EVM Tracing Node: "build/chain/run-evm-tracing-node.md"
           - Running a Development Node: "build/chain/run-dev-node.md"
-  - RingDAO: "ring-dao.md"
+  - RingDAO: "ring.md"
   - Ecosystem Collaboration: "ecosystem.md"
