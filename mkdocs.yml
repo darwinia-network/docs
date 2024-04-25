@@ -130,31 +130,7 @@ plugins:
 
 nav:
   - Home: "index.md"
-  - Msgport:
-      - Overview: "msgport/overview.md"
-      - Glossary: "msgport/glossary.md"
-      - Interfaces: "msgport/interfaces.md"
-      - Workflow: "msgport/workflow.md"
-      - API Documentation: "msgport/api.md"
-      - Message Scan: "msgport/scan.md"
-      - Messaging Protocols:
-          - Overview: "msgport/messaging-protocols/overview.md"
-          - ORMP Protocol: "msgport/messaging-protocols/ormp.md"
-          - XCMP Protocol: "msgport/messaging-protocols/xcmp.md"
-          - LCMP Protocol: "msgport/messaging-protocols/lcmp.md"
-      - Supported Networks: "msgport/networks.md"
-      - Use Cases:
-          - Overview: "msgport/use-cases/overview.md"
-          - Order Clearing: "msgport/use-cases/order-xclearing.md"
-          - XToken Management: "msgport/use-cases/xtoken.md"
-          - XAccount Operations: "msgport/use-cases/xaccount.md"
-          - XDAO Functions: "msgport/use-cases/xdao.md"
-      - Tutorials:
-          - Hello Message Using Remix: "msgport/tutorial/remix-demo.md"
-          - Message Script Demo: "msgport/tutorial/script-demo.md"
-      - FAQs: "msgport/faq.md"
-      - Troubleshooting: "msgport/troublesome.md"
-  - EVM+:
+  - Learn Darwinia:
       - Overview: "evm/overview.md"
       - Chains:
           - Overview: "evm/chains/overview.md"
@@ -162,8 +138,7 @@ nav:
           - Crab Chain: "evm/chains/crab.md"
           - Pangolin Chain: "evm/chains/pangolin.md"
           - Rollup Testnet: "evm/chains/rollup.md"
-      - Available Wallets:
-          - Overview: "evm/wallets.md"
+      - Wallets: "evm/wallets.md"
       - Ethereum Compatibility:
           - Account System: "evm/ethereum-compatibility/account-system.md"
           - JSON-RPC APIs: "evm/ethereum-compatibility/jsonrpc.md"
@@ -183,35 +158,34 @@ nav:
           - Commitment Token: "evm/darwinia-staking/commitment-token.md"
           - Staking Pallet: "evm/darwinia-staking/staking.md"
           - Deposit Pallet: "evm/darwinia-staking/deposit.md"
-      - Governance:
-          - Overview: "evm/governance.md"
-      - Tutorials:
-          - Token Transfer: "evm/tutorial/transfer-token.md"
-          - Staking Guide: "evm/tutorial/staking.md"
-          - USDT Operations: "evm/tutorial/usdt.md"
-          - Multisig Wallet Setup: "evm/tutorial/multisig-wallet.md"
-          - Creating a DAO: "evm/tutorial/create-dao.md"
-          - Governance: "evm/tutorial/governance.md"
-          - Smart Contracts:
-              - Interacting with Web3.js: "evm/tutorial/smart-contract/interact-with-web3js.md"
-              - Interacting with Ethers.js: "evm/tutorial/smart-contract/interact-with-ethersjs.md"
-              - Using Hardhat: "evm/tutorial/smart-contract/interact-with-hardhat.md"
-              - Using Foundry: "evm/tutorial/smart-contract/interact-with-foundry.md"
-              - Verifying Smart Contracts: "evm/tutorial/smart-contract/verify-contract.md"
-              - Awesome Tutorial: "evm/tutorial/smart-contract/awesome-tutorial.md"
-          - Chain Operations:
-              - Database Snapshot: "evm/tutorial/chain/snapshot.md"
-              - Running a Collator Node: "evm/tutorial/chain/run-collator-node.md"
-              - Running an Archive Node: "evm/tutorial/chain/run-archive-node.md"
-              - Running an EVM Tracing Node: "evm/tutorial/chain/run-evm-tracing-node.md"
-              - Running a Development Node: "evm/tutorial/chain/run-dev-node.md"
-              - Running a Relay Chain Testnet: "evm/tutorial/chain/run-relay-chain-testnet.md"
-          - Darwinia 1.0 Migration:
-              - Account Generation: "evm/tutorial/migration/generate-account.md"
-              - Multisig Account Setup: "evm/tutorial/migration/multisig-account.md"
-          - Indexing Services:
-              - Using SubQuery: "evm/tutorial/indexer/subquery.md"
+      - Governance: "evm/governance.md"
       - Glossary: "evm/glossary.md"
       - FAQs: "evm/faq.md"
-  - RING Overview: "ring.md"
+  - Build In Darwinia:
+      - Getting Started:
+          - Token Transfer: "evm/tutorial/transfer-token.md"
+          - Staking: "evm/tutorial/staking.md"
+          - Governance: "evm/tutorial/governance.md"
+          - USDT Operations: "evm/tutorial/usdt.md"
+          - Multisig Wallet: "evm/tutorial/multisig-wallet.md"
+          - Creating a DAO: "evm/tutorial/create-dao.md"
+          - Darwinia 1.0 Migration:
+            - Account Generation: "evm/tutorial/migration/generate-account.md"
+            - Multisig Account Setup: "evm/tutorial/migration/multisig-account.md"
+      - Build In Darwinia:
+          - Smart Contracts:
+            - Interacting with Web3.js: "evm/tutorial/smart-contract/interact-with-web3js.md"
+            - Interacting with Ethers.js: "evm/tutorial/smart-contract/interact-with-ethersjs.md"
+            - Using Hardhat: "evm/tutorial/smart-contract/interact-with-hardhat.md"
+            - Using Foundry: "evm/tutorial/smart-contract/interact-with-foundry.md"
+            - Verifying Smart Contracts: "evm/tutorial/smart-contract/verify-contract.md"
+          - Indexing Services:
+              - Using SubQuery: "evm/tutorial/indexer/subquery.md"
+      - Node Operator:
+          - Database Snapshot: "evm/tutorial/chain/snapshot.md"
+          - Running a Collator Node: "evm/tutorial/chain/run-collator-node.md"
+          - Running an Archive Node: "evm/tutorial/chain/run-archive-node.md"
+          - Running an EVM Tracing Node: "evm/tutorial/chain/run-evm-tracing-node.md"
+          - Running a Development Node: "evm/tutorial/chain/run-dev-node.md"
+  - RingDAO: "ring-dao.md"
   - Ecosystem Collaboration: "ecosystem.md"
