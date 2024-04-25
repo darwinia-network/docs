@@ -4,7 +4,7 @@ Currently, Darwinia employs OpenGov for governance. For more details on how it f
 
 Darwinia plans to transition from OpenGov to Tally in the future.
 
-Check out the [tutorial](./tutorial/governance.md).
+Check out the [tutorial](../build/getting-started/governance.md).
 
 ## Parameters
 

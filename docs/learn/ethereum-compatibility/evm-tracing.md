@@ -18,6 +18,6 @@ These APIs enable developers to examine and analyze the execution details of the
 
 It is worth noting that the EVM tracing features in Darwinia are specifically provided by a dedicated type of node. This design decision is made to ensure that the tracing feature is only enabled when needed, avoiding unnecessary overhead for production nodes.
 
-The EVM tracing node in Darwinia has its own distinct binary and requires a separate setup command compared to the production node. For more detailed information on running an EVM tracing node, please refer to the [Run Evm Trace Node](../tutorial/chain/run-evm-tracing-node.md).
+The EVM tracing node in Darwinia has its own distinct binary and requires a separate setup command compared to the production node. For more detailed information on running an EVM tracing node, please refer to the [Run Evm Trace Node](../../build/chain/run-evm-tracing-node.md).
 
-To utilize the EVM tracing features in Darwinia, users should send requests to the dedicated node's RPC endpoint, which can be found in the corresponding [Network Info](../chains/darwinia.md#network-info). This ensures that the tracing capabilities are utilized effectively and efficiently within the Darwinia ecosystem.
+To utilize the EVM tracing features in Darwinia, users should send requests to the dedicated node's RPC endpoint, which can be found in the corresponding [Network Info](../chains/pangolin.md#network-info). This ensures that the tracing capabilities are utilized effectively and efficiently within the Darwinia ecosystem.

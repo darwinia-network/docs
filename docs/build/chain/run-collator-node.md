@@ -153,19 +153,19 @@ It's important to note that there is a faster method to expedite the syncing pro
 1. Once your node has finished syncing, ensure that it is still running.
 2. Open the [staking app](https://staking.darwinia.network/#/?network=darwinia) in your browser and connect it to your wallet account. You have the option to choose between MetaMask or WalletConnect, as both wallets are now supported.
     
-    ![evm-tutorial-collator-node-1](../../../images/evm-tutorial-collator-node-1.png)
+    ![evm-tutorial-collator-node-1](../../images/evm-tutorial-collator-node-1.png)
     
 3. Click on the `Join Collator` button and follow these steps:
     1. Enter the session key that was generated earlier and click on `Set Session Key` to prompt the wallet for submitting an Ethereum transaction.
     2. Enter the desired commission amount and click on `Set Commission` to prompt the wallet for submitting an Ethereum transaction.
 
-![evm-tutorial-collator-node-2](../../../images/evm-tutorial-collator-node-2.png)
-![evm-tutorial-collator-node-3](../../../images/evm-tutorial-collator-node-3.png)
+![evm-tutorial-collator-node-2](../../images/evm-tutorial-collator-node-2.png)
+![evm-tutorial-collator-node-3](../../images/evm-tutorial-collator-node-3.png)
 
 1. To verify that your account is in the collator waiting pool, click on the `Select a collator` button.
     
-    ![evm-tutorial-collator-node-4](../../../images/evm-tutorial-collator-node-4.png)
-    ![evm-tutorial-collator-node-5](../../../images/evm-tutorial-collator-node-5.png)
+    ![evm-tutorial-collator-node-4](../../images/evm-tutorial-collator-node-4.png)
+    ![evm-tutorial-collator-node-5](../../images/evm-tutorial-collator-node-5.png)
     
 
 ## To be a real collator

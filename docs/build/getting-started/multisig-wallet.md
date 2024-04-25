@@ -12,7 +12,7 @@
 1. Open [DSafe Wallet](https://multisig.darwiniacommunitydao.xyz/)
 2. Switch your MetaMask to the Darwinia Chain
     
-    DSafe Wallet consists of multiple owners. To create a multi-signature wallet, you first need to connect your regular wallet using MetaMask (or any other compatible wallet). If you haven't added the Darwinia Chain before, you can add it by visiting this [link](../chains/darwinia.md).
+    DSafe Wallet consists of multiple owners. To create a multi-signature wallet, you first need to connect your regular wallet using MetaMask (or any other compatible wallet). If you haven't added the Darwinia Chain before, you can add it by visiting this [link](../../learn/chains/darwinia.md#network-info).
     
 3. Click "Create new Account" to initiate the process.
     

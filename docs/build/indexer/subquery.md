@@ -40,7 +40,7 @@ Select the network family as **Substrate** and the network as **Darwinia**, then
 
 The output:
 
-![evm-tutorial-indexer-subquery-1](../../../images/evm-tutorial-indexer-subquery-1.png)
+![evm-tutorial-indexer-subquery-1](../../images/evm-tutorial-indexer-subquery-1.png)
 
 The `ll example-with-subquery/`is:
 
@@ -153,7 +153,7 @@ query {
 
 The indexing result is displayed in the right pane, as shown below:
 
-![evm-tutorial-indexer-subquery-2](../../../images/evm-tutorial-indexer-subquery-2.png)
+![evm-tutorial-indexer-subquery-2](../../images/evm-tutorial-indexer-subquery-2.png)
 
 ### Stop Indexing
 

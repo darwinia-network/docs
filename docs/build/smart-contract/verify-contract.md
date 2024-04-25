@@ -6,8 +6,8 @@ For Darwinia chains, Subscan is the most commonly used explorer, offering contra
 
 ## Verify Contracts
 
-1. Navigate to the appropriate [Subscan](https://www.notion.so/Crab-Chain-7d27b58cb42a4315b878281da0043aa6?pvs=21) explorer, using the Crab chain as an example. Once there, open the contract page as demonstrated in the screenshot below.
+1. Navigate to the appropriate [Subscan](../../learn/chains/crab.md#network-info) explorer, using the Crab chain as an example. Once there, open the contract page as demonstrated in the screenshot below.
     
-    ![evm-tutorial-verify-contract-1](../../../images/evm-tutorial-verify-contract-1.png)
+    ![evm-tutorial-verify-contract-1](../../images/evm-tutorial-verify-contract-1.png)
     
 2. Verify the contract by submitting the concrete contract information or [standard input JSON](https://github.com/subscan-explorer/sourcify/blob/feat/doc/docs/Standard-Input-JSON.md), similar to the process used on Etherscan, then click `Verify & Publish`.
