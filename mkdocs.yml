@@ -139,6 +139,7 @@ nav:
           - Rollup Testnet: "learn/chains/rollup.md"
       - Wallets: "learn/wallets.md"
       - Governance: "learn/governance.md"
+      - Collator Staking: "learn/stake/collator-staking.md"
       - Ethereum Compatibility:
           - Account System: "learn/ethereum-compatibility/account-system.md"
           - JSON-RPC APIs: "learn/ethereum-compatibility/jsonrpc.md"
@@ -154,7 +155,6 @@ nav:
               - State Storage Precompile: "learn/ethereum-compatibility/precompiles/state-storage.md"
               - Dispatch Precompile: "learn/ethereum-compatibility/precompiles/dispatch.md"
               - Conviction Voting Precompile: "learn/ethereum-compatibility/precompiles/conviction-voting.md"
-      - Collator Staking: "learn/stake/collator-staking.md"
       - FAQs: "learn/faq.md"
   - Build on Darwinia:
       - Getting Started:
