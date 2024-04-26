@@ -139,6 +139,7 @@ nav:
           - Rollup Testnet: "learn/chains/rollup.md"
       - Wallets: "learn/wallets.md"
       - Governance: "learn/governance.md"
+      - Collator Staking: "learn/collator-staking.md"
       - Ethereum Compatibility:
           - Account System: "learn/ethereum-compatibility/account-system.md"
           - JSON-RPC APIs: "learn/ethereum-compatibility/jsonrpc.md"
@@ -154,12 +155,8 @@ nav:
               - State Storage Precompile: "learn/ethereum-compatibility/precompiles/state-storage.md"
               - Dispatch Precompile: "learn/ethereum-compatibility/precompiles/dispatch.md"
               - Conviction Voting Precompile: "learn/ethereum-compatibility/precompiles/conviction-voting.md"
-      - Darwinia Staking:
-          - Commitment Token: "learn/stake/commitment-token.md"
-          - Staking Pallet: "learn/stake/staking.md"
-          - Deposit Pallet: "learn/stake/deposit.md"
       - FAQs: "learn/faq.md"
-  - Build In Darwinia:
+  - Build on Darwinia:
       - Getting Started:
           - Token Transfer: "build/getting-started/transfer-token.md"
           - Staking: "build/getting-started/staking.md"
@@ -170,7 +167,7 @@ nav:
           - Darwinia 1.0 Migration:
             - Migrate Generate Account: "build/getting-started/migration/generate-account.md"
             - Migrate Multisig Account: "build/getting-started/migration/multisig-account.md"
-      - Build In Darwinia:
+      - Build on Darwinia:
           - Smart Contracts:
             - Interacting with Web3.js: "build/smart-contract/interact-with-web3js.md"
             - Interacting with Ethers.js: "build/smart-contract/interact-with-ethersjs.md"
@@ -185,5 +182,9 @@ nav:
           - Running an Archive Node: "build/chain/run-archive-node.md"
           - Running an EVM Tracing Node: "build/chain/run-evm-tracing-node.md"
           - Running a Development Node: "build/chain/run-dev-node.md"
-  - RingDAO: "ring.md"
-  - Ecosystem Collaboration: "ecosystem.md"
+  - Community:
+      - Overview: "community/overview.md"
+      - Collaboration: "community/collaboration.md"
+      - RingDAO: "community/ringdao.md"
+      - DCDAO: "community/dcdao.md"
+      - KtonDAO: "community/ktondao.md"
