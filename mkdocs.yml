@@ -139,7 +139,7 @@ nav:
           - Rollup Testnet: "learn/chains/rollup.md"
       - Wallets: "learn/wallets.md"
       - Governance: "learn/governance.md"
-      - Collator Staking: "learn/stake/collator-staking.md"
+      - Collator Staking: "learn/collator-staking.md"
       - Ethereum Compatibility:
           - Account System: "learn/ethereum-compatibility/account-system.md"
           - JSON-RPC APIs: "learn/ethereum-compatibility/jsonrpc.md"
