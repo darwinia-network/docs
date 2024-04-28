@@ -184,7 +184,6 @@ nav:
           - Running a Development Node: "build/chain/run-dev-node.md"
   - Community:
       - Overview: "community/overview.md"
-      - Collaboration: "community/collaboration.md"
       - RingDAO: "community/ringdao.md"
       - DCDAO: "community/dcdao.md"
       - KtonDAO: "community/ktondao.md"
