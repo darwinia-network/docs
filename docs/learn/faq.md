@@ -10,15 +10,7 @@ Great question! Before the [Merge](https://medium.com/darwinianetwork/darwinia-2
 
 ## Where can I buy Darwinia Tokens?
 
-[Darwinia's native token](../ring-dao.md), can be purchased from various centralized and decentralized cryptocurrency exchanges. According to [CoinMarketCap](https://coinmarketcap.com/currencies/darwinia-network/), the top exchanges for trading in Darwinia Network (RING tokens) are currently Huobi, Gate.io, MEXC, Poloniex, and CoinEx. [CoinGecko](https://www.coingecko.com/en/coins/darwinia-network) also lists MEXC, Gate.io, and CoinEx as popular exchanges for trading RING tokens.
-
-Here's an example of how to buy RING tokens:
-
-1. Create an account on any of the exchanges mentioned above, verify
-your identity, and set up 2-factor authentication for added security.
-2. Deposit funds into your account. This could be in the form of fiat
-currency like USD or another cryptocurrency like Bitcoin or Ethereum.
-3. Navigate to the appropriate trading pair (e.g., RING/USD or RING/BTC) and place a buy order.
+See [Where to get RING](https://darwinia.network/#/get-ring).
 
 ## I want to apply for a treasury grant. What kind of projects do you prefer? How do you measure a project?
 
@@ -43,7 +35,7 @@ In particular, we require all projects to create documentation that explains how
 
 Finally, we take licensing and the right of all teams in and outside the ecosystem to be recognized for their work very seriously. Using others' work with no attribution or indication that this was not your own work as part of a milestone delivery will lead to immediate termination. Please reach out to us before submitting if you have any doubts on how to comply with a specific license and we'll be happy to help.
 
-For more info, please refer to [Developer Incentive Program](../ecosystem.md).
+For more info, please refer to [Developer Incentive Program](../community/overview.md#community-collaboration).
 
 ## If I have an application that is running on Darwinia Chain. Can I get a monthly-periodic payment grant?
 
