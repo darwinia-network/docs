@@ -143,7 +143,7 @@ nav:
       - Ethereum Compatibility:
           - Account System: "learn/ethereum-compatibility/account-system.md"
           - JSON-RPC APIs: "learn/ethereum-compatibility/jsonrpc.md"
-          - Gas Compatibility: "learn/ethereum-compatibility/gas.md"
+          - Gas: "learn/ethereum-compatibility/gas.md"
           - EVM Tracing: "learn/ethereum-compatibility/evm-tracing.md"
           - Precompiled Contracts:
               - Overview: "learn/ethereum-compatibility/precompiles/overview.md"
