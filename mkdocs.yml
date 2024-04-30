@@ -1,8 +1,8 @@
-site_name: Darwinia Document
+site_name: Darwinia Docs
 copyright: Copyright &copy; Darwinia Network
-repo_url: https://github.com/darwinia-network/document
-repo_name: darwinia-network/document
-edit_uri: https://github.com/darwinia-network/document/edit/main/docs
+repo_url: https://github.com/darwinia-network/docs
+repo_name: darwinia-network/docs
+edit_uri: https://github.com/darwinia-network/docs/edit/main/docs
 theme:
   name: material
   logo: resource/pics/darwinia-logo.png
@@ -130,86 +130,61 @@ plugins:
 
 nav:
   - Home: "index.md"
-  - Msgport:
-      - Overview: "msgport/overview.md"
-      - Glossary: "msgport/glossary.md"
-      - Interfaces: "msgport/interfaces.md"
-      - Workflow: "msgport/workflow.md"
-      - API Documentation: "msgport/api.md"
-      - Message Scan: "msgport/scan.md"
-      - Messaging Protocols:
-          - Overview: "msgport/messaging-protocols/overview.md"
-          - ORMP Protocol: "msgport/messaging-protocols/ormp.md"
-          - XCMP Protocol: "msgport/messaging-protocols/xcmp.md"
-          - LCMP Protocol: "msgport/messaging-protocols/lcmp.md"
-      - Supported Networks: "msgport/networks.md"
-      - Use Cases:
-          - Overview: "msgport/use-cases/overview.md"
-          - Order Clearing: "msgport/use-cases/order-xclearing.md"
-          - XToken Management: "msgport/use-cases/xtoken.md"
-          - XAccount Operations: "msgport/use-cases/xaccount.md"
-          - XDAO Functions: "msgport/use-cases/xdao.md"
-      - Tutorials:
-          - Hello Message Using Remix: "msgport/tutorial/remix-demo.md"
-          - Message Script Demo: "msgport/tutorial/script-demo.md"
-      - FAQs: "msgport/faq.md"
-      - Troubleshooting: "msgport/troublesome.md"
-  - EVM+:
-      - Overview: "evm/overview.md"
-      - Chains and Explorers:
-          - Overview: "evm/chains/overview.md"
-          - Darwinia Chain: "evm/chains/darwinia.md"
-          - Crab Chain: "evm/chains/crab.md"
-          - Pangolin Chain: "evm/chains/pangolin.md"
-          - Rollup Testnet: "evm/chains/rollup.md"
-      - Available Wallets: "evm/wallets.md"
+  - Learn Darwinia:
+      - Chains:
+          - Overview: "learn/chains/overview.md"
+          - Darwinia Chain: "learn/chains/darwinia.md"
+          - Crab Chain: "learn/chains/crab.md"
+          - Pangolin Chain: "learn/chains/pangolin.md"
+          - Rollup Testnet: "learn/chains/rollup.md"
+      - Wallets: "learn/wallets.md"
+      - Governance: "learn/governance.md"
+      - Collator Staking: "learn/collator-staking.md"
       - Ethereum Compatibility:
-          - Account System: "evm/ethereum-compatibility/account-system.md"
-          - JSON-RPC APIs: "evm/ethereum-compatibility/jsonrpc.md"
-          - Gas Compatibility: "evm/ethereum-compatibility/gas.md"
-          - EVM Tracing: "evm/ethereum-compatibility/evm-tracing.md"
+          - Account System: "learn/ethereum-compatibility/account-system.md"
+          - JSON-RPC APIs: "learn/ethereum-compatibility/jsonrpc.md"
+          - Gas Compatibility: "learn/ethereum-compatibility/gas.md"
+          - EVM Tracing: "learn/ethereum-compatibility/evm-tracing.md"
           - Precompiled Contracts:
-              - Overview: "evm/ethereum-compatibility/precompiles/overview.md"
-              - Ethereum Precompiles: "evm/ethereum-compatibility/precompiles/ethereum.md"
-              - Staking Precompile: "evm/ethereum-compatibility/precompiles/staking.md"
-              - Deposit Precompile: "evm/ethereum-compatibility/precompiles/deposit.md"
-              - KTON Precompile: "evm/ethereum-compatibility/precompiles/commitment-token.md"
-              - USDT Precompile: "evm/ethereum-compatibility/precompiles/usdt.md"
-              - PINK Precompile: "evm/ethereum-compatibility/precompiles/pink.md"
-              - State Storage Precompile: "evm/ethereum-compatibility/precompiles/state-storage.md"
-              - Dispatch Precompile: "evm/ethereum-compatibility/precompiles/dispatch.md"
-              - Conviction Voting Precompile: "evm/ethereum-compatibility/precompiles/conviction-voting.md"
-      - Darwinia Staking:
-          - Commitment Token: "evm/darwinia-staking/commitment-token.md"
-          - Staking Pallet: "evm/darwinia-staking/staking.md"
-          - Deposit Pallet: "evm/darwinia-staking/deposit.md"
-      - Governance Overview: "evm/governance.md"
-      - Tutorials:
-          - Token Transfer: "evm/tutorial/transfer-token.md"
-          - Staking Guide: "evm/tutorial/staking.md"
-          - USDT Operations: "evm/tutorial/usdt.md"
-          - Multisig Wallet Setup: "evm/tutorial/multisig-wallet.md"
-          - Creating a DAO: "evm/tutorial/create-dao.md"
-          - Smart Contracts:
-              - Interacting with Web3.js: "evm/tutorial/smart-contract/interact-with-web3js.md"
-              - Interacting with Ethers.js: "evm/tutorial/smart-contract/interact-with-ethersjs.md"
-              - Using Hardhat: "evm/tutorial/smart-contract/interact-with-hardhat.md"
-              - Using Foundry: "evm/tutorial/smart-contract/interact-with-foundry.md"
-              - Verifying Smart Contracts: "evm/tutorial/smart-contract/verify-contract.md"
-              - Awesome Tutorial: "evm/tutorial/smart-contract/awesome-tutorial.md"
-          - Chain Operations:
-              - Database Snapshot: "evm/tutorial/chain/snapshot.md"
-              - Running a Collator Node: "evm/tutorial/chain/run-collator-node.md"
-              - Running an Archive Node: "evm/tutorial/chain/run-archive-node.md"
-              - Running an EVM Tracing Node: "evm/tutorial/chain/run-evm-tracing-node.md"
-              - Running a Development Node: "evm/tutorial/chain/run-dev-node.md"
-              - Running a Relay Chain Testnet: "evm/tutorial/chain/run-relay-chain-testnet.md"
+              - Overview: "learn/ethereum-compatibility/precompiles/overview.md"
+              - Ethereum Precompiles: "learn/ethereum-compatibility/precompiles/ethereum.md"
+              - Staking Precompile: "learn/ethereum-compatibility/precompiles/staking.md"
+              - Deposit Precompile: "learn/ethereum-compatibility/precompiles/deposit.md"
+              - KTON Precompile: "learn/ethereum-compatibility/precompiles/commitment-token.md"
+              - USDT Precompile: "learn/ethereum-compatibility/precompiles/usdt.md"
+              - PINK Precompile: "learn/ethereum-compatibility/precompiles/pink.md"
+              - State Storage Precompile: "learn/ethereum-compatibility/precompiles/state-storage.md"
+              - Dispatch Precompile: "learn/ethereum-compatibility/precompiles/dispatch.md"
+              - Conviction Voting Precompile: "learn/ethereum-compatibility/precompiles/conviction-voting.md"
+      - FAQs: "learn/faq.md"
+  - Build on Darwinia:
+      - Getting Started:
+          - Token Transfer: "build/getting-started/transfer-token.md"
+          - Staking: "build/getting-started/staking.md"
+          - Governance: "build/getting-started/governance.md"
+          - USDT Operations: "build/getting-started/usdt.md"
+          - Multisig Wallet: "build/getting-started/multisig-wallet.md"
+          - Creating a DAO: "build/getting-started/create-dao.md"
           - Darwinia 1.0 Migration:
-              - Account Generation: "evm/tutorial/migration/generate-account.md"
-              - Multisig Account Setup: "evm/tutorial/migration/multisig-account.md"
+            - Migrate Generate Account: "build/getting-started/migration/generate-account.md"
+            - Migrate Multisig Account: "build/getting-started/migration/multisig-account.md"
+      - Build on Darwinia:
+          - Smart Contracts:
+            - Interacting with Web3.js: "build/smart-contract/interact-with-web3js.md"
+            - Interacting with Ethers.js: "build/smart-contract/interact-with-ethersjs.md"
+            - Using Hardhat: "build/smart-contract/interact-with-hardhat.md"
+            - Using Foundry: "build/smart-contract/interact-with-foundry.md"
+            - Verifying Smart Contracts: "build/smart-contract/verify-contract.md"
           - Indexing Services:
-              - Using SubQuery: "evm/tutorial/indexer/subquery.md"
-      - Glossary: "evm/glossary.md"
-      - FAQs: "evm/faq.md"
-  - RING Overview: "ring.md"
-  - Ecosystem Collaboration: "ecosystem.md"
+              - Using SubQuery: "build/indexer/subquery.md"
+      - Node Operator:
+          - Database Snapshot: "build/chain/snapshot.md"
+          - Running a Collator Node: "build/chain/run-collator-node.md"
+          - Running an Archive Node: "build/chain/run-archive-node.md"
+          - Running an EVM Tracing Node: "build/chain/run-evm-tracing-node.md"
+          - Running a Development Node: "build/chain/run-dev-node.md"
+  - Community:
+      - Overview: "community/overview.md"
+      - RingDAO: "community/ringdao.md"
+      - DCDAO: "community/dcdao.md"
+      - KtonDAO: "community/ktondao.md"

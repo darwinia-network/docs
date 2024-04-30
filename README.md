@@ -8,7 +8,7 @@ To build the documentation on your local machine, ensure you have Python and pip
 
 ```sh
 # Clone the repository.
-git clone https://github.com/darwinia-network/document.git && document
+git clone https://github.com/darwinia-network/docs.git && docs
 # Install necessary dependencies.
 pip install mkdocs-material mkdocs-git-authors-plugin mkdocs-git-revision-date-localized-plugin
 # View the documentation in your browser at `http://127.0.0.1:8000`.
