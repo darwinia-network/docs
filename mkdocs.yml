@@ -161,7 +161,7 @@ nav:
           - Token Transfer: "build/getting-started/transfer-token.md"
           - Staking: "build/getting-started/staking.md"
           - Governance: "build/getting-started/governance.md"
-          - USDT Operations: "build/getting-started/usdt.md"
+          - AssetHub Bridge: "build/getting-started/assethub-bridge.md"
           - Multisig Wallet: "build/getting-started/multisig-wallet.md"
           - Creating a DAO: "build/getting-started/create-dao.md"
           - Darwinia 1.0 Migration:
