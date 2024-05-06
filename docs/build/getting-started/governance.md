@@ -27,11 +27,23 @@ Once you've filled in all the required details, submit your proposal. Below is a
 
 ![evm-tutorial-governance-5](../../images/evm-tutorial-governance-5.png)
 
-## Elaborate on the Proposal Details to the Community
+### Elaborate on the Proposal Details to the Community
 
 After submitting your proposal, it's important to communicate and elaborate on the details to the community. This helps in building consensus and encouraging discussions. Below are images depicting how you can present your proposal details:
 
 ![evm-tutorial-governance-6](../../images/evm-tutorial-governance-6.png)
 ![evm-tutorial-governance-7](../../images/evm-tutorial-governance-7.png)
 
+### Deposit for Your Proposal
+
+Please ensure that all the above details are correct. To progress your proposal to the decision stage, you must make a deposit.
+
+!!! note
+    The deposit can be made from any account; it does not have to be from the account that submitted the proposal.
+
+![evm-tutorial-governance-8](../../images/evm-tutorial-governance-8.png)
+
+### Share with the Community to Vote
+
+Once you have made the deposit for your proposal, share it with the community to encourage voting and support.
 
