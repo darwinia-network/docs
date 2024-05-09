@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://docs.msgport.xyz/sitemap.xml
+Sitemap: https://docs.darwinia.network/sitemap.xml
