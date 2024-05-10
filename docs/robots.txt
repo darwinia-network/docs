@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://docs.darwinia.network/sitemap.xml
