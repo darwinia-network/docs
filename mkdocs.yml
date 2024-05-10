@@ -64,6 +64,9 @@ extra:
       link: https://t.me/DarwiniaNetwork
     - icon: fontawesome/brands/medium
       link: https://medium.com/darwinianetwork
+  analytics:
+    provider: google
+    property: G-K2MGZ3GPEE
 
 extra_css:
   - resource/stylesheets/extra.css
