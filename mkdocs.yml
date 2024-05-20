@@ -133,6 +133,12 @@ plugins:
       enable_creation_date: true
   - redirects:
       redirect_maps:
+        "learn/chains/overview.md": "build/getting-started/networks/overview.md"
+        "learn/chains/darwinia.md": "build/getting-started/networks/darwinia.md"
+        "learn/chains/crab.md": "build/getting-started/networks/crab.md"
+        "learn/chains/pangolin.md": "build/getting-started/networks/pangolin.md"
+        "learn/chains/rollup.md": "build/getting-started/networks/rollup.md"
+        "learn/wallets.md": "build/getting-started/networks/wallets.md"
         "build/chain/snapshot.md": "node-operators/snapshot.md"
         "build/chain/run-collator-node.md": "node-operators/run-collator-node.md"
         "build/chain/run-archive-node.md": "node-operators/run-archive-node.md"
@@ -142,15 +148,6 @@ plugins:
 nav:
   - Home: "index.md"
   - Learn:
-      - Chains:
-          - Overview: "learn/chains/overview.md"
-          - Darwinia Chain: "learn/chains/darwinia.md"
-          - Crab Chain: "learn/chains/crab.md"
-          - Pangolin Chain: "learn/chains/pangolin.md"
-          - Rollup Testnet: "learn/chains/rollup.md"
-      - Wallets: "learn/wallets.md"
-      - Governance: "learn/governance.md"
-      - Collator Staking: "learn/collator-staking.md"
       - Ethereum Compatibility:
           - Account System: "learn/ethereum-compatibility/account-system.md"
           - JSON-RPC APIs: "learn/ethereum-compatibility/jsonrpc.md"
@@ -166,9 +163,18 @@ nav:
               - State Storage Precompile: "learn/ethereum-compatibility/precompiles/state-storage.md"
               - Dispatch Precompile: "learn/ethereum-compatibility/precompiles/dispatch.md"
               - Conviction Voting Precompile: "learn/ethereum-compatibility/precompiles/conviction-voting.md"
+      - Governance: "learn/governance.md"
+      - Collator Staking: "learn/collator-staking.md"
       - FAQs: "learn/faq.md"
-  - Build:
+  - Developers:
       - Getting Started:
+          - Networks:
+            - Overview: "build/getting-started/networks/overview.md"
+            - Darwinia: "build/getting-started/networks/darwinia.md"
+            - Crab: "build/getting-started/networks/crab.md"
+            - Pangolin: "build/getting-started/networks/pangolin.md"
+            - Rollup: "build/getting-started/networks/rollup.md"
+          - Wallets: "build/getting-started/networks/wallets.md"
           - Token Transfer: "build/getting-started/transfer-token.md"
           - Staking: "build/getting-started/staking.md"
           - Governance: "build/getting-started/governance.md"
