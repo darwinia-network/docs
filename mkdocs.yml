@@ -138,12 +138,24 @@ plugins:
         "learn/chains/crab.md": "build/getting-started/networks/crab.md"
         "learn/chains/pangolin.md": "build/getting-started/networks/pangolin.md"
         "learn/chains/rollup.md": "build/getting-started/networks/rollup.md"
-        "learn/wallets.md": "build/getting-started/networks/wallets.md"
+        "learn/wallets.md": "build/getting-started/wallets.md"
         "build/chain/snapshot.md": "node-operators/snapshot.md"
         "build/chain/run-collator-node.md": "node-operators/run-collator-node.md"
         "build/chain/run-archive-node.md": "node-operators/run-archive-node.md"
         "build/chain/run-evm-tracing-node.md": "node-operators/run-evm-tracing-node.md"
         "build/chain/run-dev-node.md": "node-operators/run-dev-node.md"
+        "build/getting-started/transfer-token.md": "community/guide/token-transfer.md"
+        "build/getting-started/staking.md": "community/guide/staking.md"
+        "build/getting-started/governance.md": "community/guide/governance.md"
+        "build/getting-started/assethub-bridge.md": "community/guide/assethub-bridge.md"
+        "build/getting-started/multisig-wallet.md": "community/guide/multisig-wallet.md"
+        "build/getting-started/create-dao.md": "community/guide/create-dao.md"
+        "build/getting-started/migration/generate-account.md": "community/guide/migration/generate-account.md"
+        "build/getting-started/migration/multisig-account.md": "community/guide/migration/multisig-account.md"
+        "community/ringdao.md": "community/orgs/ringdao.md"
+        "community/dcdao.md": "community/orgs/dcdao.md"
+        "community/ktondao.md": "community/orgs/ktondao.md"
+
 
 nav:
   - Home: "index.md"
@@ -174,16 +186,7 @@ nav:
             - Crab: "build/getting-started/networks/crab.md"
             - Pangolin: "build/getting-started/networks/pangolin.md"
             - Rollup: "build/getting-started/networks/rollup.md"
-          - Wallets: "build/getting-started/networks/wallets.md"
-          - Token Transfer: "build/getting-started/transfer-token.md"
-          - Staking: "build/getting-started/staking.md"
-          - Governance: "build/getting-started/governance.md"
-          - AssetHub Bridge: "build/getting-started/assethub-bridge.md"
-          - Multisig Wallet: "build/getting-started/multisig-wallet.md"
-          - Creating a DAO: "build/getting-started/create-dao.md"
-          - Darwinia 1.0 Migration:
-            - Migrate Generate Account: "build/getting-started/migration/generate-account.md"
-            - Migrate Multisig Account: "build/getting-started/migration/multisig-account.md"
+          - Wallets: "build/getting-started/wallets.md"
       - Build on Darwinia:
           - Smart Contracts:
             - Interacting with Web3.js: "build/smart-contract/interact-with-web3js.md"
@@ -201,6 +204,17 @@ nav:
       - Running a Development Node: "node-operators/run-dev-node.md"
   - Community:
       - Overview: "community/overview.md"
-      - RingDAO: "community/ringdao.md"
-      - DCDAO: "community/dcdao.md"
-      - KtonDAO: "community/ktondao.md"
+      - Community Organizations:
+        - RingDAO: "community/orgs/ringdao.md"
+        - DCDAO: "community//orgs/dcdao.md"
+        - KtonDAO: "community//orgs/ktondao.md"
+      - Community Guide:
+          - AssetHub Bridge: "community/guide/assethub-bridge.md"
+          - Token Transfer: "community/guide/token-transfer.md"
+          - How to stake: "community/guide/staking.md"
+          - Governance: "community/guide/governance.md"
+          - Multisig Wallet: "community/guide/multisig-wallet.md"
+          - Creating a DAO: "community/guide/create-dao.md"
+          - Darwinia 1.0 Migration:
+            - Migrate Generate Account: "community/guide/migration/generate-account.md"
+            - Migrate Multisig Account: "community/guide/migration/multisig-account.md"
