@@ -134,7 +134,7 @@ plugins:
 
 nav:
   - Home: "index.md"
-  - Learn Darwinia:
+  - Learn:
       - Chains:
           - Overview: "learn/chains/overview.md"
           - Darwinia Chain: "learn/chains/darwinia.md"
@@ -160,7 +160,7 @@ nav:
               - Dispatch Precompile: "learn/ethereum-compatibility/precompiles/dispatch.md"
               - Conviction Voting Precompile: "learn/ethereum-compatibility/precompiles/conviction-voting.md"
       - FAQs: "learn/faq.md"
-  - Build on Darwinia:
+  - Build:
       - Getting Started:
           - Token Transfer: "build/getting-started/transfer-token.md"
           - Staking: "build/getting-started/staking.md"
