@@ -1,5 +1,7 @@
 # Available Wallets
 
+This section provides an overview of the wallets that are compatible with the Darwinia ecosystem. The wallets listed below are widely recognized and have a substantial user base, making them the preferred choice for interacting with Darwinia's ecosystem products.
+
 ## [MetaMask](https://metamask.io/)
 
 MetaMask is widely recognized as the leading wallet in the Ethereum ecosystem, with a substantial user base comprising millions of individuals. Considering that Darwinia's chain is Ethereum compatible, if you are already familiar with the tools and functionalities of the Ethereum ecosystem, we strongly recommend MetaMask as the preferred wallet for interacting with Darwinia's ecosystem products.

@@ -1,8 +1,8 @@
 # Create DAO Guide
 
-## Overview
+This guide will show you how to create a DAO on [Snapshot](https://snapshot.org/) for Darwinia Chain. 
 
-[Snapshot](https://snapshot.org/) is a place where projects can create proposals for people to vote on using cryptocurrency. Snapshot is one of the most popular tools for decentralized organizations (DAOs) looking to query what their audiences think using blockchain technology. It supports numerous Web3 communities, including these most active DAOs like **[Arbitrum DAO](https://snapshot.org/#/arbitrumfoundation.eth)**. The off-chain nature of Snapshot's voting process enhances accessibility and encourages widespread engagement, allowing participants to contribute their voices to governance decisions without financial barriers.
+Snapshot is a place where projects can create proposals for people to vote on using cryptocurrency. It supports numerous Web3 communities, including these most active DAOs like **[Arbitrum DAO](https://snapshot.org/#/arbitrumfoundation.eth)**. The off-chain nature of Snapshot's voting process enhances accessibility and encourages widespread engagement, allowing participants to contribute their voices to governance decisions without financial barriers.
 
 Snapshot has already support Darwinia Chain. So, we will show steps to build a DAO on Snapshot for Darwinia Chain. 
 

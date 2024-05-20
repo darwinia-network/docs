@@ -1,5 +1,6 @@
 site_name: Darwinia Docs
 site_url: https://docs.darwinia.network/
+site_description: "This is the official documentation for the Darwinia Network. It covers the design, usage and integration guide for Darwinia networks."
 copyright: Copyright &copy; Darwinia Network
 repo_url: https://github.com/darwinia-network/docs
 repo_name: darwinia-network/docs
@@ -128,6 +129,10 @@ markdown_extensions:
 
 plugins:
   - search
+  - meta-descriptions:
+      enable_checks: true
+      max_length: 500
+      trim: true
   - git-authors
   - git-revision-date-localized:
       fallback_to_build_date: false
