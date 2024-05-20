@@ -131,6 +131,13 @@ plugins:
   - git-revision-date-localized:
       fallback_to_build_date: false
       enable_creation_date: true
+  - redirects:
+      redirect_maps:
+        "build/chain/snapshot.md": "node-operators/snapshot.md"
+        "build/chain/run-collator-node.md": "node-operators/run-collator-node.md"
+        "build/chain/run-archive-node.md": "node-operators/run-archive-node.md"
+        "build/chain/run-evm-tracing-node.md": "node-operators/run-evm-tracing-node.md"
+        "build/chain/run-dev-node.md": "node-operators/run-dev-node.md"
 
 nav:
   - Home: "index.md"
@@ -180,12 +187,12 @@ nav:
             - Verifying Smart Contracts: "build/smart-contract/verify-contract.md"
           - Indexing Services:
               - Using SubQuery: "build/indexer/subquery.md"
-      - Node Operator:
-          - Database Snapshot: "build/chain/snapshot.md"
-          - Running a Collator Node: "build/chain/run-collator-node.md"
-          - Running an Archive Node: "build/chain/run-archive-node.md"
-          - Running an EVM Tracing Node: "build/chain/run-evm-tracing-node.md"
-          - Running a Development Node: "build/chain/run-dev-node.md"
+  - Network Operators:
+      - Database Snapshot: "node-operators/snapshot.md"
+      - Running a Collator Node: "node-operators/run-collator-node.md"
+      - Running an Archive Node: "node-operators/run-archive-node.md"
+      - Running an EVM Tracing Node: "node-operators/run-evm-tracing-node.md"
+      - Running a Development Node: "node-operators/run-dev-node.md"
   - Community:
       - Overview: "community/overview.md"
       - RingDAO: "community/ringdao.md"
