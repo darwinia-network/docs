@@ -139,12 +139,21 @@ plugins:
         "learn/chains/pangolin.md": "build/getting-started/networks/pangolin.md"
         "learn/chains/rollup.md": "build/getting-started/networks/rollup.md"
         "learn/wallets.md": "build/getting-started/wallets.md"
+        "learn/ethereum-compatibility/precompiles/overview.md": "build/precompiles/overview.md"
+        "learn/ethereum-compatibility/precompiles/ethereum.md": "build/precompiles/ethereum.md"
+        "learn/ethereum-compatibility/precompiles/staking.md": "build/precompiles/staking.md"
+        "learn/ethereum-compatibility/precompiles/deposit.md": "build/precompiles/deposit.md"
+        "learn/ethereum-compatibility/precompiles/commitment-token.md": "build/precompiles/commitment-token.md"
+        "learn/ethereum-compatibility/precompiles/usdt.md": "build/precompiles/usdt.md"
+        "learn/ethereum-compatibility/precompiles/state-storage.md": "build/precompiles/state-storage.md"
+        "learn/ethereum-compatibility/precompiles/dispatch.md": "build/precompiles/dispatch.md"
+        "learn/ethereum-compatibility/precompiles/conviction-voting.md": "build/precompiles/conviction-voting.md"
         "build/chain/snapshot.md": "node-operators/snapshot.md"
         "build/chain/run-collator-node.md": "node-operators/run-collator-node.md"
         "build/chain/run-archive-node.md": "node-operators/run-archive-node.md"
         "build/chain/run-evm-tracing-node.md": "node-operators/run-evm-tracing-node.md"
         "build/chain/run-dev-node.md": "node-operators/run-dev-node.md"
-        "build/getting-started/transfer-token.md": "community/guide/token-transfer.md"
+        "build/getting-started/transfer-token.md": "community/guide/transfer-token.md"
         "build/getting-started/staking.md": "community/guide/staking.md"
         "build/getting-started/governance.md": "community/guide/governance.md"
         "build/getting-started/assethub-bridge.md": "community/guide/assethub-bridge.md"
@@ -152,6 +161,11 @@ plugins:
         "build/getting-started/create-dao.md": "community/guide/create-dao.md"
         "build/getting-started/migration/generate-account.md": "community/guide/migration/generate-account.md"
         "build/getting-started/migration/multisig-account.md": "community/guide/migration/multisig-account.md"
+        "build/smart-contract/interact-with-web3js.md": "build/ethereum-tools/interact-with-web3js.md"
+        "build/smart-contract/interact-with-ethersjs.md": "build/ethereum-tools/interact-with-ethersjs.md"
+        "build/smart-contract/interact-with-hardhat.md": "build/ethereum-tools/interact-with-hardhat.md"
+        "build/smart-contract/interact-with-foundry.md": "build/ethereum-tools/interact-with-foundry.md"
+        "build/smart-contract/verify-contract.md": "build/ethereum-tools/verify-contract.md"
         "community/ringdao.md": "community/orgs/ringdao.md"
         "community/dcdao.md": "community/orgs/dcdao.md"
         "community/ktondao.md": "community/orgs/ktondao.md"
@@ -165,16 +179,6 @@ nav:
           - JSON-RPC APIs: "learn/ethereum-compatibility/jsonrpc.md"
           - Gas: "learn/ethereum-compatibility/gas.md"
           - EVM Tracing: "learn/ethereum-compatibility/evm-tracing.md"
-          - Precompiled Contracts:
-              - Overview: "learn/ethereum-compatibility/precompiles/overview.md"
-              - Ethereum Precompiles: "learn/ethereum-compatibility/precompiles/ethereum.md"
-              - Staking Precompile: "learn/ethereum-compatibility/precompiles/staking.md"
-              - Deposit Precompile: "learn/ethereum-compatibility/precompiles/deposit.md"
-              - KTON Precompile: "learn/ethereum-compatibility/precompiles/commitment-token.md"
-              - USDT Precompile: "learn/ethereum-compatibility/precompiles/usdt.md"
-              - State Storage Precompile: "learn/ethereum-compatibility/precompiles/state-storage.md"
-              - Dispatch Precompile: "learn/ethereum-compatibility/precompiles/dispatch.md"
-              - Conviction Voting Precompile: "learn/ethereum-compatibility/precompiles/conviction-voting.md"
       - Governance: "learn/governance.md"
       - Collator Staking: "learn/collator-staking.md"
       - FAQs: "learn/faq.md"
@@ -187,15 +191,29 @@ nav:
             - Pangolin: "build/getting-started/networks/pangolin.md"
             - Rollup: "build/getting-started/networks/rollup.md"
           - Wallets: "build/getting-started/wallets.md"
-      - Build on Darwinia:
-          - Smart Contracts:
-            - Interacting with Web3.js: "build/smart-contract/interact-with-web3js.md"
-            - Interacting with Ethers.js: "build/smart-contract/interact-with-ethersjs.md"
-            - Using Hardhat: "build/smart-contract/interact-with-hardhat.md"
-            - Using Foundry: "build/smart-contract/interact-with-foundry.md"
-            - Verifying Smart Contracts: "build/smart-contract/verify-contract.md"
+      - Development Tools:
+          - Ethereum Tools:
+            - Interacting with Web3.js: "build/ethereum-tools/interact-with-web3js.md"
+            - Interacting with Ethers.js: "build/ethereum-tools/interact-with-ethersjs.md"
+            - Using Hardhat: "build/ethereum-tools/interact-with-hardhat.md"
+            - Using Foundry: "build/ethereum-tools/interact-with-foundry.md"
+            - Verifying Smart Contracts: "build/ethereum-tools/verify-contract.md"
           - Indexing Services:
               - Using SubQuery: "build/indexer/subquery.md"
+      - Precompiled Contracts:
+            - Overview: "build/precompiles/overview.md"
+            - Asset:
+              - KTON: "build/precompiles/commitment-token.md"
+              - USDT: "build/precompiles/usdt.md"
+            - Staking:
+              - Staking: "build/precompiles/staking.md"
+              - Deposit: "build/precompiles/deposit.md"
+            - Governance:
+              - Conviction Voting: "build/precompiles/conviction-voting.md"
+            - Utility:
+              - Ethereum Mainnet: "build/precompiles/ethereum.md"
+              - State Storage: "build/precompiles/state-storage.md"
+              - Dispatch: "build/precompiles/dispatch.md"
   - Network Operators:
       - Database Snapshot: "node-operators/snapshot.md"
       - Running a Collator Node: "node-operators/run-collator-node.md"
@@ -209,12 +227,15 @@ nav:
         - DCDAO: "community//orgs/dcdao.md"
         - KtonDAO: "community//orgs/ktondao.md"
       - Community Guide:
-          - AssetHub Bridge: "community/guide/assethub-bridge.md"
-          - Token Transfer: "community/guide/token-transfer.md"
-          - How to stake: "community/guide/staking.md"
-          - Governance: "community/guide/governance.md"
-          - Multisig Wallet: "community/guide/multisig-wallet.md"
-          - Creating a DAO: "community/guide/create-dao.md"
-          - Darwinia 1.0 Migration:
-            - Migrate Generate Account: "community/guide/migration/generate-account.md"
-            - Migrate Multisig Account: "community/guide/migration/multisig-account.md"
+          - How to Stake: "community/guide/staking.md"
+          - Accounts:
+            - How to Create a Multisig: "community/guide/multisig-wallet.md"
+            - Darwinia 1.0 Migration:
+              - Migrate Generate Account: "community/guide/migration/generate-account.md"
+              - Migrate Multisig Account: "community/guide/migration/multisig-account.md"
+          - Token Transfer:
+            - Transfer Native Token: "community/guide/transfer-token.md"
+            - Transfer AssetHub Token: "community/guide/assethub-bridge.md"
+          - Governance: 
+            - How to submit a Proposal: "community/guide/governance.md"
+            - Creating a DAO: "community/guide/create-dao.md"
