@@ -8,16 +8,3 @@ Collator staking involves participants locking up their RING tokens to support t
 ## Development
 
 If you want to learn how to interact with these Collator Staking module, pleast vist the [Staking Precompile Page](./ethereum-compatibility/precompiles/staking.md), be aware that this contract may be deprecated in future versions.
-
-### **Parameters**
-The parameters to be aware of when understanding the darwinia staking module are as follows:
-
-- `MinStakingDuration` - *Minimum time to stake at least.*
-- `MaxDeposits` - *Maximum deposit count.*
-- `MaxUnstakings` - *Maximum unstaking/unbonding count.*
-
-|  | Darwinia | Crab | Pangolin Testnet |
-| --- | --- | --- | --- |
-| MinStakingDuration | 14 days | 14 days | 2 mins |
-| MaxDeposits | 100 | 512 | 512 |
-| MaxUnstakings | 16 | 16 | 16 |
