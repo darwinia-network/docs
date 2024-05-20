@@ -7,4 +7,4 @@ Collator staking involves participants locking up their RING tokens to support t
 
 ## Development
 
-If you want to learn how to interact with these Collator Staking module, pleast vist the [Staking Precompile Page](./ethereum-compatibility/precompiles/staking.md), be aware that this contract may be deprecated in future versions.
+If you want to learn how to interact with these Collator Staking module, please visit the [Staking Precompile Page](../build/precompiles/staking.md), be aware that this contract may be deprecated in future versions.

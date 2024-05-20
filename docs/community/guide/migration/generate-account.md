@@ -55,7 +55,7 @@ The current version of [Subscan](https://darwinia.subscan.io/) supports Darwinia
 ![evm-tutorial-migrate-general-8](../../../images/evm-tutorial-migrate-general-8.png)
 ![evm-tutorial-migrate-general-9](../../../images/evm-tutorial-migrate-general-9.png)
 
-Also, you can refer to [here](../../../learn/chains/darwinia.md#network-info) and add the darwinia RPC to your wallet. Then you can see the transferrable `RING` on MetaMask.
+Also, you can refer to [here](../../../build/getting-started/networks/darwinia.md#network-info) and add the darwinia RPC to your wallet. Then you can see the transferrable `RING` on MetaMask.
 
 ![evm-tutorial-migrate-general-10](../../../images/evm-tutorial-migrate-general-10.png)
 
