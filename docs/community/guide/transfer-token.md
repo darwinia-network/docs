@@ -1,5 +1,3 @@
-## Overview
-
 The first crucial step for a newcomer in the Web3 world is understanding how to operate a cryptocurrency wallet. This is a fundamental skill for interacting with blockchain-based systems, and we have designed a beginner-friendly tutorial to help you navigate this new terrain.
 
 ## Transfer Using MetaMask
