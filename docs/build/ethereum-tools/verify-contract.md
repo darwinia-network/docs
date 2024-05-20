@@ -6,7 +6,7 @@ For Darwinia chains, Subscan is the most commonly used explorer, offering contra
 
 ## Verify Contracts
 
-1. Navigate to the appropriate [Subscan](../../learn/chains/crab.md#network-info) explorer, using the Crab chain as an example. Once there, open the contract page as demonstrated in the screenshot below.
+1. Navigate to the appropriate [Subscan](../getting-started/networks/crab.md#network-info) explorer, using the Crab chain as an example. Once there, open the contract page as demonstrated in the screenshot below.
     
     ![evm-tutorial-verify-contract-1](../../images/evm-tutorial-verify-contract-1.png)
     
