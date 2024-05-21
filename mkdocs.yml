@@ -139,6 +139,29 @@ plugins:
       enable_creation_date: true
   - redirects:
       redirect_maps:
+        "msgport/glossary.md": "https://docs.msgport.xyz/learn/glossary/"
+        "msgport/networks.md": "https://docs.msgport.xyz/build/networks/"
+        "msgport/user-cases/overview.md": "https://docs.msgport.xyz/learn/use-cases/overview/"
+        "msgport/user-cases/token-bridge.md": "https://docs.msgport.xyz/learn/use-cases/xtoken/"
+        "msgport/use-cases/order-xclearing.md": "https://docs.msgport.xyz/learn/use-cases/order-xclearing/"
+        "ecosystem.md": "community/overview.md"
+        "ring.md": "community/orgs/ringdao.md"
+        "evm/governance.md": "community/guide/governance.md"
+        "evm/faq.md": "earn/faq.md"
+        "evm/tutorial/staking.md": "community/guide/staking.md"
+        "evm/chains/darwinia.md": "build/getting-started/networks/darwinia.md"
+        "evm/chains/pangolin.md": "build/getting-started/networks/pangolin.md"
+        "evm/tutorial/multisig-wallet.md": "community/guide/multisig-wallet.md" 
+        "evm/tutorial/indexer/subquery.md": "build/indexer/subquery.md"
+        "evm/tutorial/transfer-token.md": "community/guide/transfer-token.md"
+        "evm/tutorial/migration/generate-account.md": "community/guide/migration/generate-account.md"
+        "evm/darwinia-staking/commitment-token.md": "learn/collator-staking.md"
+        "evm/ethereum-compatibility/precompiles/dispatch.md": "build/precompiles/dispatch.md"
+        "evm/ethereum-compatibility/precompiles/staking": "build/precompiles/staking.md" 
+        "evm/tutorial/chain/run-archive-node.md": "node-operators/run-archive-node.md"
+        "evm/tutorial/smart-contract/awesome-tutorial.md": "index.md"
+        "evm/ethereum-compatibility/precompiles/conviction-voting.md": "build/precompiles/conviction-voting.md"
+        "evm/tutorial/chain/run-evm-tracing-node.md": "node-operators/run-evm-tracing-node.md"
         "learn/chains/overview.md": "build/getting-started/networks/overview.md"
         "learn/chains/darwinia.md": "build/getting-started/networks/darwinia.md"
         "learn/chains/crab.md": "build/getting-started/networks/crab.md"
@@ -175,6 +198,7 @@ plugins:
         "community/ringdao.md": "community/orgs/ringdao.md"
         "community/dcdao.md": "community/orgs/dcdao.md"
         "community/ktondao.md": "community/orgs/ktondao.md"
+        
 
 
 nav:
