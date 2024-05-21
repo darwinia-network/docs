@@ -141,13 +141,22 @@ plugins:
       redirect_maps:
         "msgport/glossary.md": "https://docs.msgport.xyz/learn/glossary/"
         "msgport/networks.md": "https://docs.msgport.xyz/build/networks/"
+        "msgport/workflow.md": "https://docs.msgport.xyz/build/workflow/"
+        "msgport/messaging-protocols/lcmp.md": "https://docs.msgport.xyz/learn/messaging-protocols/lcmp/"
         "msgport/user-cases/overview.md": "https://docs.msgport.xyz/learn/use-cases/overview/"
         "msgport/user-cases/token-bridge.md": "https://docs.msgport.xyz/learn/use-cases/xtoken/"
         "msgport/use-cases/order-xclearing.md": "https://docs.msgport.xyz/learn/use-cases/order-xclearing/"
+        "msgport/user-cases/abstract-account.md": "https://docs.msgport.xyz/learn/use-cases/xaccount/"
+        "msgport/use-cases/xtoken.md": "https://docs.msgport.xyz/learn/use-cases/xtoken/"
+        "msgport/user-cases/order-xclearing.md": "https://docs.msgport.xyz/learn/use-cases/order-xclearing/"
+        "msgport/user-cases/xdao.md": "https://docs.msgport.xyz/learn/use-cases/xdao/"
+        "msgport/use-cases/overview.md": "https://docs.msgport.xyz/learn/use-cases/overview/"
+        "msgport/user-cases/xtoken.md": "https://docs.msgport.xyz/learn/use-cases/xtoken/"
         "ecosystem.md": "community/overview.md"
         "ring.md": "community/orgs/ringdao.md"
         "evm/governance.md": "community/guide/governance.md"
-        "evm/faq.md": "earn/faq.md"
+        "evm/glossary.md": "index.md"
+        "evm/faq.md": "learn/faq.md"
         "evm/tutorial/staking.md": "community/guide/staking.md"
         "evm/chains/darwinia.md": "build/getting-started/networks/darwinia.md"
         "evm/chains/pangolin.md": "build/getting-started/networks/pangolin.md"
@@ -162,111 +171,24 @@ plugins:
         "evm/tutorial/smart-contract/awesome-tutorial.md": "index.md"
         "evm/ethereum-compatibility/precompiles/conviction-voting.md": "build/precompiles/conviction-voting.md"
         "evm/tutorial/chain/run-evm-tracing-node.md": "node-operators/run-evm-tracing-node.md"
-        # Notion sites
-        "msgport-interfaces-e2aa3703c34b4016b689ddf5e8ec7ed9.md": "https://docs.msgport.xyz/build/interfaces/"
-        "lcmp-overview-d205c8d8e5794c789065aabdbb5f78c8.md": "https://docs.msgport.xyz/learn/messaging-protocols/lcmp/"
-        "getting-started-with-metamask-7e62c6c12f884e868110461b956b4f40.md": "community/guide/transfer-token.md"
-        "governance-ede4ddc7baea4020b6bfb270f30dd5ea.md": "learn/governance.md"
-        "staking-guide-4306a2a3f25f4ea0b41377e267e1d319.md": "community/guide/staking.md"
-        "darwinia-2-99b0d585271c4d029474c5f123139a4a.md": "build/getting-started/networks/overview.md"
-        "darwinia-evm-df814f681ec248438cb762df8aaddbd6.md": "build/getting-started/networks/overview.md"
-        "account-migration-f7b86936f81e42c5a4aad5c02b3f3370.md": "community/guide/migration/generate-account.md"
-        "chain-guides-b2854461c1ec495ea92fcb0817f504bd.md": "node-operators/snapshot.md"
-        "ethereum-precompiles-84a597a98ce440d8872e271bc64d6c5c.md": "build/precompiles/overview.md"
-        "indexer-guides-d4ca84582e124d18859ebaffc0804fff.md": "build/indexer/subquery.md"
-        "json-rpc-list-c96e3afedb0b4fb8a902527ffdb5ce6c.md": "learn/ethereum-compatibility/jsonrpc.md"
-        "tutorials-2c4264bfbe9c4f21833ac1939ba849ff.md": "community/overview.md"
-        "builder-0f142bfb7f6b41d78548fca21531a03d.md": "build/getting-started/networks/overview.md"
-        "libraries-4a4ce70014ba43b7977aeb16ce9634ab.md": "build/getting-started/networks/overview.md"
-        "dapp-development-4b021f21c52d474aa08a8109eb55bbd1.md": "build/getting-started/networks/overview.md"
-        "msgport-guides-eb02b9d8846e445c916a71ee11a2ac1a.md":
-        "msgport/messaging-protocols/lcmp.md":
-        "msgport/workflow.md":
-        "relayer-f488174a90ce49f992dd543987d80a8c.md":
-        "usdt-guide-f4c620c069e146adb5d7c678e3b68223.md":
-        "how-to-run-relayer-client-5ecfbd8552c84810a5935ec0d299892f.md":
-        "multisig-wallet-baa3edb491744e9a896f79cd44cd1cfe.md":
-        "supported-networks-c44e644252f7484495b5a4d65ba772db.md":
-        "testnet-faucets-98a5b8e69c7e40b59973aa36af2ac647.md":
-        "how-to-become-a-collator-af6bce360d5b49ddacc56e4587510210.md":
-        "transfer-token-guide-346586c30af24607a9330c60bc22ab7f.md":
-        "xcmp-2bb8ab7e160d496c95197ce8a7a90bd4.md":
-        "run-airnode-1e7fcbc7736f44538f7e97270b41f392.md":
-        "rollup-testnet-c7d1eac29e154f269c4a1b1495173cbd.md":
-        "migrate-darwinia-1.0-accounts-f7b86936f81e42c5a4aad5c02b3f3370.md":
-        "darwinia-staking-6fecd6a66daa44bb828c760f0499ba73.md":
-        "commitment-token-precompile-41243f797bf4421dbb49db7d88dbfd60.md":
-        "governance-22e8b46c937749b6848e7a99e11fe81a.md":
-        "ecosystem-and-developer-incentive-program-3cdf9539ed464261a0c79c47813d818c.md":
-        "how-to-use-feemarket-app-51983819db53475fb4cae954d21d5a2a.md":
-        "ethereum-guides-9e08f77455924ab5ac34e5c4057c4359.md":
-        "msgport-fa89f501ea1747e285b6169697e2ff77.md":
-        "msgport/use-cases/xtoken.md":
-        "msgport/use-cases/overview.md":
-        "faq-5cab1da651f74180bc1abbf6209eefa7.md":
-        "account-system-b607d93f5b274ba9b9f36bd833e12c0b.md":
-        "a-runnable-demo-138f9b3974704363a299d5479454d5b5.md":
-        "dispatch-precompile-f2b979abc1b746fc88cc17062863757a.md":
-        "smart-contract-guides-9e08f77455924ab5ac34e5c4057c4359.md":
-        "staking-6fecd6a66daa44bb828c760f0499ba73.md":
-        "evm-tracing-fda4666e09d84c18aa6404e6de9ced3a.md":
-        "docs/en/wiki-us-tokens.md":
-        "docs/zh-CN/wiki-tut-wormhole-e2d.md":
-        "msgport/user-cases/order-xclearing.md":
-        "msgport/user-cases/xdao.md":
-        "token-and-economic-model-ebfbf88c76794215a4abe75ae13f596b.md":
-        "glossary-f7625590780e40df80c79ceed8f7f943.md":
-        "msgport-workflow-4bd120fbf7e24ecf91dd4f4d655e20c0.md":
-        "getting-started-with-metamask-7e62c6c12f884e868110461b956b4f40.md":
-        "darwinia-db787b70edd14545a252122d1c7651d1.md":
-        "interact-contract-with-ethers.js-58d0d975c42a41679fcdc88f6d366646.md":
-        "learn/stake/staking.md":
-        "msgport-layer-480c9517f74f43489c67fbc71c4c4788.md":
-        "run-development-testnet-cc490170048e4584809233d6aebb8c57.md":
-        "crab-chain-7d27b58cb42a4315b878281da0043aa6.md":
-        "darwinia-msgport-fa89f501ea1747e285b6169697e2ff77.md":
-        "polkadot-xcmp-d42e7ad9094744268b4d7738cd441e0d.md":
-        "statestorage-e25711c6a8d846fbbdb39b2292ded34a.md":
-        "governance(legacy)-22e8b46c937749b6848e7a99e11fe81a.md":
-        "msgport/user-cases/abstract-account.md":
-        "darwinia-chain-db787b70edd14545a252122d1c7651d1.md":
-        "evm/glossary.md":
-        "darwinia-evm-df814f681ec248438cb762df8aaddbd6.md":
-        "oracle-relayer-messaging-644d05b64d7b4e0d83a7d76bfcbd539b.md":
-        "staking-precompile-f301e1fda68f450d8861f3e016c45422.md":
-        "msgport/user-cases/xtoken.md":
-        "token-and-economic-model-c6c83e06a16840ce99e64c7a88b4132e.md":
-        "a-runable-demo-138f9b3974704363a299d5479454d5b5.md":
-        "en/dev-substrate.md":
-        "builder/solidity-sdk/constants.md":
-        "docs/zh-CN/crab-tut-nominator.md":
-        "subquery-24d26214bead4a86a0afcc7b6d05da23.md":
-        "simplest-messaging-demo-045164a7d4d7413ba4a5dd65214e59e6.md":
-        "pangolin-greater-sepolia-script-demo-138f9b3974704363a299d5479454d5b5.md":
-        "docs/en/wiki-tut-governance.md":
-        "1e9ac8b09e874e8abd6a7f18c096ca6a.md":
-        "docs/zh-CN/crab-tut-get-free-cring.md":
-        "darwinia-chains-df814f681ec248438cb762df8aaddbd6.md":
-        "builtin-precompiles-98c3e406495043838199aaf8c1b74601.md":
-        "df814f681ec248438cb762df8aaddbd6?pvs=25.md":
-        "cross-chain-service-56b895cbda3a44bfb1578a9936148567.md":
-        "deposit-7d1eb1d33ac442e2a13e75ba2ace5dd3.md":
-        "dispatch-f2b979abc1b746fc88cc17062863757a.md":
-        "docs/zh-CN/wiki-tut-wormhole-d2e.md":
-        "dex-8af56cd9f48c4af092987312c4773862.md":
-        "convictionvoting-6bd9c7600aa64a499a6c9e4b53fd8176.md":
-        "docs/en/wiki-tut-validator.md":
-        "docs/en/wiki-tut-wormhole-d2e.md":
-        "blog/2020/03/31/darwinia-progress-updates-2020-q1-en.md":
-        "9d65d6d810f4446abb60fa4580c94b3a.md":
-        "blog/2020/06/24/darwinia-updates-6.md":
-        "docs/en/wiki-tut-nominator.md":
-        "builder/solidity-sdk/guides/dispatch-remote-substrate-call.md":
-        "27e4861f0c2f4777a580d149b813c8b3.md":
-        "Getting-Started-0916766fba6e417ea6532dc4386eefe1.md":
-        "getting-started-with-metamask-0916766fba6e417ea6532dc4386eefe1.md":
-        "relayer/fee-market.md":
-        "blog.md":
+        "docs/en/wiki-us-tokens.md": "community/overview.md"
+        "docs/zh-CN/crab-tut-nominator.md": "index.md"
+        "docs/zh-CN/wiki-tut-wormhole-e2d.md": "index.md"
+        "docs/en/wiki-tut-governance.md": "learn/governance.md"
+        "docs/zh-CN/crab-tut-get-free-cring.md": "index.md"
+        "docs/zh-CN/wiki-tut-wormhole-d2e.md": "index.md"
+        "docs/en/wiki-tut-validator.md": "index.md"
+        "docs/en/wiki-tut-wormhole-d2e.md": "index.md"
+        "docs/en/wiki-tut-nominator.md": "index.md"
+        "en/dev-substrate.md": "index.md"
+        "blog/2020/06/24/darwinia-updates-6.md": "index.md"
+        "builder/solidity-sdk/constants.md": "index.md"
+        "blog/2020/03/31/darwinia-progress-updates-2020-q1-en.md": "index.md"
+        "relayer/fee-market.md": "index.md"
+        "blog.md": "index.md"
+        "?ref=parachains-info.md": "index.md"
+        "builder/solidity-sdk/guides/dispatch-remote-substrate-call.md": "index.md"
+        "learn/stake/staking.md": "learn/collator-staking.md"
         "learn/chains/overview.md": "build/getting-started/networks/overview.md"
         "learn/chains/darwinia.md": "build/getting-started/networks/darwinia.md"
         "learn/chains/crab.md": "build/getting-started/networks/crab.md"
@@ -303,6 +225,89 @@ plugins:
         "community/ringdao.md": "community/orgs/ringdao.md"
         "community/dcdao.md": "community/orgs/dcdao.md"
         "community/ktondao.md": "community/orgs/ktondao.md"
+        # Notion sites
+        "msgport-interfaces-e2aa3703c34b4016b689ddf5e8ec7ed9.md": "https://docs.msgport.xyz/build/interfaces/"
+        "glossary-f7625590780e40df80c79ceed8f7f943.md": "https://docs.msgport.xyz/learn/glossary/"
+        "msgport-workflow-4bd120fbf7e24ecf91dd4f4d655e20c0.md": "https://docs.msgport.xyz/build/workflow/"
+        "msgport-layer-480c9517f74f43489c67fbc71c4c4788.md": "https://docs.msgport.xyz/"
+        "darwinia-msgport-fa89f501ea1747e285b6169697e2ff77.md": "https://docs.msgport.xyz/"
+        "polkadot-xcmp-d42e7ad9094744268b4d7738cd441e0d.md": "https://docs.msgport.xyz/learn/messaging-protocols/xcmp/"
+        "oracle-relayer-messaging-644d05b64d7b4e0d83a7d76bfcbd539b.md": "https://docs.msgport.xyz/learn/messaging-protocols/ormp/"
+        "a-runable-demo-138f9b3974704363a299d5479454d5b5.md": "https://docs.msgport.xyz/build/tutorial/script-demo/"
+        "simplest-messaging-demo-045164a7d4d7413ba4a5dd65214e59e6.md": "https://docs.msgport.xyz/build/tutorial/remix-demo/"
+        "pangolin-greater-sepolia-script-demo-138f9b3974704363a299d5479454d5b5.md": "https://docs.msgport.xyz/build/tutorial/script-demo/"
+        "lcmp-overview-d205c8d8e5794c789065aabdbb5f78c8.md": "https://docs.msgport.xyz/learn/messaging-protocols/lcmp/"
+        "supported-networks-c44e644252f7484495b5a4d65ba772db.md": "https://docs.msgport.xyz/build/networks/"
+        "relayer-f488174a90ce49f992dd543987d80a8c.md": "https://docs.msgport.xyz/build/workflow/"
+        "how-to-run-relayer-client-5ecfbd8552c84810a5935ec0d299892f.md": "https://docs.msgport.xyz/"
+        "msgport-guides-eb02b9d8846e445c916a71ee11a2ac1a.md": "https://docs.msgport.xyz/build/networks/"
+        "xcmp-2bb8ab7e160d496c95197ce8a7a90bd4.md": "https://docs.msgport.xyz/learn/messaging-protocols/xcmp/"
+        "a-runnable-demo-138f9b3974704363a299d5479454d5b5.md": "https://docs.msgport.xyz/build/tutorial/script-demo/"
+        "run-airnode-1e7fcbc7736f44538f7e97270b41f392.md": "https://docs.msgport.xyz/"
+        "msgport-fa89f501ea1747e285b6169697e2ff77.md": "https://docs.msgport.xyz/"
+        "faq-5cab1da651f74180bc1abbf6209eefa7.md": "https://docs.msgport.xyz/learn/faq/"
+        "getting-started-with-metamask-7e62c6c12f884e868110461b956b4f40.md": "community/guide/transfer-token.md"
+        "governance-ede4ddc7baea4020b6bfb270f30dd5ea.md": "learn/governance.md"
+        "staking-guide-4306a2a3f25f4ea0b41377e267e1d319.md": "community/guide/staking.md"
+        "darwinia-2-99b0d585271c4d029474c5f123139a4a.md": "build/getting-started/networks/overview.md"
+        "darwinia-evm-df814f681ec248438cb762df8aaddbd6.md": "build/getting-started/networks/overview.md"
+        "account-migration-f7b86936f81e42c5a4aad5c02b3f3370.md": "community/guide/migration/generate-account.md"
+        "chain-guides-b2854461c1ec495ea92fcb0817f504bd.md": "node-operators/snapshot.md"
+        "ethereum-precompiles-84a597a98ce440d8872e271bc64d6c5c.md": "build/precompiles/overview.md"
+        "indexer-guides-d4ca84582e124d18859ebaffc0804fff.md": "build/indexer/subquery.md"
+        "json-rpc-list-c96e3afedb0b4fb8a902527ffdb5ce6c.md": "learn/ethereum-compatibility/jsonrpc.md"
+        "tutorials-2c4264bfbe9c4f21833ac1939ba849ff.md": "community/overview.md"
+        "builder-0f142bfb7f6b41d78548fca21531a03d.md": "build/getting-started/networks/overview.md"
+        "libraries-4a4ce70014ba43b7977aeb16ce9634ab.md": "build/getting-started/networks/overview.md"
+        "dapp-development-4b021f21c52d474aa08a8109eb55bbd1.md": "build/getting-started/networks/overview.md"
+        "usdt-guide-f4c620c069e146adb5d7c678e3b68223.md": "community/guide/assethub-bridge.md"
+        "multisig-wallet-baa3edb491744e9a896f79cd44cd1cfe.md": "community/guide/multisig-wallet.md"
+        "testnet-faucets-98a5b8e69c7e40b59973aa36af2ac647.md": "build/getting-started/networks/pangolin.md"
+        "how-to-become-a-collator-af6bce360d5b49ddacc56e4587510210.md": "node-operators/run-collator-node.md"
+        "transfer-token-guide-346586c30af24607a9330c60bc22ab7f.md": "community/guide/transfer-token.md"
+        "rollup-testnet-c7d1eac29e154f269c4a1b1495173cbd.md": "build/getting-started/networks/rollup.md"
+        "migrate-darwinia-1.0-accounts-f7b86936f81e42c5a4aad5c02b3f3370.md": "community/guide/migration/generate-account.md"
+        "darwinia-staking-6fecd6a66daa44bb828c760f0499ba73.md": "community/guide/staking.md"
+        "commitment-token-precompile-41243f797bf4421dbb49db7d88dbfd60.md": "build/precompiles/commitment-token.md"
+        "governance-22e8b46c937749b6848e7a99e11fe81a.md": "community/guide/governance.md"
+        "ecosystem-and-developer-incentive-program-3cdf9539ed464261a0c79c47813d818c.md": "community/overview.md"
+        "how-to-use-feemarket-app-51983819db53475fb4cae954d21d5a2a.md": "index.md"
+        "ethereum-guides-9e08f77455924ab5ac34e5c4057c4359.md": "build/ethereum-tools/interact-with-web3js.md"
+        "account-system-b607d93f5b274ba9b9f36bd833e12c0b.md": "learn/ethereum-compatibility/account-system.md"
+        "dispatch-precompile-f2b979abc1b746fc88cc17062863757a.md": "build/precompiles/dispatch.md"
+        "smart-contract-guides-9e08f77455924ab5ac34e5c4057c4359.md": "build/ethereum-tools/interact-with-web3js.md"
+        "staking-6fecd6a66daa44bb828c760f0499ba73.md": "community/guide/staking.md"
+        "evm-tracing-fda4666e09d84c18aa6404e6de9ced3a.md": "node-operators/run-evm-tracing-node.md"
+        "token-and-economic-model-ebfbf88c76794215a4abe75ae13f596b.md":
+        "darwinia-db787b70edd14545a252122d1c7651d1.md": "index.md"
+        "interact-contract-with-ethers.js-58d0d975c42a41679fcdc88f6d366646.md": "uild/ethereum-tools/interact-with-web3js.md"
+        "run-development-testnet-cc490170048e4584809233d6aebb8c57.md": "build/getting-started/networks/dev-node.md"
+        "crab-chain-7d27b58cb42a4315b878281da0043aa6.md": "build/getting-started/networks/crab.md"
+        "statestorage-e25711c6a8d846fbbdb39b2292ded34a.md": "build/precompiles/state-storage.md"
+        "governance(legacy)-22e8b46c937749b6848e7a99e11fe81a.md": "learn/governance.md"
+        "darwinia-chain-db787b70edd14545a252122d1c7651d1.md": "build/getting-started/networks/darwinia.md"
+        "staking-precompile-f301e1fda68f450d8861f3e016c45422.md": "build/precompiles/staking.md"
+        "token-and-economic-model-c6c83e06a16840ce99e64c7a88b4132e.md": "community/overview.md"
+        "subquery-24d26214bead4a86a0afcc7b6d05da23.md": "build/indexer/subquery.md"
+        "1e9ac8b09e874e8abd6a7f18c096ca6a.md": "index.md"
+        "darwinia-chains-df814f681ec248438cb762df8aaddbd6.md": "build/getting-started/networks/darwinia.md"
+        "builtin-precompiles-98c3e406495043838199aaf8c1b74601.md": "build/precompiles/ethereum.md"
+        "df814f681ec248438cb762df8aaddbd6?pvs=25.md": "index.md"
+        "cross-chain-service-56b895cbda3a44bfb1578a9936148567.md": "index.md"
+        "deposit-7d1eb1d33ac442e2a13e75ba2ace5dd3.md": "build/precompiles/deposit.md"
+        "dispatch-f2b979abc1b746fc88cc17062863757a.md": "build/precompiles/dispatch.md"
+        "dex-8af56cd9f48c4af092987312c4773862.md": "index.md"
+        "convictionvoting-6bd9c7600aa64a499a6c9e4b53fd8176.md": "build/precompiles/conviction-voting.md"
+        "9d65d6d810f4446abb60fa4580c94b3a.md": "index.md"
+        "27e4861f0c2f4777a580d149b813c8b3.md": "index.md"
+        "Getting-Started-0916766fba6e417ea6532dc4386eefe1.md": "index.md"
+        "getting-started-with-metamask-0916766fba6e417ea6532dc4386eefe1.md": "community/guide/transfer-token.md"
+        "darwinia-docs-c159713e5ba1488e867769f40344acca.md": "index.md" 
+        "darwinia-docs-d964a268cd6a4340a8e73bfa2bd5d592.md": "index.md"
+        "how-to-become-a-collator-679e363b68ab47189bde7826c8258c1d.md": "node-operators/run-collator-node.md"
+        "builder-4003de8942774fffb25726e32be3b27e.md": "build/getting-started/networks/overview.md"
+        "collator-4009acd5b05a4de091d5dd011917a137.md": "index.md"
+        "testnet-faucets-de3bb5f3480142ce8dd77d8bec7260fe.md": "build/getting-started/networks/pangolin.md"
         
 nav:
   - Home: "index.md"
