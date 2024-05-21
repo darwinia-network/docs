@@ -162,6 +162,23 @@ plugins:
         "evm/tutorial/smart-contract/awesome-tutorial.md": "index.md"
         "evm/ethereum-compatibility/precompiles/conviction-voting.md": "build/precompiles/conviction-voting.md"
         "evm/tutorial/chain/run-evm-tracing-node.md": "node-operators/run-evm-tracing-node.md"
+        # Notion sites
+        "msgport-interfaces-e2aa3703c34b4016b689ddf5e8ec7ed9.md": "https://docs.msgport.xyz/build/interfaces/"
+        "lcmp-overview-d205c8d8e5794c789065aabdbb5f78c8.md": "https://docs.msgport.xyz/learn/messaging-protocols/lcmp/"
+        "getting-started-with-metamask-7e62c6c12f884e868110461b956b4f40.md": "community/guide/transfer-token.md"
+        "governance-ede4ddc7baea4020b6bfb270f30dd5ea.md": "learn/governance.md"
+        "staking-guide-4306a2a3f25f4ea0b41377e267e1d319.md": "community/guide/staking.md"
+        "darwinia-2-99b0d585271c4d029474c5f123139a4a.md": "build/getting-started/networks/overview.md"
+        "darwinia-evm-df814f681ec248438cb762df8aaddbd6.md": "build/getting-started/networks/overview.md"
+        "account-migration-f7b86936f81e42c5a4aad5c02b3f3370.md": "community/guide/migration/generate-account.md"
+        "chain-guides-b2854461c1ec495ea92fcb0817f504bd.md": "node-operators/snapshot.md"
+        "ethereum-precompiles-84a597a98ce440d8872e271bc64d6c5c.md": "build/precompiles/overview.md"
+        "indexer-guides-d4ca84582e124d18859ebaffc0804fff.md": "build/indexer/subquery.md"
+        "json-rpc-list-c96e3afedb0b4fb8a902527ffdb5ce6c.md": "learn/ethereum-compatibility/jsonrpc.md"
+        "tutorials-2c4264bfbe9c4f21833ac1939ba849ff.md": "community/overview.md"
+        "builder-0f142bfb7f6b41d78548fca21531a03d.md": "build/getting-started/networks/overview.md"
+        "libraries-4a4ce70014ba43b7977aeb16ce9634ab.md": "build/getting-started/networks/overview.md"
+        "dapp-development-4b021f21c52d474aa08a8109eb55bbd1.md": "build/getting-started/networks/overview.md"
         "learn/chains/overview.md": "build/getting-started/networks/overview.md"
         "learn/chains/darwinia.md": "build/getting-started/networks/darwinia.md"
         "learn/chains/crab.md": "build/getting-started/networks/crab.md"
@@ -199,8 +216,6 @@ plugins:
         "community/dcdao.md": "community/orgs/dcdao.md"
         "community/ktondao.md": "community/orgs/ktondao.md"
         
-
-
 nav:
   - Home: "index.md"
   - Learn:
