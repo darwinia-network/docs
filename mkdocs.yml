@@ -312,12 +312,13 @@ plugins:
 nav:
   - Learn:
       - What is Darwinia?: "index.md"
+      - Governance: "learn/governance.md"
       - Ethereum Compatibility:
-          - Account System: "learn/ethereum-compatibility/account-system.md"
+          - Overview: "learn/ethereum-compatibility/overview.md"
           - JSON-RPC APIs: "learn/ethereum-compatibility/jsonrpc.md"
+          - Substrate Or Ethereum Account: "learn/ethereum-compatibility/account-system.md"
           - Gas: "learn/ethereum-compatibility/gas.md"
           - EVM Tracing: "learn/ethereum-compatibility/evm-tracing.md"
-      - Governance: "learn/governance.md"
       - Collator Staking: "learn/collator-staking.md"
       - FAQ: "learn/faq.md"
   - Developers:

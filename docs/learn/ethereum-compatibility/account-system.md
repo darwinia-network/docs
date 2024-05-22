@@ -1,4 +1,4 @@
-# Account System
+# Substrate Or Ethereum Account
 
 The Darwinia network aspires to be a robust smart contract platform that boasts high compatibility with Ethereum. One of the primary areas of incompatibility lies in the account system. Utilizing the Substrate framework, Darwinia's default account system and signature protocols are significantly different from Ethereum's. This discrepancy means users cannot leverage Ethereum's battle-tested tools directly, necessitating additional learning to navigate our platform effectively. Such a requirement poses a barrier to entry for both casual traders and seasoned application developers.
 

@@ -1,10 +1,8 @@
 # Governance
 
-Currently, Darwinia employs OpenGov for governance. For more details on how it functions, please consult the Polkadot official [WIKI](https://wiki.polkadot.network/docs/learn-polkadot-opengov-index).
+Currently, Darwinia employs OpenGov for governance. For more details on how it functions, please consult the Polkadot official [WIKI](https://wiki.polkadot.network/docs/learn-polkadot-opengov-index). We plans to transition from OpenGov to Tally in the future.
 
-Darwinia plans to transition from OpenGov to Tally in the future.
-
-Check out the [tutorial](../community/guide/governance.md).
+Check out the [tutorial](../community/guide/governance.md) for how to use it.
 
 ## Parameters
 
