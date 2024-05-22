@@ -20,8 +20,8 @@ theme:
     - content.code.copy
     - content.tooltips
     - navigation.footer
-    - navigation.sections
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.path
     - navigation.top
     - navigation.tracking
