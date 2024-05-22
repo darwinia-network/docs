@@ -20,7 +20,6 @@ theme:
     - content.code.copy
     - content.tooltips
     - navigation.footer
-    - navigation.indexes
     - navigation.sections
     - navigation.tabs
     - navigation.top
@@ -311,8 +310,8 @@ plugins:
         "community/ktondao.md": "community/orgs/ktondao.md"
         
 nav:
-  - Home: "index.md"
   - Learn:
+      - What is Darwinia?: "index.md"
       - Ethereum Compatibility:
           - Account System: "learn/ethereum-compatibility/account-system.md"
           - JSON-RPC APIs: "learn/ethereum-compatibility/jsonrpc.md"
