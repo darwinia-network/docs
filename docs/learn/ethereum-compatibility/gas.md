@@ -6,7 +6,7 @@ One concern for smart contract developers is the gas mechanism. If there is a la
 
 As explained above, Darwinia's EVM highly relies on opcode compatibility with the official Ethereum implementation. However, the unique underlying blockchain framework complicates matters. One key concept in the Polkadot relay chain and parachain architecture is "proof size". For parachains, there's a proof size limit of 5M; if exceeded, the relay chain will reject the inclusion of the parachain block, causing the parachain to hang. Considering this limitation, Darwinia's EVM gas calculation incorporates two components: opcode gas, identical to Ethereum's, and proof size cost. The final gas calculation is the greater of these two values. If discrepancies in gas usage are observed during contract interactions compared to Ethereum, this may be the underlying cause. We are actively seeking additional methods to resolve this problem.
 
-## BlockGasLimit Limitation
+## `BlockGasLimit` Limitation
 
 In Ethereum, the number of pending transactions that can be included in the next block depends on the amount of gas each transaction consumes. When miners create new blocks, the total gas limit of all transactions in the block must be less than the block's gas limit. Since the London hard fork, each block has a target size of 15 million gas units, but the actual size of a block can vary depending on network demand. The maximum size of a block, known as the block gas limit, is set to **30 million** gas units.
 
