@@ -4,4 +4,20 @@
 
 [data-md-color-scheme="slate"] {
     --md-primary-fg-color: rgb(189, 45, 120);
+    .md-typeset h1 {
+        color:  rgb(189, 45, 120);
+    }
+    .md-typeset h2, h3, h4 {
+        color:  rgb(245, 157, 33); 
+    }
+}
+
+.md-header__title > .md-header__ellipsis > .md-header__topic > .md-ellipsis {
+    font-family: Montserrat Thin;
+    font-size: 18;
+    font-weight: 400;
+}
+
+.md-nav__link--active > span {
+    font-weight: bold;
 }

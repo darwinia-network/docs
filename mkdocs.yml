@@ -1,8 +1,7 @@
-site_name: Darwinia Docs
+site_name: Darwinia Network Documentation
 site_url: https://docs.darwinia.network/
 site_description: "This is the official documentation for the Darwinia Network. It covers the design, usage and integration guide for Darwinia networks."
 copyright: Copyright &copy; Darwinia Network
-repo_url: https://github.com/darwinia-network/docs
 repo_name: darwinia-network/docs
 edit_uri: https://github.com/darwinia-network/docs/edit/main/docs
 theme:
@@ -81,7 +80,7 @@ extra:
           data: 0
           note: >- 
             Thanks for your feedback! Help us improve this page by
-            using our <a href="https://github.com/msgport/docs/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
+            using our <a href="https://github.com/darwinia-network/docs/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
   consent:
     title: Cookie consent
     description: >- 
