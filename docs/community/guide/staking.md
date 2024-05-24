@@ -2,7 +2,7 @@
 
 This tutorial will guide you through the process of staking tokens (RING & KTON & Deposit) on Darwinia using the staking Dapp built by the Darwinia Dev Team. The staking Dapp is compatible with the Crab network. Be sure to select Crab network if you want to stake Crab tokens (CRAB & CKTON & Deposit), this tutorial also works; just switch to the appropriate network.
 
-## Get started with the dashboard
+## Get Started With The Dashboard
 
 To get started with the dashboard, navigate to [staking.darwinia.network](https://staking.darwinia.network/#/?network=Darwinia). You’ll be prompted to connect to [MetaMask](https://metamask.io/).
 
@@ -10,7 +10,7 @@ MetaMask will pop up and ask you to sign in. Once signed in, you will be prompte
 
 Upon accepting permissions and changing the network to `Darwinia`, you will be redirected to the main dashboard where you’ll find details about the staking data.
 
-## How to stake
+## How to Stake
 
 Token holders can delegate a collator candidate by staking tokens and adding to the collator's stake. In return, the collator will share the rewards received from producing blocks amongst all of their delegators. For more information on reward distribution, check out our documentation on [staking reward distribution](https://medium.com/darwinianetwork/faqs-for-darwinia-2-0-staking-mechanism-adjustments-f330b549f168).
 
@@ -52,9 +52,9 @@ If you check your MetaMask account, you will see that your balance has decreased
 
 ![evm-tutorial-staking-6](../../images/evm-tutorial-staking-6.png)
 
-## How to make changes to delegation
+## Make Changes To The Delegation
 
-### How to bond more funds
+### How to Bond More Funds
 
 1. Click the `+` icon next to the token you want to modify.
 2. Specify the amount you would like to increase your delegation by. In this case, we are increasing our bond by 5`RING`.
@@ -63,7 +63,7 @@ If you check your MetaMask account, you will see that your balance has decreased
 ![evm-tutorial-staking-7](../../images/evm-tutorial-staking-7.png)
 ![evm-tutorial-staking-8](../../images/evm-tutorial-staking-8.png)
 
-### How to reduce funds
+### How to Reduce Funds
 
 1. Click on the `–` icon next to the token you want to modify.
 2. Enter the amount you would like to reduce your bond by.  In this case, we are reducing our bond by 0.0001`KTON`.
@@ -80,7 +80,7 @@ Once the transaction has been confirmed and you receive the Transaction confirme
 
 Once the 14 days unbonding period has passed, you can return to this staking dashboard and release the unbonded tokens, after which you will see the unbonded funds in your free balance on MetaMask.
 
-### How to undelegate
+### How to Undelegate
 
 Undelegating usually involves two steps: undelegating of the collator and unbonding the tokens that were previously bonded in the stake.
 To undelegate, click the `Undelegate` button. This action will take effect immediately. Then, press the `Unbond all` button to unbond the tokens. This will initiate the 14-day unbonding period. After the period is over, you will need to manually release the tokens before they can be transferred.

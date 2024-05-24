@@ -168,7 +168,7 @@ It's important to note that there is a faster method to expedite the syncing pro
     ![evm-tutorial-collator-node-5](../images/evm-tutorial-collator-node-5.png)
     
 
-## To be a real collator
+## To Be A Real Collator
 
 1. Accumulate power by staking or depositing
     

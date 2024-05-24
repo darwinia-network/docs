@@ -4,11 +4,11 @@ Crab serves as Darwinia's canary network with genuine economic significance, aki
 
 Crab is now a [parachain of Kusama](https://kusama.subscan.io/parachain/2105).
 
-## Connect Wallet
+## Connect Wallet Automatically
 
-[Connect automatically](https://chainlist.org/chain/44){ .md-button .md-button--primary }
+[Connect](https://chainlist.org/chain/44){ .md-button .md-button--primary }
 
-## Network Info
+## Network Information
 
 - Network Name: **Crab2**
 - ChainId: **`44`**

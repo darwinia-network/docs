@@ -7,7 +7,7 @@
 
 This tutorial will walk you through the steps of migrating your accounts from `Darwinia 1.0` to the current Darwinia using the [Account Migration Dapp](https://migration.darwinia.network/#/?network=Darwinia). It's important to note that this tutorial is also applicable for the Crab chain.
 
-## Get started with the dashboard
+## Get Started With The Dashboard
 
 To get started with the dashboard, navigate to [migration.darwinia.network](https://migration.darwinia.network/#/?network=Darwinia). You’ll be prompted to connect to [polkadot{.js} extension](https://polkadot.js.org/extension/), [Talisman wallet](https://www.talisman.xyz/), [Subwallet](https://subwallet.app/), or [NovaWallet](https://novawallet.io/).
 
@@ -17,7 +17,7 @@ Upon accepting the permission, you will be directed to the main dashboard where 
 
 ![evm-tutorial-migrate-general-2](../../../images/evm-tutorial-migrate-general-2.png)
 
-## How to migrate
+## How to Migrate
 
 For the purpose of account migration operations, we will use the following account as an example: `2ryX5gyPDyctCfgqGdUknkfBDftpcpSnTP9gtgJGaqdpLiCB`
 
@@ -46,7 +46,7 @@ Once the transaction has been confirmed and you receive the transaction confirme
 
 That’s it! Now you’ve successfully migrated the account. Please don’t forget to check your account after the migration is complete. 
 
-## Check your account after the migration
+## Check Your Account After The Migration
 
 ### Transferrable
 

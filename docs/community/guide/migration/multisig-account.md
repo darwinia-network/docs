@@ -6,7 +6,7 @@
 
 This tutorial will walk you through the steps of migrating your accounts from `Darwinia 1.0` to the current Darwinia using the [Multisig Account Migration Dapp](https://migration.darwinia.network/#/multisig-home?network=Darwinia). It's important to note that this tutorial is also applicable for the Crab chain.
 
-## Get started with the dashboard
+## Get Started With The Dashboard
 
 To get started with the dashboard, navigate to [migration.darwinia.network.](https://migration.darwinia.network/#/multisig-home?network=Darwinia) You’ll be prompted to connect to [polkadot{.js} extension](https://polkadot.js.org/extension/), [Talisman wallet](https://www.talisman.xyz/), [Subwallet](https://subwallet.app/), or [NovaWallet](https://novawallet.io/).
 
@@ -17,7 +17,7 @@ After granting the necessary permissions, you will be redirected to the main das
 ![evm-tutorial-migrate-multisig-2](../../../images/evm-tutorial-migrate-multisig-2.png)
 ![evm-tutorial-migrate-multisig-3](../../../images/evm-tutorial-migrate-multisig-3.png)
 
-## How to migrate
+## How to Migrate
 
 !!! note
     Please note that you can use [Gnosis Safe Multisig - IPFS](https://ipfs.io/ipfs/QmfRD4GuqZobNi2NT2C77a3UTQ452ffwstr4fjEJixUgjf/#/wallets) to restore the current Darwinia multisig account that you previously created and perform multisig operations on the current Darwinia.
