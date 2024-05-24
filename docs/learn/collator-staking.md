@@ -5,6 +5,6 @@
 
 Collator staking involves participants locking up their RING tokens to support the network’s operations and security through a nomination mechanism. In this system, users can participate either as nominators or collators to help the chain's liveness, earning rewards in return. To get started with the DApp, visit [Collator Staking App](https://collator-staking.darwinia.network/).
 
-## Development
+## Interact with Staking
 
 If you want to learn how to interact with these Collator Staking module, please visit the [Staking Precompile Page](../build/precompiles/staking.md), be aware that this contract may be deprecated in future versions.

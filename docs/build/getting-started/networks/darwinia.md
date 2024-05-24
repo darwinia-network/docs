@@ -6,11 +6,11 @@ It is designed to provide secure and scalable interoperability between different
 
 Darwinia is now a [parachain of Polkadot](https://polkadot.subscan.io/parachain/2046).
 
-## Connect Wallet
+## Connect Wallet Automatically
 
-[Connect automatically](https://chainlist.org/chain/46){ .md-button .md-button--primary }
+[Connect](https://chainlist.org/chain/46){ .md-button .md-button--primary }
 
-## Network Info
+## Network Information
 
 - Network Name: **Darwinia2**
 - ChainId: **46**

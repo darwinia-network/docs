@@ -9,7 +9,7 @@ As you may be aware, Darwinia chains are EVM compatible, which means that the RP
 - **RAM:** 8 GB:
 - **Storage(SSD)**: 800 GB
 
-### Prepare the tracing binary and overridden wasms
+### Prepare Tracing Binary And Overridden Wasms
 
 1. Create a work dirctory
     
@@ -45,7 +45,7 @@ As you may be aware, Darwinia chains are EVM compatible, which means that the RP
     The `wasm-runtime-overrides` repository has four branches, each corresponding to one of the four Darwinia chains. You will need to switch to the branch that corresponds to your desired network and copy the `wasm` directory to your temporary workaround location. In this tutorial, we will use the `pangolin` branch.
     
 
-### Start the evm tracing node
+### Start The EVM Tracing Node
 
 1. Start the node by running the following command:
     

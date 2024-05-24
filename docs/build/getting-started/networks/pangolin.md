@@ -2,9 +2,9 @@
 
 The Pangolin acts as the primary test network for Darwinia, officially maintained to ensure that new and innovative features are thoroughly tested before they are deployed to the main production network.
 
-## Connect Wallet
+## Connect Wallet Automatically
 
-[Connect automatically](https://chainlist.org/chain/43){ .md-button .md-button--primary }
+[Connect](https://chainlist.org/chain/43){ .md-button .md-button--primary }
 
 ## Faucet
 
@@ -13,7 +13,7 @@ The Pangolin acts as the primary test network for Darwinia, officially maintaine
 
 To obtain the test token, go to the [faucet-testnet](https://discord.com/channels/456092011347443723/1115885903605411850) channel on Discord and send `/faucet pangolin address` to get test tokens.
 
-## Network Info
+## Network Information
 
 - Network Name: **Pangolin2**
 - Token Info:

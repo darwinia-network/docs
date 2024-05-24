@@ -4,7 +4,7 @@ Currently, Darwinia employs OpenGov for governance. For more details on how it f
 
 Check out the [tutorial](../community/guide/governance.md) for how to use it.
 
-## Parameters
+## Key Parameters
 
 |     Origin/Track     |                      Usage                      | Prepare  Period | Decision Period | Confirm Period | Min Enactment Period |
 | :------------------: | :---------------------------------------------: | :-------------: | :-------------: | :------------: | :------------------: |
