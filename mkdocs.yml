@@ -374,6 +374,7 @@ nav:
             - Overview: "build/precompiles/overview.md"
             - Asset:
               - KTON: "build/precompiles/commitment-token.md"
+              - PINK: "build/precompiles/pink.md"
               - USDT: "build/precompiles/usdt.md"
             - Staking:
               - Staking: "build/precompiles/staking.md"

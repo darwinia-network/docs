@@ -4,11 +4,6 @@ Tether (USDT) is a widely used stablecoin in the crypto world. It has been [inte
 
 In order to improve the compatibility of USDT with Ethereum-based tools and workflows, a dedicated precompile has been developed. This precompile acts as a bridge, simplifying the interaction between Ethereum users and USDT. By leveraging this precompile, Ethereum users can seamlessly interact with USDT using their familiar Ethereum tools, such as MetaMask.
 
-!!! Warning
-    As of 2023-11-21, the USDT functionality is only enabled for testing purposes in the Pangolin Testnet. We have plans to enable this in the Darwinia in the future.
-
-</aside>
-
 ## Contract Info
 
 - The default contract address:  0x0000000000000000000000000000000000000403
