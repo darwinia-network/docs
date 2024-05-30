@@ -4,6 +4,12 @@ Tether (USDT) is a widely used stablecoin in the crypto world. It has been [inte
 
 In order to improve the compatibility of USDT with Ethereum-based tools and workflows, a dedicated precompile has been developed. This precompile acts as a bridge, simplifying the interaction between Ethereum users and USDT. By leveraging this precompile, Ethereum users can seamlessly interact with USDT using their familiar Ethereum tools, such as MetaMask.
 
+## Add to MetaMask
+
+View details about the [USDT Token on Subscan](https://darwinia.subscan.io/erc20_token/0x0000000000000000000000000000000000000403) and add it to MetaMask by clicking its icon.
+
+![precompiles-usdt](../../images/precompiles-usdt.png)
+
 ## Contract Info
 
 - The default contract address:  0x0000000000000000000000000000000000000403

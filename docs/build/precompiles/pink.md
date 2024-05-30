@@ -4,6 +4,12 @@ We recently introduced [PINK Memecoin](https://coinmarketcap.com/community/artic
 
 For users who want to interact with PINK, we provide a dedicated precompile for this purpose. You can use it in the same way you would use an ERC-20 token.
 
+## Add to MetaMask
+
+View details about the [PINK Token on Subscan](https://darwinia.subscan.io/erc20_token/0x0000000000000000000000000000000000000404) and add it to MetaMask by clicking its icon.
+
+![precompiles-pink](../../images/precompiles-pink.png)
+
 ## Contract Info
 
 - The default contract address:  0x0000000000000000000000000000000000000404

@@ -4,6 +4,12 @@ Before delving into the understanding of this precompile, it's essential to have
 
 Similar to the staking and deposit precompiles, the commitment token also requires a dedicated precompile to enhance its usability for users of Ethereum tools. This precompile acts as a bridge, simplifying the interaction between Ethereum users and the commitment token. By leveraging this precompile, Ethereum users can seamlessly interact with the commitment token using their familiar Ethereum workflows and tools, such as MetaMask.
 
+## Add to MetaMask
+
+View details about the [Commitment Token on Subscan](https://darwinia.subscan.io/erc20_token/0x0000000000000000000000000000000000000402) and add it to MetaMask by clicking its icon.
+
+![precompiles-kton](../../images/precompiles-kton.png)
+
 ## Contract Info
 
 - The default contract address:  0x0000000000000000000000000000000000000402
