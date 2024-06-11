@@ -6,7 +6,6 @@ Welcome to Darwinia, a community-run blockchain network designed to enhance the 
 
 The roadmap for the ecosystem is outlined at [Darwinia Roadmap](https://itering.notion.site/9617e154ec884b07a7cee9a056374e42?v=0c3e4d9f257646c486a32a0425ee3a93). It provides a clear vision for the future of the Darwinia ecosystem and should be consulted by developers looking to join and contribute to this exciting project.
 
-
 ## Community Organizations
 
 Darwinia is supported by dedicated organizations, each playing a critical role in governance, development, and the enhancement of our network:
@@ -25,7 +24,7 @@ We wholeheartedly believe in the power of collaboration and warmly invite additi
 
 | Project | Purpose |
 | --- | --- |
-| [The Immunefi Bounty Program](https://immunefi.com/bounty/darwinia/) | It offers rewards for finding potential flaws in our products. |
+| [The Immunefi Bounty Program](https://immunefi.com/bug-bounty/ringdao/)| It offers rewards for finding potential flaws in our products. |
 | [RFP (Request For Proposals)](https://github.com/darwinia-network/collaboration/issues) | Provides a selection of potential projects or tasks for members of the ecosystem. |
 | [Grant Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md) | To fund the development of projects and applications that contribute to the Darwinia ecosystem and promote overall network growth, we encourage passionate teams to build innovative cross-chain projects on Darwinia Chain. |
 | [Treasury Proposal](https://github.com/darwinia-network/collaboration/blob/master/treasury/README.md) | Your proposal should address a problem, outline a goal, give a detailed account of how you will reach that goal, and include any ongoing maintenance needs. As much as possible, you should itemize the tasks to be completed so fees can be evaluated and milestones can be followed. |
