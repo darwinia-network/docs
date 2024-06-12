@@ -36,16 +36,16 @@ In this tutorial, we will explore the usage of Ethers.js by deploying a contract
 mkdir example-with-ethersjs && cd example-with-ethersjs && npm init --y
 ```
 
-Install the Web3.js by runing the following command:
+Install the ethers by running the following command:
 
 ```bash
-npm install ethers@5.7.2
+npm install ethers@6.13.0
 ```
 
 ## Contract Interaction
 
 !!! note
-    The network provider used in this tutorial is the Pangolin Testnet. However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
+    The network provider used in this tutorial is the [Koi testnet](../getting-started/networks/koi.md). However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
 
 ### Prepare Contract
 
@@ -96,7 +96,7 @@ solc storage.sol --combined-json abi,bin,hashes --pretty-json > metadata.json
 
 The output of `cat metadata.json`:
 
-```json
+```json title="metadata.json"
 {
   "contracts": {
     "storage.sol:Storage": {
@@ -144,14 +144,14 @@ The output of `cat metadata.json`:
 Create a deploy script by running this command:
 
 ```bash
-node deploy.js
+touch deploy.js
 ```
 
 And paste the following content into it:
 
 ```jsx linenums="1" title="deploy.js"
-const ethers = require("ethers");
-const contractMetadata = require("../example-with-ethersjs/metadata.json");
+const { ethers, JsonRpcProvider } = require("ethers");
+const contractMetadata = require("./metadata.json");
 
 // The test account
 const accountFrom = {
@@ -159,7 +159,7 @@ const accountFrom = {
     privateKey: "0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc",
 }
 
-const provider = new ethers.providers.JsonRpcProvider('https://pangolin-rpc.darwinia.network');
+const provider = new JsonRpcProvider('https://koi-rpc.darwinia.network');
 const wallet = new ethers.Wallet(accountFrom.privateKey, provider);
 const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 const bin = contractMetadata.contracts["storage.sol:Storage"].bin;
@@ -169,9 +169,10 @@ const deploy = async () => {
 
     // Construct the contract instance
     const contract = new ethers.ContractFactory(abi, bin, wallet);
-    
+
     let storage = await contract.deploy();
-    console.log(`Contract deployed at address: ${storage.address}`);
+    let address = await storage.getAddress();
+    console.log(`Contract deployed at address: ${address}`);
 };
 
 deploy();
@@ -187,7 +188,7 @@ The output like this:
 
 ```bash
 Attempting to deploy from account 0x6Bc9543094D17f52CF6b419FB692797E48d275d0
-Contract deployed at address: 0xE175242B7509e32a18973Ab622Ea3349a6C47429
+Contract deployed at address: 0x24e263941c13bD12EEaAdba64531385e83103908
 ```
 
 `0xE175242B7509e32a18973Ab622Ea3349a6C47429` is the address of the deployed storage contract, as a unique identifier for that contract. It will be used later to store and retrieve the number.
@@ -200,35 +201,39 @@ Create a store script by running this command:
 touch store.js
 ```
 
-Please paste the following content into the `store.js` file, *ensuring that you have updated the **`contractAddress`** in the script with the address of the contract you deployed.*
+Please paste the following content into the `store.js` file.
+
+!!! tip
+    Ensure that the `const contractAddress = '0x24e263941c13bD12EEaAdba64531385e83103908` in the script updated to your deployed contract.
 
 ```jsx linenums="1" title="store.js"
-const ethers = require("ethers");
-const contractMetadata = require("../example-with-ethersjs/metadata.json");
+const { ethers, JsonRpcProvider } = require("ethers");
+const contractMetadata = require("./metadata.json");
+
+// The contract address deployed in last step
+const contractAddress = "0x24e263941c13bD12EEaAdba64531385e83103908";
 
 // The test account
 const accountFrom = {
-    address: "0x6Bc9543094D17f52CF6b419FB692797E48d275d0",
-    privateKey: "0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc",
-}
-
-const provider = new ethers.providers.JsonRpcProvider('https://pangolin-rpc.darwinia.network');
+  address: "0x6Bc9543094D17f52CF6b419FB692797E48d275d0",
+  privateKey:
+    "0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc",
+};
+const provider = new JsonRpcProvider("https://koi-rpc.darwinia.network");
 const wallet = new ethers.Wallet(accountFrom.privateKey, provider);
 const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 
-// The contract address deployed in last step
-const contractAddress = '0xE175242B7509e32a18973Ab622Ea3349a6C47429';
 const store = async () => {
-    // Construct the contract instance=
+    // Construct the contract instance
     let storageContract = new ethers.Contract(contractAddress, abi, wallet);
 
     // Call store to update the number to 3
-    let transaction = await storageContract.store(3);
-    let receipt = await transaction.wait();
-    console.log(`Tx successful with hash: ${receipt.transactionHash}`);
+    let transactionResponse = await storageContract.store(3);
+    console.log(`Tx successful with hash: ${transactionResponse.hash}`);
+    await transactionResponse.wait();
 };
 
-store();
+store().catch(console.error);
 ```
 
 Run the script by the command:
@@ -251,17 +256,20 @@ Create a retrieve script by running this command:
 touch retrieve.js
 ```
 
-Please paste the following content into the `retrieve.js` file, *ensuring that you have updated the **`contractAddress`** in the script with the address of the contract you deployed.*
+Please paste the following content into the `retrieve.js` file.
+
+!!! tip
+    Ensure that the `const contractAddress = '0x24e263941c13bD12EEaAdba64531385e83103908` in the script updated to your deployed contract.
 
 ```jsx linenums="1" title="retrieve.js"
-const ethers = require("ethers");
-const contractMetadata = require("../example-with-ethersjs/metadata.json");
-
-const provider = new ethers.providers.JsonRpcProvider('https://pangolin-rpc.darwinia.network');
-const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
+const { ethers, JsonRpcProvider } = require("ethers");
+const contractMetadata = require("./metadata.json");
 
 // The contract address deployed in last step
-const contractAddress = '0xE175242B7509e32a18973Ab622Ea3349a6C47429';
+const contractAddress = '0x24e263941c13bD12EEaAdba64531385e83103908';
+
+const provider = new JsonRpcProvider('https://koi-rpc.darwinia.network');
+const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 const retrieve = async () => {
     // Construct the contract instance
     let storageContract = new ethers.Contract(contractAddress, abi, provider);
