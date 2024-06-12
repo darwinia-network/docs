@@ -1,8 +1,5 @@
 # Overview
 
-!!! note
-    Familiarity with Linux/Javascript is essential.
-
 [Web3.js](https://web3js.org/) is a comprehensive library that enables developers to communicate with Ethereum nodes using various protocols such as HTTP or WebSocket in JavaScript. Darwinia offers an [Ethereum-Compatible API](../../learn/ethereum-compatibility/jsonrpc.md) that supports JSON RPC calls similar to Ethereum. As a result, developers can utilize the Web3.js library to interact with a Darwinia node in the same way they would interact with an Ethereum node. This compatibility simplifies the process of building applications that interact with Darwinia using familiar Ethereum tools and libraries.
 
 ## Prerequisites
@@ -39,7 +36,7 @@ mkdir example-with-web3js && cd example-with-web3js && npm init --y
 Install the Web3.js by runing the following command:
 
 ```bash
-npm install web3
+npm install web3@4.9.0"
 ```
 
 ## Contract Interaction

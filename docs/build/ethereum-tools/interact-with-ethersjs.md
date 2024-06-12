@@ -1,8 +1,5 @@
 # Overview
 
-!!! note
-    Familiarity with Linux/Javascript is essential.
-
 Similar to Web3.js, the [Ethers.js](https://docs.ethers.org/v5/) library offers a comprehensive suite of tools for interacting with Ethereum nodes using JavaScript. In addition, Darwinia provides an Ethereum-compatible API that supports JSON RPC invocations, making it fully compatible with the Ethers.js library. This compatibility enables developers to utilize the Ethers.js library to interact with a Darwinia node in a manner similar to interacting with an Ethereum node. This allows developers to leverage their existing knowledge and tools to build applications on the Darwinia network seamlessly.
 
 ## Prerequisites

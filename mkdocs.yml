@@ -376,8 +376,8 @@ nav:
           - Wallets: "build/getting-started/wallets.md"
       - Development Tools:
           - Ethereum Tools:
-            - Interacting with Web3.js: "build/ethereum-tools/interact-with-web3js.md"
-            - Interacting with Ethers.js: "build/ethereum-tools/interact-with-ethersjs.md"
+            - Using Web3.js: "build/ethereum-tools/interact-with-web3js.md"
+            - Using Ethers.js: "build/ethereum-tools/interact-with-ethersjs.md"
             - Using Hardhat: "build/ethereum-tools/interact-with-hardhat.md"
             - Using Foundry: "build/ethereum-tools/interact-with-foundry.md"
             - Verifying Smart Contracts: "build/ethereum-tools/verify-contract.md"

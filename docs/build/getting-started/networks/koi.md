@@ -24,7 +24,7 @@ To obtain the test token, go to the [faucet-testnet](https://discord.com/channel
     - Decimal: **`18`**
 - ChainId: **`701`**
 - Block Explorers:
-    - [**Subscan**](https://pangolin.subscan.io)
+    - [**Subscan**](https://koi-scan.darwinia.network/)
 - HTTPS RPC Endpoints:
     - **`https://koi-rpc.darwinia.network`**
 - Websocket RPC Endpoints:
