@@ -1,8 +1,5 @@
 # Overview
 
-!!! note
-    Familiarity with Linux/Javascript is essential.
-
 [Web3.js](https://web3js.org/) is a comprehensive library that enables developers to communicate with Ethereum nodes using various protocols such as HTTP or WebSocket in JavaScript. Darwinia offers an [Ethereum-Compatible API](../../learn/ethereum-compatibility/jsonrpc.md) that supports JSON RPC calls similar to Ethereum. As a result, developers can utilize the Web3.js library to interact with a Darwinia node in the same way they would interact with an Ethereum node. This compatibility simplifies the process of building applications that interact with Darwinia using familiar Ethereum tools and libraries.
 
 ## Prerequisites
@@ -39,14 +36,14 @@ mkdir example-with-web3js && cd example-with-web3js && npm init --y
 Install the Web3.js by runing the following command:
 
 ```bash
-npm install web3@1.10.2
+npm install web3@4.9.0"
 ```
 
 ## Contract Interaction
 
 
 !!! note
-    The network provider used in this tutorial is the Pangolin Testnet. However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
+    The network provider used in this tutorial is the [Koi testnet](../getting-started/networks/koi.md). However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
 
 ### Prepare Contract
 
@@ -97,7 +94,7 @@ solc storage.sol --combined-json abi,bin,hashes --pretty-json > metadata.json
 
 The output of `cat metadata.json`:
 
-```json
+```json title="metadata.json"
 {
   "contracts": {
     "storage.sol:Storage": {
@@ -145,13 +142,13 @@ The output of `cat metadata.json`:
 Create a deploy script by running this command:
 
 ```bash
-node deploy.js
+touch deploy.js
 ```
 
 And paste the following content into it:
 
 ```jsx linenums="1" title="deploy.js"
-const  Web3 = require("web3");
+const { Web3 } = require("web3");
 const contractMetadata = require("./metadata.json");
 
 // The test account
@@ -160,7 +157,7 @@ const accountFrom = {
     privateKey: "0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc",
 }
 
-const web3 = new Web3('https://pangolin-rpc.darwinia.network');
+const web3 = new Web3('https://koi-rpc.darwinia.network');
 const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 const bin = contractMetadata.contracts["storage.sol:Storage"].bin;
 
@@ -207,7 +204,7 @@ Attempting to deploy from account 0x6Bc9543094D17f52CF6b419FB692797E48d275d0
 Contract deployed at address: 0x677163264bcb88A6f8F71E2B7D88F51d54325AB1
 ```
 
-`0x677163264bcb88A6f8F71E2B7D88F51d54325AB1` is the address of the deployed storage contract, as a unique identifier for that contract. It will be used later to store and retrieve the number.
+`0x677163264bcb88A6f8F71E2B7D88F51d54325AB1` is the address of the deployed storage contract, as a unique identifier for that contract. **It will be used later to store and retrieve the number**.
 
 ### Store Number
 
@@ -217,23 +214,27 @@ Create a store script by running this command:
 touch store.js
 ```
 
-Please paste the following content into the `store.js` file, *ensuring that you have updated the **`contractAddress`** in the script with the address of the contract you deployed.*
+Please paste the following content into the `store.js` file.
+
+!!! tip
+    Ensure that the `const contractAddress = '0x677163264bcb88A6f8F71E2B7D88F51d54325AB1'` in the script updated to your deployed contract.
 
 ```jsx linenums="1" title="store.js"
-const  Web3 = require("web3");
+
+const { Web3 } = require("web3");
 const contractMetadata = require("./metadata.json");
+
+// The contract address deployed in last step
+const contractAddress = '0x677163264bcb88A6f8F71E2B7D88F51d54325AB1';
 
 // The test account
 const accountFrom = {
     address: "0x6Bc9543094D17f52CF6b419FB692797E48d275d0",
     privateKey: "0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc",
 }
-
-const web3 = new Web3('https://pangolin-rpc.darwinia.network');
+const web3 = new Web3('https://koi-rpc.darwinia.network');
 const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 
-// The contract address deployed in last step
-const contractAddress = '0x677163264bcb88A6f8F71E2B7D88F51d54325AB1';
 const store = async () => {
     web3.eth.accounts.wallet.add(accountFrom.privateKey);
 
@@ -241,7 +242,7 @@ const store = async () => {
     let storageContract = new web3.eth.Contract(abi, contractAddress);
     storageContract.options.from = accountFrom.address;
     storageContract.options.gas = 4_000_000;
-    
+
     // Call store to update the number to 3
     let receipt = await storageContract.methods.store(3).send();
     console.log(`Tx successful with hash: ${receipt.transactionHash}`);
@@ -270,17 +271,21 @@ Create a retrieve script by running this command:
 touch retrieve.js
 ```
 
-Please paste the following content into the `retrieve.js` file, *ensuring that you have updated the **`contractAddress`** in the script with the address of the contract you deployed.*
+Please paste the following content into the `retrieve.js` file.
+
+!!! tip
+    Ensure that the `const contractAddress = '0x677163264bcb88A6f8F71E2B7D88F51d54325AB1'` in the script updated to your deployed contract.
 
 ```jsx linenums="1" title="retrieve.js"
-const  Web3 = require("web3");
+const { Web3 } = require("web3");
 const contractMetadata = require("./metadata.json");
-
-const web3 = new Web3('https://pangolin-rpc.darwinia.network');
-const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 
 // The contract address deployed in last step
 const contractAddress = '0x677163264bcb88A6f8F71E2B7D88F51d54325AB1';
+
+const web3 = new Web3('https://koi-rpc.darwinia.network');
+const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
+
 const retrieve = async () => {
     // Construct the contract instance
     let storageContract = new web3.eth.Contract(abi, contractAddress);

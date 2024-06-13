@@ -7,7 +7,7 @@ Darwinia strives to achieve compatibility with Ethereum, which includes being RP
 
 ## Precompiles In Darwinia Networks
 
-In the comprehensive Darwinia Ecosystem, each network serves a distinct purpose, resulting in the installation of different precompiles on each network. It is possible that a particular network requires a unique precompile to execute specific actions, while it is unnecessary and would introduce unnecessary overhead in other networks. To address this, it is crucial to provide a precompile list for each network. If you are unfamiliar with the relationship between these networks, please refer to [this answer](../../learn/faq.md#what-distinguishes-the-darwinia-crab-and-pangolin-networks-from-each-other) for more information.
+In the comprehensive Darwinia Ecosystem, each network serves a distinct purpose, resulting in the installation of different precompiles on each network. It is possible that a particular network requires a unique precompile to execute specific actions, while it is unnecessary and would introduce unnecessary overhead in other networks. To address this, it is crucial to provide a precompile list for each network. If you are unfamiliar with the relationship between these networks, please refer to [this answer](../../learn/faq.md#what-distinguishes-the-darwinia-crab-and-koi-networks-from-each-other) for more information.
 
 ### Darwinia Network
 
@@ -21,7 +21,6 @@ In the comprehensive Darwinia Ecosystem, each network serves a distinct purpose,
 | `0x0000000000000000000000000000000000000404` | [PINK](../precompiles/pink.md) |
 | `0x0000000000000000000000000000000000000600` | [Deposit](../precompiles/deposit.md) |
 | `0x0000000000000000000000000000000000000601` | [Staking](../precompiles/staking.md) |
-| `0x0000000000000000000000000000000000000800` | BLS12-381 |
 
 ### Crab Network
 
@@ -34,9 +33,8 @@ In the comprehensive Darwinia Ecosystem, each network serves a distinct purpose,
 | `0x0000000000000000000000000000000000000600` | [Deposit](../precompiles/deposit.md) |
 | `0x0000000000000000000000000000000000000601` | [Staking](../precompiles/staking.md) |
 | `0x0000000000000000000000000000000000000602` | [Conviction Voting](../precompiles/conviction-voting.md) |
-| `0x0000000000000000000000000000000000000800` | BLS12-381 |
 
-### Pangolin Testnet
+### Koi Testnet
 
 | Precompile Address | Name |
 | --- | --- |
@@ -48,4 +46,3 @@ In the comprehensive Darwinia Ecosystem, each network serves a distinct purpose,
 | `0x0000000000000000000000000000000000000600` | [Deposit](../precompiles/deposit.md) |
 | `0x0000000000000000000000000000000000000601` | [Staking](../precompiles/staking.md) |
 | `0x0000000000000000000000000000000000000602` | [Conviction Voting](../precompiles/conviction-voting.md) |
-| `0x0000000000000000000000000000000000000800` | BLS12-381 |

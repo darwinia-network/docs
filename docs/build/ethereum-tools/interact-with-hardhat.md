@@ -1,8 +1,5 @@
 # Overview
 
-!!! note
-    Familiarity with Linux/Javascript is essential.
-
 [Hardhat](https://hardhat.org/) is a powerful Ethereum development environment designed to assist developers in managing and automating the repetitive tasks associated with building smart contracts and decentralized applications (DApps). Notably, Hardhat has the capability to directly interact with Darwinia's Ethereum API, enabling developers to deploy their smart contracts onto the Darwinia network. This compatibility allows developers to leverage Hardhat's features and tools when working with Darwinia, streamlining the development process and facilitating the creation of robust and reliable applications.
 
 ## Setting up a project
@@ -61,7 +58,7 @@ These are the default paths for a Hardhat project.
 ## Contract Interaction
 
 !!! note
-    The network provider used in this tutorial is the Pangolin Testnet. However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
+    The network provider used in this tutorial is the [Koi Testnet](../getting-started/networks/koi.md). However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
 
 
 ### Prepare And Compile Contract
@@ -117,7 +114,7 @@ Compiled 1 Solidity file successfully
 
 ### Update Hardhat Config
 
-Before working with the contracts, there are a few basic configurations that need to be set up. Replace the default **`hardhat.config`** file with the following content. This configuration includes the Pangolin network RPC information and adds a test account:
+Before working with the contracts, there are a few basic configurations that need to be set up. Replace the default **`hardhat.config`** file with the following content. This configuration includes the Koi network RPC information and adds a test account:
 
 ```jsx linenums="1" title="hardhat.config"
 require("@nomicfoundation/hardhat-toolbox");
@@ -125,17 +122,17 @@ require("@nomicfoundation/hardhat-toolbox");
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.19",
-  defaultNetwork: "pangolin",
+  defaultNetwork: "koi",
   networks: {
-    pangolin: {
-      url: "https://pangolin-rpc.darwinia.network",
+    koi: {
+      url: "https://koi-rpc.darwinia.network",
       accounts: ["0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc"]
     }
   }
 };
 ```
 
-By updating the **`hardhat.config`** file with this content, you will have the necessary configurations in place to interact with the Pangolin network and use the test account for testing purposes.
+By updating the **`hardhat.config`** file with this content, you will have the necessary configurations in place to interact with the Koi network and use the test account for testing purposes.
 
 ### Deploy Storage Contract
 
@@ -161,7 +158,7 @@ main().catch((error) => {
 Start the deployment by running the command:
 
 ```jsx
-npx hardhat run --network pangolin scripts/deploy.js
+npx hardhat run --network koi scripts/deploy.js
 ```
 
 The output like this:
@@ -209,7 +206,7 @@ ContractTransactionResponse {
       _initializingPromise: [Promise],
       provider: [BackwardsCompatibilityProviderAdapter]
     },
-    _networkName: 'pangolin',
+    _networkName: 'koi',
     _blockListeners: [],
     _transactionHashListeners: Map(0) {},
     _eventListeners: []
