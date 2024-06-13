@@ -24,7 +24,7 @@ The Koi acts as the primary test network for Darwinia, officially maintained to 
     - Decimal: **`18`**
 - ChainId: **`701`**
 - Block Explorers:
-    - [**Subscan**](https://koi-scan.darwinia.network/)
+    - [**Koi Scan**](https://koi-scan.darwinia.network/)
 - HTTPS RPC Endpoints:
     - **`https://koi-rpc.darwinia.network`**
 - Websocket RPC Endpoints:
