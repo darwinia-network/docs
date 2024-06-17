@@ -13,15 +13,12 @@ The first crucial step for a newcomer in the Web3 world is understanding how to 
     ![evm-tutorial-token-transfer-1](../../images/evm-tutorial-token-transfer-1.png)
     ![evm-tutorial-token-transfer-2](../../images/evm-tutorial-token-transfer-2.png)
 
-<!-- todo: add the link -->
-- At first, you need to switch from the Ethereum Mainnet to the Darwinia networks. For example, take the Koi network as an example, the network information page provides a convenient link to connect directly.
+- By default, the MetaMask extension is connected to the Ethereum Mainnet. So, you need to switch from the Ethereum Mainnet to the Darwinia Koi networks. For example, take the Koi network as an example, [the network information page](../../build/getting-started/networks/koi.md#connect-wallet-automatically) provides a convenient link to connect directly.
 
-    <!-- todo: update the screenshot     -->
     ![evm-tutorial-token-transfer-3](../../images/evm-tutorial-token-transfer-3.png)
     
-    Click the `Add To MetaMask` button.
+    Click the `Connect` button.
 
-<!-- todo: update the screenshot -->
 ![evm-tutorial-token-transfer-4](../../images/evm-tutorial-token-transfer-4.png)
 
 Check the network displayed and click the `Approve` button. Then , you can see that the network has switched from the Ethereum Mainnet to the Koi Testnet.
