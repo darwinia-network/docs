@@ -16,8 +16,8 @@ Crab is now a [parachain of Kusama](https://kusama.subscan.io/parachain/2105).
     - Symbol: [**CRAB**](https://coinmarketcap.com/currencies/darwinia-crab-network)
     - Decimal: **`18`**
 - Block Explorers:
-    - [**Subscan**](https://crab.subscan.io/)
-    - [**Subview**](https://crab.subview.xyz/)
+    - [**CrabScan**](https://crab-scan.darwinia.network/)
+    - [**Crab SubView**](https://crab.subview.xyz/)
 - HTTPS RPC Endpoints:
     - **`https://crab-rpc.darwinia.network`**
     - **`https://crab-rpc.darwiniacommunitydao.xyz`**
