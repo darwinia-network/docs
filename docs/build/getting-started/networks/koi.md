@@ -3,10 +3,9 @@
 
 The Koi acts as the primary test network for Darwinia, officially maintained to ensure that new and innovative features are thoroughly tested before they are deployed to the main production network.
 
-<!-- ## Connect Wallet Automatically -->
+## Connect Wallet Automatically
 
-<!-- TODO: Update the link here -->
-<!-- [Connect](https://chainlist.org/chain/43){ .md-button .md-button--primary } -->
+[Connect](https://chainlist.org/chain/701){ .md-button .md-button--primary }
 
 <!-- ## Faucet -->
 
