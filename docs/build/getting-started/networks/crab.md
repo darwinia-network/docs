@@ -20,9 +20,9 @@ Crab is now a [parachain of Kusama](https://kusama.subscan.io/parachain/2105).
     - [**Crab SubView**](https://crab.subview.xyz/)
 - HTTPS RPC Endpoints:
     - **`https://crab-rpc.darwinia.network`**
-    - **`https://darwinia-rpc.dcdao.box`**
+    - **`https://crab-rpc.dcdao.box`**
 - Websocket RPC Endpoints:
     - **`wss://crab-rpc.darwinia.network`**
-    - **`wss://darwinia-rpc.dcdao.box`**
+    - **`wss://crab-rpc.dcdao.box`**
 - EVM-Tracing Node Endpoints
     - **`ws://c1.crab2.darwinia.network:9944`**
