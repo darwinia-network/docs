@@ -1,6 +1,6 @@
 # AssetHub Bridge Tutorial
 
-This tutorial provides a basic guide on using [assethub-bridge.darwinia.network](https://assethub-bridge.darwinia.network) to perform a XCM cross-chain transfer between Darwinia and AssetHub.
+This tutorial provides a basic guide on using [Darwinia paralink](https://paralink.darwinia.network) to perform a XCM cross-chain transfer between Darwinia and AssetHub.
 
 !!! note
     Please note that this bridge requires USDT for transaction fees on both ends, so ensure you have some USDT in your wallet before using it. On the AssetHub side, you can purchase USDT through a centralized exchange (CEX) like Binance or a decentralized exchange (DEX) such as Moonbeam Swap. On the Darwinia side, you'll need to first transfer some USDT from AssetHub to Darwinia using this bridge; then, you can proceed with transfers from Darwinia to AssetHub.
