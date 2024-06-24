@@ -383,6 +383,7 @@ nav:
             - Verifying Smart Contracts: "build/ethereum-tools/verify-contract.md"
           - Indexing Services:
               - Using SubQuery: "build/indexer/subquery.md"
+              - Using Envio: "build/indexer/envio.md"
       - Precompiled Contracts:
             - Overview: "build/precompiles/overview.md"
             - Asset:
