@@ -7,13 +7,9 @@ The Koi acts as the primary test network for Darwinia, officially maintained to 
 
 [Connect](https://chainlist.org/chain/701){ .md-button .md-button--primary }
 
-<!-- ## Faucet -->
+## Faucet
 
-<!-- !!! note
-    50 tokens per day for each address. -->
-
-<!-- TODO: update the link later  -->
-<!-- To obtain the test token, go to the [faucet-testnet](https://discord.com/channels/456092011347443723/1115885903605411850) channel on Discord and send `/faucet pangolin address` to get test tokens. -->
+To obtain the test token, go to the [faucet-koi](https://faucet.triangleplatform.com/darwinia/koi).
 
 ## Network Information
 
