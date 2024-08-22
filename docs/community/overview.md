@@ -14,7 +14,7 @@ Darwinia is supported by dedicated organizations, each playing a critical role i
 | --- | --- |
 | [**RingDAO**](./orgs/ringdao.md) | Focused on governance decisions, RingDAO allows RING token holders to participate directly in the decision-making processes, ensuring that Darwinia remains a truly decentralized network. |
 | [**DCDAO**](./orgs/dcdao.md) | DCDAO is a community self-organized workgroup (WG) that aims to contribute to the growth and development of the Darwinia community. |
-| [**KtonDAO**](./orgs/ktondao.md) | KtonDAO is a community initiative primarily initiated and conceived by KTON holders. Although it is not yet fully formed, there have been some [forum discussions](https://github.com/orgs/dcdao/discussions/32). KTON is designed to specialize in long-term staking incentives and reward strategies, encouraging long-term commitment from network supporters. |
+| [**KtonDAO**](./orgs/ktondao.md) | KtonDAO is a community-driven initiative, built on [Tally](https://www.tally.xyz/gov/ktondao), where KTON holders come together to propose, discuss, and decide on the future of the community. |
 | **Itering** | Itering is a blockchain technology development company that provides runtime and smart contract engineering implementations for Darwinia. It is also the founding company of Darwinia. |
 | **Crab SubDAO** | Crab SubDAO is a DAO currently in design and will exist as a SubDAO of RingDAO. CRAB is its governance token, which is expected to be used for governing the Crab Chain, the experimental canary chain of Darwinia Chain. The design and concept of the SubDAO are inspired by Maker SubDAO. |
 

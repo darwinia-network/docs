@@ -1,8 +1,8 @@
 # Overview
 
-[RingDAO](https://ringdao.com/) is a upcoming DAO based using [Tally](https://www.tally.xyz/) on Darwinia Chain, intended for governing the Darwinia Chain in its next version. It is currently under development and implementation. [**RING**](https://coinmarketcap.com/currencies/darwinia-network/) will be the govenance token of RingDAO. RING has an initial supply of 2 billion tokens, and its token model can be found in [Genepaper V4](https://darwinia.network/Genepaper_v4.pdf).
+The governance of Darwinia chains is managed by [RingDAO](https://ringdao.com/), a decentralized community of [**RING**](https://coinmarketcap.com/currencies/darwinia-network/) holders. You can submit proposals or vote to participate the development of Darwinia chains.
 
 ## Other Projects Governed By The RingDAO
 
 * [Msgport](https://docs.msgport.xyz/) 
-* [XAPI](https://github.com/xapi-box)
+* [xAPI](https://github.com/xapi-box)
