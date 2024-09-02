@@ -14,7 +14,7 @@ To learn more about Collators and their functions, you can click [here](https:/
 
 ## Download Snapshot
 
-It's important to note that there is a faster method to expedite the syncing process**.** You can achieve this by downloading the snapshot blockchain data and moving it to the current node database location and greatly speeding up the node sync process. Click [here](./snapshot.md) for more detailed instructions.
+It's important to note that there is a faster method to expedite the syncing process. You can achieve this by downloading the snapshot blockchain data and moving it to the current node database location and greatly speeding up the node sync process. Click [here](./snapshot.md) for more detailed instructions.
 
 ## Start The Collator Node
 
@@ -29,10 +29,10 @@ It's important to note that there is a faster method to expedite the syncing pro
     
 3. Download and decompress the binary.
     
-    As of the time of writing this doc(2023-09-04), the latest version of the Darwinia node is `v6.4.0`. Please ensure that you check for [the latest version](https://github.com/darwinia-network/darwinia/releases) when running your own node. 
+    As of the time of writing this doc(2024-09-02), the latest version of the Darwinia node is `v6.6.5`. Please ensure that you check for [the latest version](https://github.com/darwinia-network/darwinia/releases) when running your own node. 
     
     ```bash
-    wget https://github.com/darwinia-network/darwinia/releases/download/v6.4.0/darwinia-x86_64-linux-gnu.tar.bz2
+    wget https://github.com/darwinia-network/darwinia/releases/download/v6.6.5/darwinia-x86_64-linux-gnu.tar.bz2
     tar xvf darwinia-x86_64-linux-gnu.tar.bz2
     ```
     
@@ -45,63 +45,75 @@ It's important to note that there is a faster method to expedite the syncing pro
 5. Verify your node is up and running successfully by reviewing the output displayed in the terminal. The terminal should display output similar to this:
     
     ```bash
-    Loading genesis from `/home/bear/coding/rust-space/test-docs/run-collator-node/darwinia2.json`
-    2023-10-16 16:14:20 Darwinia    
-    2023-10-16 16:14:20 ✌️  version 6.4.0-2f0941d6f2a    
-    2023-10-16 16:14:20 ❤️  by Darwinia Network <hello@darwinia.network>, 2018-2023    
-    2023-10-16 16:14:20 📋 Chain specification: Darwinia2    
-    2023-10-16 16:14:20 🏷  Node name: adventurous-throne-2027    
-    2023-10-16 16:14:20 👤 Role: AUTHORITY    
-    2023-10-16 16:14:20 💾 Database: RocksDb at /data/darwinia-collator/chains/darwinia2/db/full    
-    2023-10-16 16:14:20 ⛓  Native runtime: Darwinia2-6400 (DarwiniaOfficialRust-0.tx0.au0)    
-    2023-10-16 16:14:21 Parachain id: Id(2046)    
-    2023-10-16 16:14:21 Parachain Account: 2qiDxtPxw1BsbLwujRn5Q2352CaDPY8UMZi4iHBfPXo6FgHd    
-    2023-10-16 16:14:21 Parachain genesis state: 0x000000000000000000000000000000000000000000000000000000000000000000de42f41f451c1be24559be5f93ed0a74f2b6a65d0c965fec4647e165d1947b7103170a2e7597b7b7e3d84c05391d139a62b157e78786d8c082f29dcf4c11131400    
-    2023-10-16 16:14:21 Is collating: yes    
-    2023-10-16 16:14:23 [Parachain] 📑 Connection configuration: SqliteBackendConfig { path: "/data/darwinia-collator/chains/darwinia2/sql/frontier.db3", create_if_missing: true, thread_count: 4, cache_size: 209715200 }    
-    2023-10-16 16:14:25 [Relaychain] 🏷  Local node identity is: 12D3KooWJXgiE8JJSv6fCiEmkEjGAewNYh2HPCSJZuKMZrJUwWrR    
-    2023-10-16 16:14:25 [Relaychain] 💻 Operating system: linux    
-    2023-10-16 16:14:25 [Relaychain] 💻 CPU architecture: x86_64    
-    2023-10-16 16:14:25 [Relaychain] 💻 Target environment: gnu    
-    2023-10-16 16:14:25 [Relaychain] 💻 CPU: AMD Ryzen 7 5700G with Radeon Graphics    
-    2023-10-16 16:14:25 [Relaychain] 💻 CPU cores: 8    
-    2023-10-16 16:14:25 [Relaychain] 💻 Memory: 63578MB    
-    2023-10-16 16:14:25 [Relaychain] 💻 Kernel: 6.2.0-33-generic    
-    2023-10-16 16:14:25 [Relaychain] 💻 Linux distribution: Ubuntu 22.04.3 LTS    
-    2023-10-16 16:14:25 [Relaychain] 💻 Virtual machine: no    
-    2023-10-16 16:14:25 [Relaychain] 📦 Highest known block at #61195    
-    2023-10-16 16:14:25 [Relaychain] 〽️ Prometheus exporter started at 127.0.0.1:9616    
-    2023-10-16 16:14:25 [Relaychain] Running JSON-RPC server: addr=127.0.0.1:9945, allowed origins=["http://localhost:*", "http://127.0.0.1:*", "https://localhost:*", "https://127.0.0.1:*", "https://polkadot.js.org"]    
-    2023-10-16 16:14:25 [Relaychain] 🏁 CPU score: 1.34 GiBs    
-    2023-10-16 16:14:25 [Relaychain] 🏁 Memory score: 14.33 GiBs    
-    2023-10-16 16:14:25 [Relaychain] 🏁 Disk score (seq. writes): 1.42 GiBs    
-    2023-10-16 16:14:25 [Relaychain] 🏁 Disk score (rand. writes): 746.65 MiBs    
-    2023-10-16 16:14:25 [Relaychain] Starting with an empty approval vote DB.
-    2023-10-16 16:14:25 [Parachain] 🏷  Local node identity is: 12D3KooWLoBFJ5oRNmXU8SfSiSuA8vuFAwaS5PyMfdWCGvtXGYnJ    
-    2023-10-16 16:14:25 [Parachain] 💻 Operating system: linux    
-    2023-10-16 16:14:25 [Parachain] 💻 CPU architecture: x86_64    
-    2023-10-16 16:14:25 [Parachain] 💻 Target environment: gnu    
-    2023-10-16 16:14:25 [Parachain] 💻 CPU: AMD Ryzen 7 5700G with Radeon Graphics    
-    2023-10-16 16:14:25 [Parachain] 💻 CPU cores: 8    
-    2023-10-16 16:14:25 [Parachain] 💻 Memory: 63578MB    
-    2023-10-16 16:14:25 [Parachain] 💻 Kernel: 6.2.0-33-generic    
-    2023-10-16 16:14:25 [Parachain] 💻 Linux distribution: Ubuntu 22.04.3 LTS    
-    2023-10-16 16:14:25 [Parachain] 💻 Virtual machine: no    
-    2023-10-16 16:14:25 [Parachain] 📦 Highest known block at #18290    
-    2023-10-16 16:14:25 [Parachain] Running JSON-RPC server: addr=127.0.0.1:9944, allowed origins=["http://localhost:*", "http://127.0.0.1:*", "https://localhost:*", "https://127.0.0.1:*", "https://polkadot.js.org"]    
-    2023-10-16 16:14:25 [Parachain] 🏁 CPU score: 1.34 GiBs    
-    2023-10-16 16:14:25 [Parachain] 🏁 Memory score: 14.33 GiBs    
-    2023-10-16 16:14:25 [Parachain] 🏁 Disk score (seq. writes): 1.42 GiBs    
-    2023-10-16 16:14:25 [Parachain] 🏁 Disk score (rand. writes): 746.65 MiBs    
-    2023-10-16 16:14:25 [Parachain] 〽️ Prometheus exporter started at 127.0.0.1:9615    
-    2023-10-16 16:14:25 [Parachain] 🔍 Discovered new external address for our node: /ip4/60.176.103.239/tcp/30333/p2p/12D3KooWLoBFJ5oRNmXU8SfSiSuA8vuFAwaS5PyMfdWCGvtXGYnJ    
-    2023-10-16 16:14:26 [Relaychain] 🔍 Discovered new external address for our node: /ip4/60.176.103.239/tcp/30334/ws/p2p/12D3KooWJXgiE8JJSv6fCiEmkEjGAewNYh2HPCSJZuKMZrJUwWrR    
-    2023-10-16 16:14:26 [Parachain] [pallet::message-gadget] invalid raw message root: [], return.    
-    2023-10-16 16:14:26 [Parachain] [pallet::message-gadget] invalid raw message root: [], return.    
-    2023-10-16 16:14:26 [Parachain] [pallet::message-gadget] invalid raw message root: [], return.    
-    2023-10-16 16:14:26 [Parachain] [pallet::message-gadget] invalid raw message root: [], return.    
-    2023-10-16 16:14:26 [Parachain] [pallet::message-gadget] invalid raw message root: [], return.    
-    2023-10-16 16:14:26 [Parachain] [pallet::message-gadget] invalid raw message root: [], return.
+    Loading genesis from `/mnt/myssd/coding/darwinia-space/darwinia-collator/darwinia2.json`
+    2024-09-02 17:24:47.856  INFO main sc_cli::runner: Darwinia    
+    2024-09-02 17:24:47.856  INFO main sc_cli::runner: ✌️  version 6.6.5-3b73ea205a9    
+    2024-09-02 17:24:47.856  INFO main sc_cli::runner: ❤️  by Darwinia Network <hello@darwinia.network>, 2018-2024    
+    2024-09-02 17:24:47.856  INFO main sc_cli::runner: 📋 Chain specification: Darwinia2    
+    2024-09-02 17:24:47.856  INFO main sc_cli::runner: 🏷  Node name: lewd-scent-9551    
+    2024-09-02 17:24:47.856  INFO main sc_cli::runner: 👤 Role: FULL    
+    2024-09-02 17:24:47.856  INFO main sc_cli::runner: 💾 Database: RocksDb at /data/darwinia-collator/chains/darwinia2/db/full    
+    2024-09-02 17:24:47.856  INFO main darwinia::command: Parachain id: Id(2046)    
+    2024-09-02 17:24:47.856  INFO main darwinia::command: Parachain Account: 2qiDxtPxw1BsbLwujRn5Q2352CaDPY8UMZi4iHBfPXo6FgHd    
+    2024-09-02 17:24:47.856  INFO main darwinia::command: Is collating: no    
+    2024-09-02 17:24:48.863  INFO main sc_service::client::client: [Parachain] 🔨 Initializing Genesis block/state (state: 0xde42…7b71, header-hash: 0xf0b8…570e)    
+    2024-09-02 17:24:49.737  INFO main frontier-sql: [Parachain] 📑 Connection configuration: SqliteBackendConfig { path: "/data/darwinia-collator/chains/darwinia2/sql/frontier.db3", create_if_missing: true, thread_count: 4, cache_size: 209715200 }    
+    2024-09-02 17:24:51.826  INFO main sc_service::client::client: [Relaychain] 🔨 Initializing Genesis block/state (state: 0x29d0…4e17, header-hash: 0x91b1…90c3)    
+    2024-09-02 17:24:51.828  INFO main grandpa: [Relaychain] 👴 Loading GRANDPA authority set from genesis on what appears to be first startup.    
+    2024-09-02 17:24:52.026  INFO main babe: [Relaychain] 👶 Creating empty BABE epoch changes on what appears to be first startup.    
+    2024-09-02 17:24:52.027  INFO main sub-libp2p: [Relaychain] 🏷  Local node identity is: 12D3KooWQjUjkVTfADQCvAc3BrujBgYFHGJcUeFc8NhmqP13SPSD    
+    2024-09-02 17:24:52.032  INFO main sc_sysinfo: [Relaychain] 💻 Operating system: linux    
+    2024-09-02 17:24:52.032  INFO main sc_sysinfo: [Relaychain] 💻 CPU architecture: x86_64    
+    2024-09-02 17:24:52.032  INFO main sc_sysinfo: [Relaychain] 💻 Target environment: gnu    
+    2024-09-02 17:24:52.032  INFO main sc_sysinfo: [Relaychain] 💻 CPU: AMD Ryzen 7 5700G with Radeon Graphics    
+    2024-09-02 17:24:52.032  INFO main sc_sysinfo: [Relaychain] 💻 CPU cores: 8    
+    2024-09-02 17:24:52.032  INFO main sc_sysinfo: [Relaychain] 💻 Memory: 63584MB    
+    2024-09-02 17:24:52.032  INFO main sc_sysinfo: [Relaychain] 💻 Kernel: 6.8.0-40-generic    
+    2024-09-02 17:24:52.032  INFO main sc_sysinfo: [Relaychain] 💻 Linux distribution: Ubuntu 22.04.4 LTS    
+    2024-09-02 17:24:52.032  INFO main sc_sysinfo: [Relaychain] 💻 Virtual machine: no    
+    2024-09-02 17:24:52.032  INFO main sc_service::builder: [Relaychain] 📦 Highest known block at #0    
+    2024-09-02 17:24:52.032  INFO tokio-runtime-worker substrate_prometheus_endpoint: [Relaychain] 〽️ Prometheus exporter started at 127.0.0.1:9616    
+    2024-09-02 17:24:52.032  INFO                 main sc_rpc_server: [Relaychain] Running JSON-RPC server: addr=127.0.0.1:9945, allowed origins=["http://localhost:*", "http://127.0.0.1:*", "https://localhost:*", "https://127.0.0.1:*", "https://polkadot.js.org"]    
+    2024-09-02 17:24:52.033  INFO                 main sc_sysinfo: [Relaychain] 🏁 CPU score: 1017.97 MiBs    
+    2024-09-02 17:24:52.033  INFO                 main sc_sysinfo: [Relaychain] 🏁 Memory score: 14.64 GiBs    
+    2024-09-02 17:24:52.033  INFO                 main sc_sysinfo: [Relaychain] 🏁 Disk score (seq. writes): 1.48 GiBs    
+    2024-09-02 17:24:52.033  INFO                 main sc_sysinfo: [Relaychain] 🏁 Disk score (rand. writes): 586.02 MiBs    
+    2024-09-02 17:24:52.034  INFO                 main sub-libp2p: [Parachain] 🏷  Local node identity is: 12D3KooWBby2tZwfpid4atUx4c8VaXLpsurG3t7pNniZNfpxgrUQ    
+    2024-09-02 17:24:52.054  INFO tokio-runtime-worker frontier-sql: Import genesis    
+    2024-09-02 17:24:52.057  INFO                 main sc_sysinfo: [Parachain] 💻 Operating system: linux    
+    2024-09-02 17:24:52.057  INFO                 main sc_sysinfo: [Parachain] 💻 CPU architecture: x86_64    
+    2024-09-02 17:24:52.057  INFO                 main sc_sysinfo: [Parachain] 💻 Target environment: gnu    
+    2024-09-02 17:24:52.057  INFO                 main sc_sysinfo: [Parachain] 💻 CPU: AMD Ryzen 7 5700G with Radeon Graphics    
+    2024-09-02 17:24:52.057  INFO                 main sc_sysinfo: [Parachain] 💻 CPU cores: 8    
+    2024-09-02 17:24:52.057  INFO                 main sc_sysinfo: [Parachain] 💻 Memory: 63584MB    
+    2024-09-02 17:24:52.057  INFO                 main sc_sysinfo: [Parachain] 💻 Kernel: 6.8.0-40-generic    
+    2024-09-02 17:24:52.057  INFO                 main sc_sysinfo: [Parachain] 💻 Linux distribution: Ubuntu 22.04.4 LTS    
+    2024-09-02 17:24:52.057  INFO                 main sc_sysinfo: [Parachain] 💻 Virtual machine: no    
+    2024-09-02 17:24:52.057  INFO                 main sc_service::builder: [Parachain] 📦 Highest known block at #0    
+    2024-09-02 17:24:52.057  INFO tokio-runtime-worker substrate_prometheus_endpoint: [Parachain] 〽️ Prometheus exporter started at 127.0.0.1:9615    
+    2024-09-02 17:24:52.057  INFO                 main sc_rpc_server: [Parachain] Running JSON-RPC server: addr=0.0.0.0:9944, allowed origins=["*"]    
+    2024-09-02 17:24:52.058  INFO                 main sc_sysinfo: [Parachain] 🏁 CPU score: 1017.97 MiBs    
+    2024-09-02 17:24:52.058  INFO                 main sc_sysinfo: [Parachain] 🏁 Memory score: 14.64 GiBs    
+    2024-09-02 17:24:52.058  INFO                 main sc_sysinfo: [Parachain] 🏁 Disk score (seq. writes): 1.48 GiBs    
+    2024-09-02 17:24:52.058  INFO                 main sc_sysinfo: [Parachain] 🏁 Disk score (rand. writes): 586.02 MiBs    
+    2024-09-02 17:24:52.069  INFO tokio-runtime-worker libp2p_mdns::behaviour: [Parachain] discovered: 12D3KooWQjUjkVTfADQCvAc3BrujBgYFHGJcUeFc8NhmqP13SPSD /ip4/192.168.31.52/tcp/30334/ws    
+    2024-09-02 17:24:52.069  INFO tokio-runtime-worker libp2p_mdns::behaviour: [Relaychain] discovered: 12D3KooWBby2tZwfpid4atUx4c8VaXLpsurG3t7pNniZNfpxgrUQ /ip4/192.168.31.52/tcp/30333/ws    
+    2024-09-02 17:24:52.069  INFO tokio-runtime-worker libp2p_mdns::behaviour: [Relaychain] discovered: 12D3KooWBby2tZwfpid4atUx4c8VaXLpsurG3t7pNniZNfpxgrUQ /ip4/172.18.0.1/tcp/30333/ws    
+    2024-09-02 17:24:52.069  INFO tokio-runtime-worker libp2p_mdns::behaviour: [Parachain] discovered: 12D3KooWQjUjkVTfADQCvAc3BrujBgYFHGJcUeFc8NhmqP13SPSD /ip4/172.17.0.1/tcp/30334/ws    
+    2024-09-02 17:24:52.069  INFO tokio-runtime-worker libp2p_mdns::behaviour: [Relaychain] discovered: 12D3KooWBby2tZwfpid4atUx4c8VaXLpsurG3t7pNniZNfpxgrUQ /ip4/172.17.0.1/tcp/30333/ws    
+    2024-09-02 17:24:52.069  INFO tokio-runtime-worker libp2p_mdns::behaviour: [Parachain] discovered: 12D3KooWQjUjkVTfADQCvAc3BrujBgYFHGJcUeFc8NhmqP13SPSD /ip4/172.18.0.1/tcp/30334/ws    
+    2024-09-02 17:24:53.168  WARN tokio-runtime-worker rustls::conn: [Relaychain] Sending fatal alert BadCertificate    
+    2024-09-02 17:24:53.177  WARN tokio-runtime-worker rustls::conn: [Relaychain] Sending fatal alert BadCertificate    
+    2024-09-02 17:24:53.256  INFO tokio-runtime-worker sub-libp2p: [Relaychain] 🔍 Discovered new external address for our node: /ip4/183.159.52.190/tcp/30334/ws/p2p/12D3KooWQjUjkVTfADQCvAc3BrujBgYFHGJcUeFc8NhmqP13SPSD    
+    2024-09-02 17:24:53.534  WARN tokio-runtime-worker sc_network::service: [Relaychain] 💔 The bootnode you want to connect to at `/dns/dot14.rotko.net/tcp/33214/p2p/12D3KooWPyEvPEXghnMC67Gff6PuZiSvfx3fmziKiPZcGStZ5xff` provided a different peer ID `12D3KooWPc7jNXa7zbsRzF5rdq3QEqhwJLdnXcgG3PR74z99PAka` than the one you expect `12D3KooWPyEvPEXghnMC67Gff6PuZiSvfx3fmziKiPZcGStZ5xff`.    
+    2024-09-02 17:24:54.112  INFO tokio-runtime-worker sub-libp2p: [Parachain] 🔍 Discovered new external address for our node: /ip4/183.159.52.190/tcp/30333/ws/p2p/12D3KooWBby2tZwfpid4atUx4c8VaXLpsurG3t7pNniZNfpxgrUQ    
+    2024-09-02 17:24:56.116  WARN tokio-runtime-worker peerset: [Parachain] Report 12D3KooWFJ4BQN6w2GGhBtyZwqoVgzjVtuLXJimVvfBWqmWXEPAv: -2147483648 to -2147483648. Reason: Genesis mismatch. Banned, disconnecting.    
+    2024-09-02 17:24:56.501  WARN tokio-runtime-worker rustls::conn: [Relaychain] Sending fatal alert BadCertificate    
+    2024-09-02 17:24:57.033  INFO tokio-runtime-worker substrate: [Relaychain] ⏩ Warping, Waiting for 3 peers to be connected, 0.00 Mib (1 peers), best: #0 (0x91b1…90c3), finalized #0 (0x91b1…90c3), ⬇ 25.5kiB/s ⬆ 13.8kiB/s    
+    2024-09-02 17:24:57.058  INFO tokio-runtime-worker substrate: [Parachain] ⚙️  Syncing, target=#3564198 (1 peers), best: #64 (0x582f…bd0e), finalized #0 (0xf0b8…570e), ⬇ 177.9kiB/s ⬆ 1.0kiB/s    
+    2024-09-02 17:24:57.134  WARN tokio-runtime-worker rustls::conn: [Relaychain] Sending fatal alert BadCertificate    
+    2024-09-02 17:24:57.758  WARN tokio-runtime-worker darwinia_message_gadget: [Parachain] [pallet::message-gadget] invalid raw message root: [], return.    
+    2024-09-02 17:24:57.775  WARN tokio-runtime-worker darwinia_message_gadget: [Parachain] [pallet::message-gadget] invalid raw message root: [], return.    
     ```
     
     A collator operates a relay chain node alongside a parachain node. The status messages `[Relaychain] ⚙️ Syncing` and `[Parachain] ⚙️ Syncing` indicate that the node is currently in the process of syncing. You can refer to these logs to monitor the syncing progress. Given that the relay chain and parachain have been active for several years, the syncing process may take anywhere from one to three days to complete.
@@ -130,21 +142,21 @@ It's important to note that there is a faster method to expedite the syncing pro
     Once the syncing process of the node is complete, you are just a step away from becoming a fully operational network collator. Keep an eye on your node's running terminal, and when you come across a message resembling the following, it signifies the completion of the syncing process.
     
     ```bash
-    2023-07-25 02:43:30 [Relaychain] ✨ Imported #16547932 (0x3391…ab15)
-    2023-07-25 02:43:31 [Parachain] ✨ Imported #636560 (0x2ea0…29d0)
-    2023-07-25 02:43:35 [Relaychain] 💤 Idle (109 peers), best: #16547932 (0x3391…ab15), finalized #16547930 (0x7b6b…4c5d), ⬇ 326.8kiB/s ⬆ 203.2kiB/s
-    2023-07-25 02:43:35 [Parachain] 💤 Idle (31 peers), best: #636559 (0x235e…ab71), finalized #636558 (0x03fc…a0f5), ⬇ 30.9kiB/s ⬆ 14.5kiB/s
-    2023-07-25 02:43:36 [Relaychain] ✨ Imported #16547933 (0x7569…7c4d)
-    2023-07-25 02:43:40 [Relaychain] 💤 Idle (109 peers), best: #16547933 (0x7569…7c4d), finalized #16547930 (0x7b6b…4c5d), ⬇ 305.1kiB/s ⬆ 272.8kiB/s
-    2023-07-25 02:43:40 [Parachain] 💤 Idle (31 peers), best: #636559 (0x235e…ab71), finalized #636558 (0x03fc…a0f5), ⬇ 1.1kiB/s ⬆ 1.4kiB/s
-    2023-07-25 02:43:42 [Relaychain] ✨ Imported #16547934 (0xa4aa…c72b)
-    2023-07-25 02:43:43 [Parachain] ✨ Imported #636561 (0x97de…c0ba)
-    2023-07-25 02:43:45 [Relaychain] 💤 Idle (109 peers), best: #16547934 (0xa4aa…c72b), finalized #16547931 (0x17bc…5121), ⬇ 364.1kiB/s ⬆ 296.6kiB/s
-    2023-07-25 02:43:45 [Parachain] 💤 Idle (31 peers), best: #636560 (0x2ea0…29d0), finalized #636558 (0x03fc…a0f5), ⬇ 35.5kiB/s ⬆ 8.1kiB/s
-    2023-07-25 02:43:48 [Relaychain] ✨ Imported #16547935 (0x9f0f…517e)
-    2023-07-25 02:43:48 [Relaychain] ✨ Imported #16547935 (0x7892…a897)
-    2023-07-25 02:43:50 [Relaychain] 💤 Idle (109 peers), best: #16547935 (0x9f0f…517e), finalized #16547932 (0x3391…ab15), ⬇ 466.0kiB/s ⬆ 301.9kiB/s
-    2023-07-25 02:43:50 [Parachain] 💤 Idle (31 peers), best: #636560 (0x2ea0…29d0), finalized #636559 (0x235e…ab71), ⬇ 1.0kiB/s ⬆ 3.1kiB/s
+    2024-09-04 02:43:30 [Relaychain] ✨ Imported #16547932 (0x3391…ab15)
+    2024-09-04 02:43:31 [Parachain] ✨ Imported #636560 (0x2ea0…29d0)
+    2024-09-04 02:43:35 [Relaychain] 💤 Idle (109 peers), best: #16547932 (0x3391…ab15), finalized #16547930 (0x7b6b…4c5d), ⬇ 326.8kiB/s ⬆ 203.2kiB/s
+    2024-09-04 02:43:35 [Parachain] 💤 Idle (31 peers), best: #636559 (0x235e…ab71), finalized #636558 (0x03fc…a0f5), ⬇ 30.9kiB/s ⬆ 14.5kiB/s
+    2024-09-04 02:43:36 [Relaychain] ✨ Imported #16547933 (0x7569…7c4d)
+    2024-09-04 02:43:40 [Relaychain] 💤 Idle (109 peers), best: #16547933 (0x7569…7c4d), finalized #16547930 (0x7b6b…4c5d), ⬇ 305.1kiB/s ⬆ 272.8kiB/s
+    2024-09-04 02:43:40 [Parachain] 💤 Idle (31 peers), best: #636559 (0x235e…ab71), finalized #636558 (0x03fc…a0f5), ⬇ 1.1kiB/s ⬆ 1.4kiB/s
+    2024-09-04 02:43:42 [Relaychain] ✨ Imported #16547934 (0xa4aa…c72b)
+    2024-09-04 02:43:43 [Parachain] ✨ Imported #636561 (0x97de…c0ba)
+    2024-09-04 02:43:45 [Relaychain] 💤 Idle (109 peers), best: #16547934 (0xa4aa…c72b), finalized #16547931 (0x17bc…5121), ⬇ 364.1kiB/s ⬆ 296.6kiB/s
+    2024-09-04 02:43:45 [Parachain] 💤 Idle (31 peers), best: #636560 (0x2ea0…29d0), finalized #636558 (0x03fc…a0f5), ⬇ 35.5kiB/s ⬆ 8.1kiB/s
+    2024-09-04 02:43:48 [Relaychain] ✨ Imported #16547935 (0x9f0f…517e)
+    2024-09-04 02:43:48 [Relaychain] ✨ Imported #16547935 (0x7892…a897)
+    2024-09-04 02:43:50 [Relaychain] 💤 Idle (109 peers), best: #16547935 (0x9f0f…517e), finalized #16547932 (0x3391…ab15), ⬇ 466.0kiB/s ⬆ 301.9kiB/s
+    2024-09-04 02:43:50 [Parachain] 💤 Idle (31 peers), best: #636560 (0x2ea0…29d0), finalized #636559 (0x235e…ab71), ⬇ 1.0kiB/s ⬆ 3.1kiB/s
     ```
     
 
@@ -179,30 +191,30 @@ It's important to note that there is a faster method to expedite the syncing pro
     Once you have accumulated enough power and have been selected as a real collator, your node will begin producing blocks once the next session starts. You will be able to observe messages similar to the following in the node log:
     
     ```bash
-    2023-07-25 02:29:36 [Parachain] Starting collation. relay_parent=0x6e01f34762d42f007122a3e1ce6c4831dfd83ac5b6785d094ec526c573f332a6 at=0x0daa9a024b7c31241cdaffeebcc60ae778c24a005f42a6989092e7f63860161a
-    2023-07-25 02:29:36 [Parachain] ✨ Imported #636493 (0x0cf1…1d91)
-    2023-07-25 02:29:38 [Parachain] 💤 Idle (11 peers), best: #636492 (0x0daa…161a), finalized #636490 (0x4b44…310c), ⬇ 7.4kiB/s ⬆ 4.7kiB/s
-    2023-07-25 02:29:38 [Relaychain] 💤 Idle (147 peers), best: #16547793 (0x6e01…32a6), finalized #16547790 (0x63fa…f203), ⬇ 335.0kiB/s ⬆ 404.6kiB/s
-    2023-07-25 02:29:42 [Relaychain] ✨ Imported #16547794 (0xa7e0…5f03)
-    2023-07-25 02:29:43 [Parachain] 💤 Idle (11 peers), best: #636492 (0x0daa…161a), finalized #636491 (0x78a0…5135), ⬇ 0.2kiB/s ⬆ 0.2kiB/s
-    2023-07-25 02:29:43 [Relaychain] 💤 Idle (147 peers), best: #16547794 (0xa7e0…5f03), finalized #16547791 (0x865f…5f93), ⬇ 335.0kiB/s ⬆ 380.2kiB/s
-    2023-07-25 02:29:48 [Parachain] 💤 Idle (11 peers), best: #636492 (0x0daa…161a), finalized #636491 (0x78a0…5135), ⬇ 74 B/s ⬆ 74 B/s
-    2023-07-25 02:29:48 [Relaychain] 💤 Idle (149 peers), best: #16547794 (0xa7e0…5f03), finalized #16547792 (0x4fe7…12a4), ⬇ 364.7kiB/s ⬆ 417.2kiB/s
-    2023-07-25 02:29:48 [Relaychain] ✨ Imported #16547795 (0x59e7…1c0c)
-    2023-07-25 02:29:48 [Parachain] Starting collation. relay_parent=0x59e78ce166cfd86edbd65e827d4091bf571a7eff09dcb8ba054ad3f5eb8d1c0c at=0x0cf1b42f16e6411f624b15c48a9fd3666643cbba12ff9b4ea36aa4d18ceb1d91
-    2023-07-25 02:29:48 [Relaychain] ✨ Imported #16547795 (0x62f3…ec4b)
-    2023-07-25 02:29:48 [Parachain] Starting collation. relay_parent=0x62f3987004eafc258b4a62252c3f187e7cdd8dc896b760692a456721f743ec4b at=0x0cf1b42f16e6411f624b15c48a9fd3666643cbba12ff9b4ea36aa4d18ceb1d91
-    2023-07-25 02:29:51 [Parachain] ✨ Imported #636494 (0x7318…81cc)
-    2023-07-25 02:29:51 [Parachain] ✨ Imported #636494 (0xe2ac…8564)
-    2023-07-25 02:29:53 [Parachain] 💤 Idle (11 peers), best: #636493 (0x0cf1…1d91), finalized #636491 (0x78a0…5135), ⬇ 24.0kiB/s ⬆ 3.9kiB/s
-    2023-07-25 02:29:53 [Relaychain] 💤 Idle (149 peers), best: #16547795 (0x59e7…1c0c), finalized #16547792 (0x4fe7…12a4), ⬇ 372.0kiB/s ⬆ 422.2kiB/s
-    2023-07-25 02:29:54 [Relaychain] ✨ Imported #16547796 (0x3385…41df)
-    2023-07-25 02:29:58 [Parachain] 💤 Idle (11 peers), best: #636493 (0x0cf1…1d91), finalized #636492 (0x0daa…161a), ⬇ 0.1kiB/s ⬆ 0.3kiB/s
-    2023-07-25 02:29:58 [Relaychain] 💤 Idle (148 peers), best: #16547796 (0x3385…41df), finalized #16547793 (0x6e01…32a6), ⬇ 193.2kiB/s ⬆ 345.7kiB/s
-    2023-07-25 02:30:00 [Relaychain] ✨ Imported #16547797 (0x8476…715f)
-    2023-07-25 02:30:00 [Parachain] Starting collation. relay_parent=0x84766f7ebf5ec140fd3add8052447f0c74f688a1fb0b71083498ff1853b4715f at=0xe2acefecc7a059cd833b8b3347fb076768f6587e37d58337ded0e9d376068564
-    2023-07-25 02:30:03 [Parachain] 💤 Idle (11 peers), best: #636494 (0xe2ac…8564), finalized #636492 (0x0daa…161a), ⬇ 0.2kiB/s ⬆ 0.2kiB/s
-    2023-07-25 02:30:03 [Relaychain] 💤 Idle (147 peers), best: #16547797 (0x8476…715f), finalized #16547794 (0xa7e0…5f03), ⬇ 257.7kiB/s ⬆ 464.5kiB/s
+    2024-09-04 02:29:36 [Parachain] Starting collation. relay_parent=0x6e01f34762d42f007122a3e1ce6c4831dfd83ac5b6785d094ec526c573f332a6 at=0x0daa9a024b7c31241cdaffeebcc60ae778c24a005f42a6989092e7f63860161a
+    2024-09-04 02:29:36 [Parachain] ✨ Imported #636493 (0x0cf1…1d91)
+    2024-09-04 02:29:38 [Parachain] 💤 Idle (11 peers), best: #636492 (0x0daa…161a), finalized #636490 (0x4b44…310c), ⬇ 7.4kiB/s ⬆ 4.7kiB/s
+    2024-09-04 02:29:38 [Relaychain] 💤 Idle (147 peers), best: #16547793 (0x6e01…32a6), finalized #16547790 (0x63fa…f203), ⬇ 335.0kiB/s ⬆ 404.6kiB/s
+    2024-09-04 02:29:42 [Relaychain] ✨ Imported #16547794 (0xa7e0…5f03)
+    2024-09-04 02:29:43 [Parachain] 💤 Idle (11 peers), best: #636492 (0x0daa…161a), finalized #636491 (0x78a0…5135), ⬇ 0.2kiB/s ⬆ 0.2kiB/s
+    2024-09-04 02:29:43 [Relaychain] 💤 Idle (147 peers), best: #16547794 (0xa7e0…5f03), finalized #16547791 (0x865f…5f93), ⬇ 335.0kiB/s ⬆ 380.2kiB/s
+    2024-09-04 02:29:48 [Parachain] 💤 Idle (11 peers), best: #636492 (0x0daa…161a), finalized #636491 (0x78a0…5135), ⬇ 74 B/s ⬆ 74 B/s
+    2024-09-04 02:29:48 [Relaychain] 💤 Idle (149 peers), best: #16547794 (0xa7e0…5f03), finalized #16547792 (0x4fe7…12a4), ⬇ 364.7kiB/s ⬆ 417.2kiB/s
+    2024-09-04 02:29:48 [Relaychain] ✨ Imported #16547795 (0x59e7…1c0c)
+    2024-09-04 02:29:48 [Parachain] Starting collation. relay_parent=0x59e78ce166cfd86edbd65e827d4091bf571a7eff09dcb8ba054ad3f5eb8d1c0c at=0x0cf1b42f16e6411f624b15c48a9fd3666643cbba12ff9b4ea36aa4d18ceb1d91
+    2024-09-04 02:29:48 [Relaychain] ✨ Imported #16547795 (0x62f3…ec4b)
+    2024-09-04 02:29:48 [Parachain] Starting collation. relay_parent=0x62f3987004eafc258b4a62252c3f187e7cdd8dc896b760692a456721f743ec4b at=0x0cf1b42f16e6411f624b15c48a9fd3666643cbba12ff9b4ea36aa4d18ceb1d91
+    2024-09-04 02:29:51 [Parachain] ✨ Imported #636494 (0x7318…81cc)
+    2024-09-04 02:29:51 [Parachain] ✨ Imported #636494 (0xe2ac…8564)
+    2024-09-04 02:29:53 [Parachain] 💤 Idle (11 peers), best: #636493 (0x0cf1…1d91), finalized #636491 (0x78a0…5135), ⬇ 24.0kiB/s ⬆ 3.9kiB/s
+    2024-09-04 02:29:53 [Relaychain] 💤 Idle (149 peers), best: #16547795 (0x59e7…1c0c), finalized #16547792 (0x4fe7…12a4), ⬇ 372.0kiB/s ⬆ 422.2kiB/s
+    2024-09-04 02:29:54 [Relaychain] ✨ Imported #16547796 (0x3385…41df)
+    2024-09-04 02:29:58 [Parachain] 💤 Idle (11 peers), best: #636493 (0x0cf1…1d91), finalized #636492 (0x0daa…161a), ⬇ 0.1kiB/s ⬆ 0.3kiB/s
+    2024-09-04 02:29:58 [Relaychain] 💤 Idle (148 peers), best: #16547796 (0x3385…41df), finalized #16547793 (0x6e01…32a6), ⬇ 193.2kiB/s ⬆ 345.7kiB/s
+    2024-09-04 02:30:00 [Relaychain] ✨ Imported #16547797 (0x8476…715f)
+    2024-09-04 02:30:00 [Parachain] Starting collation. relay_parent=0x84766f7ebf5ec140fd3add8052447f0c74f688a1fb0b71083498ff1853b4715f at=0xe2acefecc7a059cd833b8b3347fb076768f6587e37d58337ded0e9d376068564
+    2024-09-04 02:30:03 [Parachain] 💤 Idle (11 peers), best: #636494 (0xe2ac…8564), finalized #636492 (0x0daa…161a), ⬇ 0.2kiB/s ⬆ 0.2kiB/s
+    2024-09-04 02:30:03 [Relaychain] 💤 Idle (147 peers), best: #16547797 (0x8476…715f), finalized #16547794 (0xa7e0…5f03), ⬇ 257.7kiB/s ⬆ 464.5kiB/s
     ```
     
 

@@ -11,7 +11,7 @@ When running as a simple sync node (above), only the state of the past 256 block
 ### Recommended Hardware
 
 - **RAM:** 8 GB:
-- **Storage(SSD)**: 800 GB
+- **Storage(SSD)**: 1 TB
 
 ### Download Snapshot
 
@@ -19,10 +19,10 @@ It's important to note that there is a faster method to expedite the syncing pro
 
 ### Prepare The Binary
 
-As of the time of writing this doc(2023-09-04), the latest version of the Darwinia node is `v6.4.0`. Please ensure that you check for [the latest version](https://github.com/darwinia-network/darwinia/releases) when running your own node.
+As of the time of writing this doc(2024-09-04), the latest version of the Darwinia node is `v6.6.5`. Please ensure that you check for [the latest version](https://github.com/darwinia-network/darwinia/releases) when running your own node.
 
 ```bash
-wget https://github.com/darwinia-network/darwinia/releases/download/v6.4.0/darwinia-x86_64-linux-gnu.tar.bz2
+wget https://github.com/darwinia-network/darwinia/releases/download/v6.6.5/darwinia-x86_64-linux-gnu.tar.bz2
 tar xvf darwinia-x86_64-linux-gnu.tar.bz2
 ```
 

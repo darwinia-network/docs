@@ -22,7 +22,7 @@ apt install zstd
 
 ### Create Data Directory
 
-If you are running the collator according to this [tutorial](https://www.notion.so/Run-Collator-Node-af6bce360d5b49ddacc56e4587510210?pvs=21), the **`base-path`** command parameter is set to `/data/darwinia-collator`. If you have customized the path for the data, please adjust it accordingly. To create a snapshot data location, run the following command:
+If you are running the collator according to this [tutorial](./run-collator-node.md), the **`base-path`** command parameter is set to `/data/darwinia-collator`. If you have customized the path for the data, please adjust it accordingly. To create a snapshot data location, run the following command:
 
 ```bash
 mkdir -p /data/darwinia-collator/chains/darwinia2/
@@ -33,8 +33,8 @@ mkdir -p /data/darwinia-collator/chains/darwinia2/
 Select the archive block height and download the parachain snapshot, then extract the database to the node `base-path` by running the following command:
 
 ```bash
-wget -c https://snapshots.darwinia.network/darwinia2-1172183.tar.zst
-tar xv --zstd -f darwinia2-1172183.tar.zst -C data/chains/darwinia2
+wget -c https://snapshots.darwinia.network/darwinia2-3545420.tar.zst
+tar xv --zstd -f darwinia2-3545420.tar.zst -C data/chains/darwinia2
 ```
 
 ### Prepare Relaychain
