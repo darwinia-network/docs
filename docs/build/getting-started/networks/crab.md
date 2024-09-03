@@ -1,6 +1,6 @@
 # Crab Chain
 
-Crab serves as Darwinia's canary network with genuine economic significance, akin to how Kusama functions for Polkadot. Anticipating chaos is par for the course!
+Crab serves as Darwinia's incentivized testnet network with genuine economic significance, akin to how Kusama functions for Polkadot.
 
 Crab is now a [parachain of Kusama](https://kusama.subscan.io/parachain/2105).
 
