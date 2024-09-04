@@ -3,7 +3,7 @@
 
 ![home](./images/home.png)
 
-Darwinia is pioneering the development of cutting-edge cross-chain service solutions, with a strategic emphasis on boosting the cross-chain functionalities of decentralized applications. At its core, [the Darwinia Chains](./build/getting-started/networks/overview.md) represents an EVM-compliant network built upon [the Polkadot framework](https://polkadot.network/). It has been designed to integrate seamlessly with various bridge tools, such as [the Helix Bridge](https://helixbridge.app/) and [the Msgport protocol](https://docs.msgport.xyz/). This integration facilitates the connection between assets within the Polkadot ecosystem and the wider array of EVM chains present in the Ethereum ecosystem.
+Darwinia is pioneering the development of cutting-edge cross-chain service solutions, with a strategic emphasis on boosting the cross-chain functionalities of decentralized applications. At its core, [the Darwinia Chains](./build/getting-started/networks/overview.md) represents an EVM-compliant network built upon [the Polkadot framework](https://polkadot.network/). It has been designed to integrate seamlessly with various bridge tools, such as [the Helix Bridge](https://helixbridge.app/) and [the Msgport protocol](https://msgport.ringdao.com/docs/). This integration facilitates the connection between assets within the Polkadot ecosystem and the wider array of EVM chains present in the Ethereum ecosystem.
 
 ## Key Features
 

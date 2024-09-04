@@ -4,5 +4,5 @@ The governance of Darwinia chains is managed by [RingDAO](https://ringdao.com/),
 
 ## Other Projects Governed By The RingDAO
 
-* [Msgport](https://docs.msgport.xyz/) 
+* [Msgport](https://msgport.ringdao.com/docs/) 
 * [XAPI](https://github.com/ringecosystem/xapi)
