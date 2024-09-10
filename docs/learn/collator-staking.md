@@ -24,5 +24,3 @@ The staking system has two types:
 
 1. Direct RING token staking: This is the most straightforward way to stake, and the reward you receive is based on the amount of tokens you stake.
 2. Deposit-based staking: By depositing RING tokens, you can receive a bonus in the form of [KTON](../community/orgs/ktondao.md) tokens. Additionally, the deposited tokens can be considered part of the amount you staked, allowing you to receive more rewards.
-
-
