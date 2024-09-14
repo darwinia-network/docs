@@ -23,7 +23,7 @@ We wholeheartedly believe in the power of collaboration and warmly invite additi
 
 | Project | Purpose |
 | --- | --- |
-| [DIP](https://dips.darwinia.network/) | Darwinia Improvement Proposal, primarily focusing on changes and improvement ideas for the Darwinia ecosystem. Feel free to submit and discuss your suggestions. |
+| [DIP](https://dips.darwinia.network/) | Darwinia Improvement Proposal, primarily focusing on changes and improvement ideas for the Darwinia ecosystem. Feel free to submit and discuss your suggestions [here](https://github.com/darwinia-network/DIPs). |
 | [RFP](https://github.com/darwinia-network/collaboration/issues) | Request for Proposals, provides a selection of potential projects or tasks for members of the ecosystem. |
 | [The Immunefi Bounty Program](https://immunefi.com/bug-bounty/ringdao/)| It offers rewards for finding potential flaws in our products. |
 | [Grant Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md) | To fund the development of projects and applications that contribute to the Darwinia ecosystem and promote overall network growth, we encourage passionate teams to build innovative cross-chain projects on Darwinia Chain. |
