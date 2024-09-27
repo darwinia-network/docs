@@ -29,17 +29,17 @@ It's important to note that there is a faster method to expedite the syncing pro
     
 3. Download and decompress the binary.
     
-    As of the time of writing this doc(2024-09-02), the latest version of the Darwinia node is `v6.6.5`. Please ensure that you check for [the latest version](https://github.com/darwinia-network/darwinia/releases) when running your own node. 
+    As of the time of writing this doc(2024-09-27), the latest version of the Darwinia node is `v6.7.1`. Please ensure that you check for [the latest version](https://github.com/darwinia-network/darwinia/releases) when running your own node. 
     
     ```bash
-    wget https://github.com/darwinia-network/darwinia/releases/download/v6.6.5/darwinia-x86_64-linux-gnu.tar.bz2
+    wget https://github.com/darwinia-network/darwinia/releases/download/v6.7.1/darwinia-x86_64-linux-gnu.tar.bz2
     tar xvf darwinia-x86_64-linux-gnu.tar.bz2
     ```
     
 4. Start the node by running the following command:
     
     ```bash
-    ./darwinia --chain darwinia --base-path /data/darwinia-collator --frontier-backend-type sql --collator
+    ./darwinia --chain=darwinia --base-path=/data/darwinia-collator --frontier-backend-type=sql --collator
     ```
     
 5. Verify your node is up and running successfully by reviewing the output displayed in the terminal. The terminal should display output similar to this:

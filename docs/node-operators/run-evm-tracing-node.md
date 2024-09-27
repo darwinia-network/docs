@@ -22,14 +22,14 @@ As you may be aware, Darwinia chains are EVM compatible, which means that the RP
     
 2. Download the precompiled tracing binary
     
-    As of the time of writing this doc (2024-09-02), the latest version of the Koi Chain is `v6.6.5`. Please ensure that you check for [the latest version](https://github.com/darwinia-network/darwinia/releases) when running your own node.
+    As of the time of writing this doc (2024-09-27), the latest version of the Koi Chain is `v6.7.1`. Please ensure that you check for [the latest version](https://github.com/darwinia-network/darwinia/releases) when running your own node.
 
     !!! warn 
         Please be aware that there are two types of binaries available on the release page. Select the one that starts with `darwinia-tracing-xxx`.
     
     ```bash
-    wget https://github.com/darwinia-network/darwinia/releases/download/v6.6.5/darwinia-x86_64-linux-gnu.tar.bz2
-    tar xvf darwinia-x86_64-linux-gnu.tar.bz2
+    wget https://github.com/darwinia-network/darwinia/releases/download/v6.7.1/darwinia-tracing-x86_64-linux-gnu.tar.zst
+    tar -I zstd -xf darwinia-tracing-x86_64-linux-gnu.tar.zst
     ```
     
 3. Download the overridden wasms
@@ -66,7 +66,7 @@ As you may be aware, Darwinia chains are EVM compatible, which means that the RP
         --frontier-backend-type=sql \
         --wasm-runtime-overrides=overridden-runtimes \
         -- \
-        --chain polkadot \
+        --chain=polkadot \
         --sync=warp
     ```
     
