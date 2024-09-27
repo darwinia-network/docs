@@ -15,7 +15,7 @@ When running as a simple sync node (above), only the state of the past 256 block
 
 ### Download Snapshot
 
-It's important to note that there is a faster method to expedite the syncing process**.** You can achieve this by downloading the snapshot blockchain data and moving it to the current node database location and greatly speeding up the node sync process. Click [here](./snapshot.md) for more detailed instructions.
+It's important to note that there is a faster method to expedite the syncing process. You can achieve this by downloading the parachain snapshot chain data and moving it to the current node database location and greatly speeding up the node sync process. Click [here](./snapshot.md) for more detailed instructions.
 
 ### Prepare The Binary
 
