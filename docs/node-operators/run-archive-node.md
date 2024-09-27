@@ -29,7 +29,7 @@ tar xvf darwinia-x86_64-linux-gnu.tar.bz2
 ### Run An Archive Node
 
 !!! note
-    Most of the arguments are the same between different networks. However, please note that the `-chain`, `-base-path` and `-chain` after `--` refer to the relay chain in the last line.
+    Most of the arguments are the same between different networks. However, please note that the `--chain`, `--base-path` and `--chain` after `--` refer to the relay chain in the last line.
 
 - For Darwinia Chain
     
@@ -43,6 +43,7 @@ tar xvf darwinia-x86_64-linux-gnu.tar.bz2
         --rpc-external \
         --rpc-cors=all \
         --rpc-max-connections=1000 \
+        --runtime-cache-size=64 \
         -- \
         --chain=polkadot
     ```
@@ -59,6 +60,7 @@ tar xvf darwinia-x86_64-linux-gnu.tar.bz2
         --rpc-external \
         --rpc-cors=all \
         --rpc-max-connections=1000 \
+        --runtime-cache-size=64 \
         -- \
         --chain=kusama
     ```
