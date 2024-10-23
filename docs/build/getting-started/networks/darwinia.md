@@ -24,9 +24,11 @@ Darwinia is now a [parachain of Polkadot](https://polkadot.subscan.io/parachain/
     - **`https://rpc.darwinia.network`**
     - **`https://darwinia-rpc.dcdao.box`**
     - **`https://darwinia-rpc.dwellir.com`**
+    - **`https://darwinia.rpc.subquery.network/public`**
 - Websocket RPC Endpoints:
     - **`wss://rpc.darwinia.network`**
     - **`wss://darwinia-rpc.dcdao.box`**
     - **`wss://darwinia-rpc.dwellir.com`**
+    - **`wss://darwinia.rpc.subquery.network/public/ws`**
 - EVM-Tracing Node Endpoints
     - **`ws://c1.darwinia2.darwinia.network:9944`**
