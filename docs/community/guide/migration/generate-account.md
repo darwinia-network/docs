@@ -76,6 +76,6 @@ Please navigate to [staking.darwinia.network](https://staking.darwinia.network/
 
 MetaMask will pop up and ask you to sign in. Once signed in, you will be prompted to select the account to connect to the Dapp and accept permissions.
 
-Upon accepting permissions and changing the network to `Darwinia`, you will be directed to the main dashboard. There, you will find the details of the stake you had on Darwinia 1.0, including Bonded, Unbonding, Unbonded, and Deposits. You can continue to use these to participate in staking on the Darwinia. Please refer to [this tutorial](../staking.md) for instructions on how to stake and earn staking rewards on the Darwinia.
+Upon accepting permissions and changing the network to `Darwinia`, you will be directed to the main dashboard. There, you will find the details of the stake you had on Darwinia 1.0, including Bonded, Unbonding, Unbonded, and Deposits. You can continue to use these to participate in staking on the Darwinia. Please refer to [this tutorial](../../../learn/collator-staking.md#staking-design) for instructions on how to stake and earn staking rewards on the Darwinia.
 
 ![evm-tutorial-migrate-general-13](../../../images/evm-tutorial-migrate-general-13.png)
