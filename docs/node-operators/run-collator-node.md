@@ -155,35 +155,19 @@ It's important to note that there is a faster method to expedite the syncing pro
     ```
     
 
-## Set Session Key And Commission Rate
+## Join The Collators Set
 
-1. Once your node has finished syncing, ensure that it is still running.
-2. Open the [staking app](https://staking.darwinia.network/#/?network=darwinia) in your browser and connect it to your wallet account. You have the option to choose between MetaMask or WalletConnect, as both wallets are now supported.
-    
-    ![evm-tutorial-collator-node-1](../images/evm-tutorial-collator-node-1.png)
-    
-3. Click on the `Join Collator` button and follow these steps:
-    1. Enter the session key that was generated earlier and click on `Set Session Key` to prompt the wallet for submitting an Ethereum transaction.
-    2. Enter the desired commission amount and click on `Set Commission` to prompt the wallet for submitting an Ethereum transaction.
-
-![evm-tutorial-collator-node-2](../images/evm-tutorial-collator-node-2.png)
-![evm-tutorial-collator-node-3](../images/evm-tutorial-collator-node-3.png)
-
-1. To verify that your account is in the collator waiting pool, click on the `Select a collator` button.
-    
-    ![evm-tutorial-collator-node-4](../images/evm-tutorial-collator-node-4.png)
-    ![evm-tutorial-collator-node-5](../images/evm-tutorial-collator-node-5.png)
-    
+Once your node has finished syncing, ensure that it is still running, then follow the [Join Collators Set Guide](https://ringdao.notion.site/How-to-become-a-collator-fffaad1d671e81c6b5f0ee4e97c29889) to complete the process of becoming a collator.
 
 ## To Be A Real Collator
 
-1. Accumulate power by staking or depositing
+1. Accumulate `RING` by staking or depositing
     
-    At this point, your node is operational and the node session key has been successfully registered and associated with your account. As a candidate collator, you are currently in the waiting pool. However, in order to progress and participate in block production, as well as receive rewards, you must collect sufficient power. To achieve this, you can either stake native `RING`  or deposit `KTON`. By doing so, you will accumulate the necessary power to be included in the real collator list. It is important to note that only the top 20 power-owning collators will be selected to form the collator set for the next session.
+    At this point, your node is operational and the node session key has been successfully registered and associated with your account. As a candidate collator, you are currently in the waiting pool. However, in order to progress and participate in block production, as well as receive rewards, you must collect sufficient `RING`. To achieve this, you can either stake native `RING`  or deposit `KTON`. By doing so, you will accumulate the necessary `RING ` to be included in the real collator list. It is important to note that only the top 20 RING-owning collators will be selected to form the collator set for the next session.
     
 2. Wait until the next session
     
-    Once you have accumulated enough power and have been selected as a real collator, your node will begin producing blocks once the next session starts. You will be able to observe messages similar to the following in the node log:
+    Once you have accumulated enough `RING` and have been selected as a real collator, your node will begin producing blocks once the next session starts. You will be able to observe messages similar to the following in the node log:
     
     ```bash
     2024-09-04 02:29:36 [Parachain] Starting collation. relay_parent=0x6e01f34762d42f007122a3e1ce6c4831dfd83ac5b6785d094ec526c573f332a6 at=0x0daa9a024b7c31241cdaffeebcc60ae778c24a005f42a6989092e7f63860161a
