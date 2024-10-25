@@ -18,8 +18,8 @@ Darwinia is now a [parachain of Polkadot](https://polkadot.subscan.io/parachain/
     - Symbol: [**RING**](https://coinmarketcap.com/currencies/darwinia-network/)
     - Decimal: 18
 - Block Explorers:
-    - [Subscan](https://darwinia.subscan.io/)
-    - [DarwiniaScan](https://explorer.darwinia.network/)
+    - [**Subscan**](https://darwinia.subscan.io/)
+    - [**DarwiniaScan**](https://explorer.darwinia.network/)
 - HTTPS RPC Endpoints:
     - **`https://rpc.darwinia.network`**
     - **`https://darwinia-rpc.dcdao.box`**
