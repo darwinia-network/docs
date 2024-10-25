@@ -17,7 +17,6 @@ Crab is now a [parachain of Kusama](https://kusama.subscan.io/parachain/2105).
     - Decimal: **`18`**
 - Block Explorers:
     - [**CrabScan**](https://crab-scan.darwinia.network/)
-    - [**Crab SubView**](https://crab.subview.xyz/)
 - HTTPS RPC Endpoints:
     - **`https://crab-rpc.darwinia.network`**
     - **`https://crab-rpc.dcdao.box`**

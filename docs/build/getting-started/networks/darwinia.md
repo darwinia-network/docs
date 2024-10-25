@@ -19,7 +19,7 @@ Darwinia is now a [parachain of Polkadot](https://polkadot.subscan.io/parachain/
     - Decimal: 18
 - Block Explorers:
     - [Subscan](https://darwinia.subscan.io/)
-    - [Subview](https://darwinia.subview.xyz/)
+    - [DarwiniaScan](https://explorer.darwinia.network/)
 - HTTPS RPC Endpoints:
     - **`https://rpc.darwinia.network`**
     - **`https://darwinia-rpc.dcdao.box`**
