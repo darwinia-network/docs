@@ -1,6 +1,6 @@
 # Overview
 
-[KTON](https://coinmarketcap.com/currencies/darwinia-commitment-token/) is a token that incentivizes users to deposit their [RING](https://coinmarketcap.com/currencies/darwinia-network/) token for a specific period of time. On the Darwinia chains, users can deposit their RING for up to 12 months on the [Darwinia Staking App](https://collator-staking.darwinia.network), and in return, they receive KTON as a reward. The initial supply of KTON is zero, and it is only created when users deposit their RING tokens. Once acquired, KTON can be used to participate in the KtonDAO staking and governance processes.
+[KTON](https://coinmarketcap.com/currencies/darwinia-commitment-token/) is a token that incentivizes users to deposit their [RING](https://coinmarketcap.com/currencies/darwinia-network/) token for a specific period of time. On the Darwinia chains, users can deposit their RING for up to 12 months on the [Darwinia Staking App](https://collator-staking.ringdao.com/), and in return, they receive KTON as a reward. The initial supply of KTON is zero, and it is only created when users deposit their RING tokens. Once acquired, KTON can be used to participate in the KtonDAO staking and governance processes.
 
 !!! warning
     Please note that users cannot undeposit their RING during the committed period unless they pay a penalty of the amount of KTON they have received. Therefore, users have the flexibility to choose the deposit period and receive KTON in return during the RING staking process.
