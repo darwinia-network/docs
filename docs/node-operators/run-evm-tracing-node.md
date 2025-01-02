@@ -43,7 +43,7 @@ As you may be aware, Darwinia chains are EVM compatible, which means that the RP
     # Check out the corresponding network branch
     git checkout origin/darwinia
     # Copy the wasm runtime files to the temporary workaround override runtime location 
-    cp wasm/evm-tracing/* ../run-evm-tracing-node/overridden-runtimes/
+    cp wasm/evm-tracing/* ../overridden-runtimes/
     ```
     
     The `wasm-runtime-overrides` repository has five branches, each corresponding to one of the four Darwinia chains. You will need to switch to the branch that corresponds to your desired network and copy the `wasm` directory to your temporary workaround location. In this tutorial, we will use the `darwinia` branch.
