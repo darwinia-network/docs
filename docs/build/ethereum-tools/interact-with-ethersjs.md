@@ -42,7 +42,7 @@ npm install ethers@6.13.0
 ## Contract Interaction
 
 !!! note
-    The network provider used in this tutorial is the [Koi testnet](../getting-started/networks/koi.md). However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
+    The network provider used in this tutorial is the [Crab testnet](../getting-started/networks/crab.md). However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
 
 ### Prepare Contract
 
@@ -156,7 +156,7 @@ const accountFrom = {
     privateKey: "0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc",
 }
 
-const provider = new JsonRpcProvider('https://koi-rpc.darwinia.network');
+const provider = new JsonRpcProvider('https://crab-rpc.darwinia.network');
 const wallet = new ethers.Wallet(accountFrom.privateKey, provider);
 const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 const bin = contractMetadata.contracts["storage.sol:Storage"].bin;
@@ -216,7 +216,7 @@ const accountFrom = {
   privateKey:
     "0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc",
 };
-const provider = new JsonRpcProvider("https://koi-rpc.darwinia.network");
+const provider = new JsonRpcProvider("https://crab-rpc.darwinia.network");
 const wallet = new ethers.Wallet(accountFrom.privateKey, provider);
 const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 
@@ -265,7 +265,7 @@ const contractMetadata = require("./metadata.json");
 // The contract address deployed in last step
 const contractAddress = '0x24e263941c13bD12EEaAdba64531385e83103908';
 
-const provider = new JsonRpcProvider('https://koi-rpc.darwinia.network');
+const provider = new JsonRpcProvider('https://crab-rpc.darwinia.network');
 const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 const retrieve = async () => {
     // Construct the contract instance

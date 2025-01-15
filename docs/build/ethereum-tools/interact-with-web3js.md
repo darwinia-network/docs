@@ -43,7 +43,7 @@ npm install web3@4.9.0"
 
 
 !!! note
-    The network provider used in this tutorial is the [Koi testnet](../getting-started/networks/koi.md). However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
+    The network provider used in this tutorial is the [Crab testnet](../getting-started/networks/crab.md). However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
 
 ### Prepare Contract
 
@@ -157,7 +157,7 @@ const accountFrom = {
     privateKey: "0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc",
 }
 
-const web3 = new Web3('https://koi-rpc.darwinia.network');
+const web3 = new Web3('https://crab-rpc.darwinia.network');
 const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 const bin = contractMetadata.contracts["storage.sol:Storage"].bin;
 
@@ -232,7 +232,7 @@ const accountFrom = {
     address: "0x6Bc9543094D17f52CF6b419FB692797E48d275d0",
     privateKey: "0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc",
 }
-const web3 = new Web3('https://koi-rpc.darwinia.network');
+const web3 = new Web3('https://crab-rpc.darwinia.network');
 const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 
 const store = async () => {
@@ -283,7 +283,7 @@ const contractMetadata = require("./metadata.json");
 // The contract address deployed in last step
 const contractAddress = '0x677163264bcb88A6f8F71E2B7D88F51d54325AB1';
 
-const web3 = new Web3('https://koi-rpc.darwinia.network');
+const web3 = new Web3('https://crab-rpc.darwinia.network');
 const abi = contractMetadata.contracts["storage.sol:Storage"].abi;
 
 const retrieve = async () => {

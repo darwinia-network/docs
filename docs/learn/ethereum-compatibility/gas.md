@@ -12,9 +12,9 @@ In Ethereum, the number of pending transactions that can be included in the next
 
 Similarly, the Darwinia platform also has a block gas limit that determines the maximum amount of gas that can be consumed in a block. However, the specific block gas limit in Darwinia may be different from that of Ethereum.
 
-| Network | Darwinia | Crab | Koi Testnet |
+| Network | Darwinia | Crab |
 | --- | --- | --- | --- |
-| BlockGasLimit | 20 million gas | 20 million gas | 20 million gas  |
+| BlockGasLimit | 20 million gas | 20 million gas |
 
 **It is important to note that the BlockGasLimit in the Darwinia Platform is lower than the corresponding value in Ethereum.** This means that when building applications on the Darwinia Platform, developers need to be mindful of the lower gas limit and ensure that their code and transactions stay within this limit. Failure to do so may result in transactions being rejected or not being included in blocks. It is recommended to thoroughly test and optimize gas usage in order to ensure the smooth functioning of applications on the Darwinia Platform.
 

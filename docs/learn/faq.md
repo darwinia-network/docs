@@ -2,7 +2,7 @@
 
 Welcome to our Frequently Asked Questions (FAQs) section This page is designed to provide clear and concise answers to common questions we receive regarding the Darwinia networks. Our goal is to make navigating the complexities of the Darwinia as straightforward as possible. If you have any further questions not covered here, feel free to reach out to us directly. We're always here to help!
 
-## What distinguishes the Darwinia, Crab and Koi networks from each other?
+## What distinguishes the Darwinia and Crab networks from each other?
 
 See [Chains](../build/getting-started/networks/overview.md) 
 

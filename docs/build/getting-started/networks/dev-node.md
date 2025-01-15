@@ -63,7 +63,7 @@ While there is an established test network, namely the [Crab network](./crab.md)
 
 After your node compiles, you are ready to start exploring what it does using the darwinia development node.
 
-To start the local darwinia koi testnet node:
+To start the local Crab testnet node:
 
 1. In the same terminal where you compiled your node, you can now start the node in development mode by running the following command:
     

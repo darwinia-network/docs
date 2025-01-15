@@ -7,7 +7,7 @@ Darwinia strives to achieve compatibility with Ethereum, which includes being RP
 
 ## Precompiles In Darwinia Networks
 
-In the comprehensive Darwinia Ecosystem, each network serves a distinct purpose, resulting in the installation of different precompiles on each network. It is possible that a particular network requires a unique precompile to execute specific actions, while it is unnecessary and would introduce unnecessary overhead in other networks. To address this, it is crucial to provide a precompile list for each network. If you are unfamiliar with the relationship between these networks, please refer to [this answer](../../learn/faq.md#what-distinguishes-the-darwinia-crab-and-koi-networks-from-each-other) for more information.
+In the comprehensive Darwinia Ecosystem, each network serves a distinct purpose, resulting in the installation of different precompiles on each network. It is possible that a particular network requires a unique precompile to execute specific actions, while it is unnecessary and would introduce unnecessary overhead in other networks. To address this, it is crucial to provide a precompile list for each network. If you are unfamiliar with the relationship between these networks, please refer to [this answer](../../learn/faq.md#what-distinguishes-the-darwinia-and-crab-networks-from-each-other) for more information.
 
 ### Darwinia Network
 
@@ -28,15 +28,4 @@ In the comprehensive Darwinia Ecosystem, each network serves a distinct purpose,
 | `0x0000000000000000000000000000000000000400` | [StateStorage](../precompiles/state-storage.md) |
 | `0x0000000000000000000000000000000000000401` | [Dispatch](../precompiles/dispatch.md) |
 | `0x0000000000000000000000000000000000000402` | [Commitment Token](../precompiles/commitment-token.md) |
-| `0x0000000000000000000000000000000000000602` | [Conviction Voting](../precompiles/conviction-voting.md) |
-
-### Koi Testnet
-
-| Precompile Address | Name |
-| --- | --- |
-| `0x0000000000000000000000000000000000000001 ~ 0x0000000000000000000000000000000000000009` | [Ethereum](../precompiles/ethereum.md) |
-| `0x0000000000000000000000000000000000000400` | [StateStorage](../precompiles/state-storage.md) |
-| `0x0000000000000000000000000000000000000401` | [Dispatch](../precompiles/dispatch.md) |
-| `0x0000000000000000000000000000000000000402` | [Commitment Token](../precompiles/commitment-token.md) |
-| `0x0000000000000000000000000000000000000403` | [USDT](../precompiles/usdt.md) |
 | `0x0000000000000000000000000000000000000602` | [Conviction Voting](../precompiles/conviction-voting.md) |
