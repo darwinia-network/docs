@@ -12,7 +12,7 @@ The four main tools in Foundry are:
 - [Anvil](https://github.com/foundry-rs/foundry/blob/master/crates/anvil): Anvil is a local TestNet node that can be used for development purposes. It has the ability to fork preexisting networks.
 - [Chisel](https://github.com/foundry-rs/foundry/blob/master/crates/chisel): Chisel is a Solidity REPL (Read-Eval-Print Loop) that allows for quick testing of Solidity snippets.
 
-This guide will provide instructions on how to use Foundry's Forge and Cast tools to interact with Ethereum smart contracts on the Darwinia [Koi TestNet](../getting-started/networks/koi.md).
+This guide will provide instructions on how to use Foundry's Forge and Cast tools to interact with Ethereum smart contracts on the Darwinia [Crab testnet](../getting-started/networks/crab.md).
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ In addition to these three folders, a git project will also be created along wit
 ## Contract Interaction
 
 !!! note
-    The network provider used in this tutorial is the Koi Testnet. However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
+    The network provider used in this tutorial is the Crab testnet. However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
 
 ### Prepare And Compile Contract
 
@@ -106,7 +106,7 @@ Compiler run successful!
 Start the deployment by running the command:
 
 ```bash
-forge create --rpc-url https://koi-rpc.darwinia.network --private-key 0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc src/storage.sol:Storage
+forge create --rpc-url https://crab-rpc.darwinia.network --private-key 0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc src/storage.sol:Storage
 ```
 
 The output like this:
@@ -126,7 +126,7 @@ Transaction hash: 0x8a9089e9aaf1569807cf3bae0f525370a490444fb6c55702aee46aaad70e
 Run the command:
 
 ```bash
-cast send --private-key 0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc --rpc-url https://koi-rpc.darwinia.network 0x0De784894D8FfE792EA7cF108E96f6e4451D066E "store(uint256)" 3
+cast send --private-key 0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc --rpc-url https://crab-rpc.darwinia.network 0x0De784894D8FfE792EA7cF108E96f6e4451D066E "store(uint256)" 3
 ```
 
 The output:
@@ -152,7 +152,7 @@ type                    2
 Run the command:
 
 ```bash
-cast call 0x0De784894D8FfE792EA7cF108E96f6e4451D066E "retrieve()" --rpc-url https://koi-rpc.darwinia.network
+cast call 0x0De784894D8FfE792EA7cF108E96f6e4451D066E "retrieve()" --rpc-url https://crab-rpc.darwinia.network
 ```
 
 The output:

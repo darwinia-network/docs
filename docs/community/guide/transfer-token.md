@@ -5,7 +5,7 @@ The first crucial step for a newcomer in the Web3 world is understanding how to 
 ## Transfer Using MetaMask
 
 !!! note
-    This tutorial based on the [Koi testnet](../../build/getting-started/networks/koi.md), it operations are also apply to other chains.
+    This tutorial based on the [Crab testnet](../../build/getting-started/networks/crab.md), it operations are also apply to other chains.
 
 - Install the Wallet extension in your browser.
 - Import your existing accounts or create new ones. `Test Account 1` and `Test Account 2` are two test accounts in this tutorial.
@@ -13,20 +13,16 @@ The first crucial step for a newcomer in the Web3 world is understanding how to 
     ![evm-tutorial-token-transfer-1](../../images/evm-tutorial-token-transfer-1.png)
     ![evm-tutorial-token-transfer-2](../../images/evm-tutorial-token-transfer-2.png)
 
-- By default, the MetaMask extension is connected to the Ethereum Mainnet. So, you need to switch from the Ethereum Mainnet to the Darwinia Koi networks. For example, take the Koi network as an example, [the network information page](../../build/getting-started/networks/koi.md#connect-wallet-automatically) provides a convenient link to connect directly.
+- By default, the MetaMask extension is connected to the Ethereum Mainnet. So, you need to switch from the Ethereum Mainnet to the Crab network. For example, take the Crab network as an example, [the network information page](../../build/getting-started/networks/crab.md#connect-wallet-automatically) provides a convenient link to connect directly.
 
     ![evm-tutorial-token-transfer-3](../../images/evm-tutorial-token-transfer-3.png)
     
-    Click the `Connect` button.
-
-![evm-tutorial-token-transfer-4](../../images/evm-tutorial-token-transfer-4.png)
-
-Check the network displayed and click the `Approve` button. Then , you can see that the network has switched from the Ethereum Mainnet to the Koi Testnet.
+Click the `Connect` button, and the MetaMask extension will automatically switch to the Crab network, check the network displayed and click the `Approve` button. Then , you can see that the network has switched from the Ethereum Mainnet to the Crab testnet.
 
 ![evm-tutorial-token-transfer-5](../../images/evm-tutorial-token-transfer-5.png)
 ![evm-tutorial-token-transfer-6](../../images/evm-tutorial-token-transfer-6.png)
 
-`Test Account 1` has 20 KRING and `Test Account 2` balance is 0. Let's transfer 10 KRING to the `Test Acccount 2` next.
+`Test Account 1` has 20 CRAB and `Test Account 2` balance is 0. Let's transfer 10 CRAB to the `Test Acccount 2` next.
 
 - Transfer
     ![evm-tutorial-token-transfer-7](../../images/evm-tutorial-token-transfer-7.png)
@@ -42,4 +38,4 @@ Check the network displayed and click the `Approve` button. Then , you can see t
     Confirm the source account and target account, then click `Comfirm` button.
     
     ![evm-tutorial-token-transfer-10](../../images/evm-tutorial-token-transfer-10.png)
-    ![evm-tutorial-token-transfer-11](../../images/evm-tutorial-token-transfer-11.png)/
+    ![evm-tutorial-token-transfer-11](../../images/evm-tutorial-token-transfer-11.png)

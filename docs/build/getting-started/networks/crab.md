@@ -1,8 +1,5 @@
-# Crab Chain
-
-Crab serves as Darwinia's incentivized testnet network with genuine economic significance, akin to how Kusama functions for Polkadot.
-
-Crab is now a [parachain of Kusama](https://kusama.subscan.io/parachain/2105).
+# Crab Chain(Testnet)
+The Crab, a [parachain of Kusama](https://kusama.subscan.io/parachain/2105), now serves as Darwinia’s primary test network. It is officially maintained to ensure that new and innovative features are thoroughly tested before being deployed to the main production network.
 
 ## Connect Wallet Automatically
 

@@ -1,6 +1,6 @@
 # Run Development Testnet
 
-While there is an established test network, namely the [Koi network](./koi.md), which serves as an ideal sandbox for your applications, eliminating any concern about initiating and connecting nodes, among other things. The official test network is designed to fulfill application developers' requirements. However, there may be scenarios where you want to perform low-level tasks. In such cases, creating your own development network can significantly enhance your development, testing, or debugging efficiency. This guide will walk you through the process of establishing a single-node development network.
+While there is an established test network, namely the [Crab network](./crab.md), which serves as an ideal sandbox for your applications, eliminating any concern about initiating and connecting nodes, among other things. The official test network is designed to fulfill application developers' requirements. However, there may be scenarios where you want to perform low-level tasks. In such cases, creating your own development network can significantly enhance your development, testing, or debugging efficiency. This guide will walk you through the process of establishing a single-node development network.
 
 ## Compile darwinia node
 
@@ -15,48 +15,47 @@ While there is an established test network, namely the [Koi network](./koi.md), 
     
     ```bash
     cd darwinia
-    cargo build --release -p darwinia --features koi-native
+    cargo build --release -p darwinia --features all-runtime
     ```
     
 4. When the compilation is finished, something like this will be printed:
     
     ```bash
     ......
-    Compiling polkadot-node-core-backing v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling polkadot-gossip-support v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling polkadot-node-core-dispute-coordinator v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling polkadot-statement-distribution v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling polkadot-availability-distribution v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling polkadot-node-core-prospective-parachains v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling polkadot-node-core-bitfield-signing v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling polkadot-node-core-av-store v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling polkadot-approval-distribution v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling polkadot-availability-bitfield-distribution v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling polkadot-node-core-pvf-checker v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling polkadot-node-core-chain-selection v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling polkadot-node-core-approval-voting v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling polkadot-node-core-parachains-inherent v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling polkadot-node-core-chain-api v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling fc-db v2.0.0-dev (https://github.com/darwinia-network/frontier?branch=polkadot-v1.1.0-patch#a562b665)
-    Compiling fc-mapping-sync v2.0.0-dev (https://github.com/darwinia-network/frontier?branch=polkadot-v1.1.0-patch#a562b665)
-    Compiling cumulus-client-consensus-common v0.1.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling cumulus-pallet-aura-ext v0.1.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling cumulus-client-network v0.1.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling try-runtime-cli v0.10.0-dev (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling sc-storage-monitor v0.1.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling cumulus-client-collator v0.1.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling fc-rpc v2.0.0-dev (https://github.com/darwinia-network/frontier?branch=polkadot-v1.1.0-patch#a562b665)
-    Compiling cumulus-relay-chain-rpc-interface v0.1.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling cumulus-relay-chain-minimal-node v0.1.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling cumulus-client-consensus-proposer v0.1.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling cumulus-client-cli v0.1.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling cumulus-client-consensus-aura v0.1.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling moonbeam-rpc-debug v0.1.0 (https://github.com/darwinia-network/moonbeam?branch=polkadot-v1.1.0#078eff3e)
-    Compiling moonbeam-rpc-trace v0.6.0 (https://github.com/darwinia-network/moonbeam?branch=polkadot-v1.1.0#078eff3e)
-    Compiling polkadot-service v1.0.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling cumulus-relay-chain-inprocess-interface v0.1.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Compiling cumulus-client-service v0.1.0 (https://github.com/paritytech/polkadot-sdk?branch=release-polkadot-v1.1.0#c8d2251c)
-    Finished release [optimized] target(s) in 16m 12s
+    Compiling evm-gasometer v0.41.0 (https://github.com/darwinia-network/evm.git?branch=stable2407#b1e92a28)
+    Compiling evm v0.41.2 (https://github.com/darwinia-network/evm.git?branch=stable2407#b1e92a28)
+    Compiling fp-evm v3.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling evm-tracing-events v0.1.0 (https://github.com/darwinia-network/moonbeam?branch=stable2407#a816c21a)
+    Compiling moonbeam-client-evm-tracing v0.1.0 (https://github.com/darwinia-network/moonbeam?branch=stable2407#a816c21a)
+    Compiling pallet-evm v6.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling fp-rpc v3.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling fp-ethereum v1.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling pallet-evm-precompile-bn128 v2.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling pallet-evm-precompile-modexp v2.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling pallet-evm-precompile-blake2 v2.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling pallet-evm-precompile-simple v2.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling pallet-evm-precompile-bls12381 v1.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling fc-storage v1.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling fc-consensus v2.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling moonbeam-rpc-core-debug v0.1.0 (https://github.com/darwinia-network/moonbeam?branch=stable2407#a816c21a)
+    Compiling moonbeam-rpc-core-trace v0.6.0 (https://github.com/darwinia-network/moonbeam?branch=stable2407#a816c21a)
+    Compiling fc-db v2.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling precompile-utils v0.1.0 (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling darwinia-ethtx-forwarder v6.8.1 (/mnt/myssd/coding/darwinia-space/darwinia/pallet/ethtx-forwarder)
+    Compiling pallet-evm-precompile-dispatch v2.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling pallet-ethereum v4.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling darwinia-deposit v6.8.1 (/mnt/myssd/coding/darwinia-space/darwinia/pallet/deposit)
+    Compiling darwinia-staking v6.8.1 (/mnt/myssd/coding/darwinia-space/darwinia/pallet/staking)
+    Compiling fc-mapping-sync v2.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling darwinia-account-migration v6.8.1 (/mnt/myssd/coding/darwinia-space/darwinia/pallet/account-migration)
+    Compiling fc-rpc v2.0.0-dev (https://github.com/polkadot-evm/frontier?branch=stable2407#2e219e17)
+    Compiling moonbeam-rpc-debug v0.1.0 (https://github.com/darwinia-network/moonbeam?branch=stable2407#a816c21a)
+    Compiling moonbeam-rpc-trace v0.6.0 (https://github.com/darwinia-network/moonbeam?branch=stable2407#a816c21a)
+    Compiling darwinia-precompile-assets v6.8.1 (/mnt/myssd/coding/darwinia-space/darwinia/precompile/assets)
+    Compiling pallet-evm-precompile-conviction-voting v0.1.0 (https://github.com/darwinia-network/moonbeam?branch=stable2407#a816c21a)
+    Compiling darwinia-precompile-state-storage v6.8.1 (/mnt/myssd/coding/darwinia-space/darwinia/precompile/state-storage)
+    Compiling darwinia-common-runtime v6.8.1 (/mnt/myssd/coding/darwinia-space/darwinia/runtime/common)
+    Finished `release` profile [optimized] target(s) in 2m 40s
     ```
     
 
@@ -64,57 +63,63 @@ While there is an established test network, namely the [Koi network](./koi.md), 
 
 After your node compiles, you are ready to start exploring what it does using the darwinia development node.
 
-To start the local darwinia koi testnet node:
+To start the local Crab testnet node:
 
 1. In the same terminal where you compiled your node, you can now start the node in development mode by running the following command:
     
-    ```bash
-    ./target/release/darwinia --chain koi-dev --alice --tmp --rpc-external --rpc-cors all
-    ```
-    
-    The darwinia command-line options specify how you want the running node to operate. In this case, the `--dev` option specifies that the node runs in development mode using the predefined `development` chain specification. By default, this option also deletes all active data—such as keys, the blockchain database, and networking information when you stop the node by pressing `Ctrl-c`. Using the `--dev` option ensures that you have a clean working state any time you stop and restart the node.
+	```bash
+	./target/release/darwinia --chain crab-dev --alice --tmp --rpc-external --rpc-cors all --unsafe-force-node-key-generation
+	```
+
+	The darwinia command-line options specify how you want the running node to operate. In this case, the `--chain crab-dev` option specifies that the node runs in development mode using the predefined Crab development chain specification. By default, this option also deletes all active data—such as keys, the blockchain database, and networking information—when you stop the node by pressing Ctrl-C. Using the `--tmp` option ensures that you have a clean working state any time you stop and restart the node.
     
 2. Verify your node is up and running successfully by reviewing the output displayed in the terminal. The terminal should display output similar to this:
     
     ```bash
-    2024-06-12 11:39:11 Darwinia    
-    2024-06-12 11:39:11 ✌️  version 6.6.3-2dadcd456ab    
-    2024-06-12 11:39:11 ❤️  by Darwinia Network <hello@darwinia.network>, 2018-2024    
-    2024-06-12 11:39:11 📋 Chain specification: Darwinia Koi D    
-    2024-06-12 11:39:11 🏷  Node name: Alice    
-    2024-06-12 11:39:11 👤 Role: AUTHORITY    
-    2024-06-12 11:39:11 💾 Database: RocksDb at /tmp/substrategTTTOz/chains/darwinia-koi-d/db/full    
-    2024-06-12 11:39:12 Parachain id: Id(2105)    
-    2024-06-12 11:39:12 Parachain Account: 5Ec4AhNxga1JYLioRBNxfRnovheDELVbZTRSnKMgvSVPvNcN    
-    2024-06-12 11:39:12 Is collating: yes    
-    2024-06-12 11:39:12 [pallet::staking] assembling new collators for new session 0 at #0    
-    2024-06-12 11:39:12 [pallet::staking] assembling new collators for new session 1 at #0    
-    2024-06-12 11:39:13 🔨 Initializing Genesis block/state (state: 0xed27…e560, header-hash: 0x1411…ebf9)    
-    2024-06-12 11:39:14 🏷  Local node identity is: 12D3KooWJMkgwqQuq71NepWoZBsjk3EpZAxHeDdyhUF99zu86rVH    
-    2024-06-12 11:39:14 💻 Operating system: linux    
-    2024-06-12 11:39:14 💻 CPU architecture: x86_64    
-    2024-06-12 11:39:14 💻 Target environment: gnu    
-    2024-06-12 11:39:14 💻 CPU: AMD Ryzen 7 5700G with Radeon Graphics    
-    2024-06-12 11:39:14 💻 CPU cores: 8    
-    2024-06-12 11:39:14 💻 Memory: 63578MB    
-    2024-06-12 11:39:14 💻 Kernel: 6.5.0-35-generic    
-    2024-06-12 11:39:14 💻 Linux distribution: Ubuntu 22.04.4 LTS    
-    2024-06-12 11:39:14 💻 Virtual machine: no    
-    2024-06-12 11:39:14 📦 Highest known block at #0    
-    2024-06-12 11:39:14 〽️ Prometheus exporter started at 127.0.0.1:9615    
-    2024-06-12 11:39:14 Running JSON-RPC server: addr=0.0.0.0:9944, allowed origins=["*"]    
-    2024-06-12 11:39:19 💤 Idle (0 peers), best: #0 (0x1411…ebf9), finalized #0 (0x1411…ebf9), ⬇ 0 ⬆ 0    
-    2024-06-12 11:39:24 🙌 Starting consensus session on top of parent 0x14110d2746620059805fd18a6047003fcedf6c3f85642c968f7b398536abebf9    
-    2024-06-12 11:39:24 🎁 Prepared block for proposing at 1 (0 ms) [hash: 0x7d3ce7da0e2850bc1cbba208f4c408ff5ed4732e3bb363409af5ba73df202cff; parent_hash: 0x1411…ebf9; extrinsics (2): [0xeb54…e7f6, 0x2934…47d2]    
-    2024-06-12 11:39:24 🔖 Pre-sealed block for proposal at 1. Hash now 0x8d4eca909342cac95a7d4e4fc40eae0de9a3b781706838aa67a91ee5eb17c4e4, previously 0x7d3ce7da0e2850bc1cbba208f4c408ff5ed4732e3bb363409af5ba73df202cff.    
-    2024-06-12 11:39:24 ✨ Imported #1 (0x8d4e…c4e4)    
-    2024-06-12 11:39:24 💤 Idle (0 peers), best: #1 (0x8d4e…c4e4), finalized #1 (0x8d4e…c4e4), ⬇ 0 ⬆ 0    
-    2024-06-12 11:39:29 💤 Idle (0 peers), best: #1 (0x8d4e…c4e4), finalized #1 (0x8d4e…c4e4), ⬇ 0 ⬆ 0    
-    2024-06-12 11:39:34 💤 Idle (0 peers), best: #1 (0x8d4e…c4e4), finalized #1 (0x8d4e…c4e4), ⬇ 0 ⬆ 0    
-    2024-06-12 11:39:36 🙌 Starting consensus session on top of parent 0x8d4eca909342cac95a7d4e4fc40eae0de9a3b781706838aa67a91ee5eb17c4e4    
-    2024-06-12 11:39:36 🎁 Prepared block for proposing at 2 (0 ms) [hash: 0x65b1fd87b1ba6aa247a232f9f240eba0b44f27b8b61689e60ab6fd7bdbfae65b; parent_hash: 0x8d4e…c4e4; extrinsics (2): [0x2611…0617, 0xe585…ad8d]    
-    2024-06-12 11:39:36 🔖 Pre-sealed block for proposal at 2. Hash now 0xa87b9c78352ce2e0f4ba2f2e10043b10b7cc49070ee6274199793b0c465263ae, previously 0x65b1fd87b1ba6aa247a232f9f240eba0b44f27b8b61689e60ab6fd7bdbfae65b.    
-    2024-06-12 11:39:36 ✨ Imported #2 (0xa87b…63ae)    
+    2025-01-14 17:46:13 darwinia    
+    2025-01-14 17:46:13 ✌️  version 6.8.1-8476af2e40e    
+    2025-01-14 17:46:13 ❤️  by Darwinia Network <hello@darwinia.network>, 2018-2025    
+    2025-01-14 17:46:13 📋 Chain specification: Crab2 D    
+    2025-01-14 17:46:13 🏷  Node name: Alice    
+    2025-01-14 17:46:13 👤 Role: AUTHORITY    
+    2025-01-14 17:46:13 💾 Database: RocksDb at /tmp/substraterhaReX/chains/crab2-d/db/full    
+    2025-01-14 17:46:13 🪪 Parachain id: Id(2105)    
+    2025-01-14 17:46:13 🧾 Parachain Account: 5Ec4AhNxga1JYLioRBNxfRnovheDELVbZTRSnKMgvSVPvNcN    
+    2025-01-14 17:46:13 ✍️ Is collating: yes    
+    2025-01-14 17:46:14 assembling new collators for new session 0 at #0    
+    2025-01-14 17:46:14 RING staking contract must be some; qed    
+    2025-01-14 17:46:14 assembling new collators for new session 1 at #0    
+    2025-01-14 17:46:14 RING staking contract must be some; qed    
+    2025-01-14 17:46:14 🔨 Initializing Genesis block/state (state: 0x8af4…8f61, header-hash: 0x2e55…42d9)    
+    2025-01-14 17:46:14 🏷  Local node identity is: 12D3KooWLUJfiPveWoHTeEpN8MFypjoABVuuLPGahAjzqM7xn32C    
+    2025-01-14 17:46:14 Running libp2p network backend    
+    2025-01-14 17:46:14 💻 Operating system: linux    
+    2025-01-14 17:46:14 💻 CPU architecture: x86_64    
+    2025-01-14 17:46:14 💻 Target environment: gnu    
+    2025-01-14 17:46:14 💻 CPU: AMD Ryzen 7 5700G with Radeon Graphics    
+    2025-01-14 17:46:14 💻 CPU cores: 8    
+    2025-01-14 17:46:14 💻 Memory: 63584MB    
+    2025-01-14 17:46:14 💻 Kernel: 6.8.0-49-generic    
+    2025-01-14 17:46:14 💻 Linux distribution: Ubuntu 22.04.5 LTS    
+    2025-01-14 17:46:14 💻 Virtual machine: no    
+    2025-01-14 17:46:14 📦 Highest known block at #0    
+    2025-01-14 17:46:14 〽️ Prometheus exporter started at 127.0.0.1:9615    
+    2025-01-14 17:46:14 Running JSON-RPC server: addr=0.0.0.0:9944, allowed origins=["*"]    
+    2025-01-14 17:46:18 🙌 Starting consensus session on top of parent 0x2e5540a21c82b56c1c562c70bfd98e30a9b1f7646b0e8aff06415c833faf42d9 (#0)    
+    2025-01-14 17:46:18 🎁 Prepared block for proposing at 1 (1 ms) [hash: 0xf2a26363dda74c26d61d8473f47bc8ba588a3015de0e5d7c047f99aaedd15b7c; parent_hash: 0x2e55…42d9; extrinsics (2): [0x0bf5…e66e, 0x7af7…7dc6]    
+    2025-01-14 17:46:18 🔖 Pre-sealed block for proposal at 1. Hash now 0xfaf6737b21b49929fce65a138b839c79593d835cc679e967a3767d3f59bc0784, previously 0xf2a26363dda74c26d61d8473f47bc8ba588a3015de0e5d7c047f99aaedd15b7c.    
+    2025-01-14 17:46:18 🏆 Imported #1 (0x2e55…42d9 → 0xfaf6…0784)    
+    2025-01-14 17:46:19 💤 Idle (0 peers), best: #1 (0xfaf6…0784), finalized #1 (0xfaf6…0784), ⬇ 0 ⬆ 0    
+    2025-01-14 17:46:24 🙌 Starting consensus session on top of parent 0xfaf6737b21b49929fce65a138b839c79593d835cc679e967a3767d3f59bc0784 (#1)    
+    2025-01-14 17:46:24 🎁 Prepared block for proposing at 2 (1 ms) [hash: 0xf4c5189184dd79ba7203bbca689947a66729efb6c1f3ec078c0ef7d089189bbe; parent_hash: 0xfaf6…0784; extrinsics (2): [0x1dab…0d91, 0xa161…c06b]    
+    2025-01-14 17:46:24 🔖 Pre-sealed block for proposal at 2. Hash now 0xc9e89c0b5cde3de6ddf7430c9f5951225aa06f906c27375002212b41acfef087, previously 0xf4c5189184dd79ba7203bbca689947a66729efb6c1f3ec078c0ef7d089189bbe.    
+    2025-01-14 17:46:24 🏆 Imported #2 (0xfaf6…0784 → 0xc9e8…f087)    
+    2025-01-14 17:46:24 💤 Idle (0 peers), best: #2 (0xc9e8…f087), finalized #2 (0xc9e8…f087), ⬇ 0 ⬆ 0    
+    2025-01-14 17:46:29 💤 Idle (0 peers), best: #2 (0xc9e8…f087), finalized #2 (0xc9e8…f087), ⬇ 0 ⬆ 0    
+    2025-01-14 17:46:30 🙌 Starting consensus session on top of parent 0xc9e89c0b5cde3de6ddf7430c9f5951225aa06f906c27375002212b41acfef087 (#2)    
+    2025-01-14 17:46:30 🎁 Prepared block for proposing at 3 (1 ms) [hash: 0x7103a33c5a61eb4ed39eae641e4cca6414c56af6fbe19ce9bae9dcae46f1a1f9; parent_hash: 0xc9e8…f087; extrinsics (2): [0x8a2b…b767, 0xd967…8e1b]    
+    2025-01-14 17:46:30 🔖 Pre-sealed block for proposal at 3. Hash now 0xb3048c2267eed86ec3703c0d80857304e124be3b757ab54207ceedbb4ec88edd, previously 0x7103a33c5a61eb4ed39eae641e4cca6414c56af6fbe19ce9bae9dcae46f1a1f9.    
+    2025-01-14 17:46:30 🏆 Imported #3 (0xc9e8…f087 → 0xb304…8edd)    
     ....
     ```
     

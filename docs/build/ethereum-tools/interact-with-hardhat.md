@@ -58,7 +58,7 @@ These are the default paths for a Hardhat project.
 ## Contract Interaction
 
 !!! note
-    The network provider used in this tutorial is the [Koi Testnet](../getting-started/networks/koi.md). However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
+    The network provider used in this tutorial is the [Crab testnet](../getting-started/networks/crab.md). However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
 
 
 ### Prepare And Compile Contract
@@ -114,7 +114,7 @@ Compiled 1 Solidity file successfully
 
 ### Update Hardhat Config
 
-Before working with the contracts, there are a few basic configurations that need to be set up. Replace the default **`hardhat.config`** file with the following content. This configuration includes the Koi network RPC information and adds a test account:
+Before working with the contracts, there are a few basic configurations that need to be set up. Replace the default **`hardhat.config`** file with the following content. This configuration includes the Crab network RPC information and adds a test account:
 
 ```jsx linenums="1" title="hardhat.config"
 require("@nomicfoundation/hardhat-toolbox");
@@ -122,17 +122,17 @@ require("@nomicfoundation/hardhat-toolbox");
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.19",
-  defaultNetwork: "koi",
+  defaultNetwork: "crab",
   networks: {
-    koi: {
-      url: "https://koi-rpc.darwinia.network",
+    crab: {
+      url: "https://crab-rpc.darwinia.network",
       accounts: ["0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc"]
     }
   }
 };
 ```
 
-By updating the **`hardhat.config`** file with this content, you will have the necessary configurations in place to interact with the Koi network and use the test account for testing purposes.
+By updating the **`hardhat.config`** file with this content, you will have the necessary configurations in place to interact with the Crab network and use the test account for testing purposes.
 
 ### Deploy Storage Contract
 
@@ -158,7 +158,7 @@ main().catch((error) => {
 Start the deployment by running the command:
 
 ```jsx
-npx hardhat run --network koi scripts/deploy.js
+npx hardhat run --network crab scripts/deploy.js
 ```
 
 The output like this:
@@ -206,7 +206,7 @@ ContractTransactionResponse {
       _initializingPromise: [Promise],
       provider: [BackwardsCompatibilityProviderAdapter]
     },
-    _networkName: 'koi',
+    _networkName: 'crab',
     _blockListeners: [],
     _transactionHashListeners: Map(0) {},
     _eventListeners: []
