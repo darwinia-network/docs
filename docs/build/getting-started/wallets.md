@@ -12,7 +12,6 @@ If you are new to MetaMask and have never used it before, [How to add a custom n
 
 Rabby is a wallet that recently gained momentum in the Ethereum ecosystem, offering a user-friendly interface and enhanced security features. It integrates seamlessly with Darwinia’s Ethereum-based chains, enabling easy interaction with Darwinia. If you are new to Rabby, refer to [The Darwinia network information](./networks/overview.md) to add custom networks.
 
-
 ## [Talisman](https://www.talisman.xyz/)
 
 Talisman is a feature-rich wallet within the Polkadot ecosystem, offering support for both Polkadot chains and Ethereum-compatible chains. In the Darwinia chain, governance is conducted through the Polkadot Apps, which are fully compatible with Talisman. If you are already acquainted with the tools in the Polkadot ecosystem, we highly recommend Talisman as your go-to wallet, providing a seamless experience for managing your assets and participating in the Darwinia ecosystem.
