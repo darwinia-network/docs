@@ -38,4 +38,4 @@ Click the `Connect` button, and the MetaMask extension will automatically switch
     Confirm the source account and target account, then click `Comfirm` button.
     
     ![evm-tutorial-token-transfer-10](../../images/evm-tutorial-token-transfer-10.png)
-    ![evm-tutorial-token-transfer-11](../../images/evm-tutorial-token-transfer-11.png)/
+    ![evm-tutorial-token-transfer-11](../../images/evm-tutorial-token-transfer-11.png)
