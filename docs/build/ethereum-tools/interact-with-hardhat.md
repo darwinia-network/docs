@@ -58,7 +58,7 @@ These are the default paths for a Hardhat project.
 ## Contract Interaction
 
 !!! note
-    The network provider used in this tutorial is the [Crab testnet](../getting-started/networks/crab.md). However, the concepts and techniques covered in this tutorial are applicable to other Darwinia networks as well.
+    The network provider used in this tutorial is the [Darwinia network](../getting-started/networks/darwinia.md). However, the concepts and techniques covered in this tutorial are applicable to other networks as well.
 
 
 ### Prepare And Compile Contract
@@ -114,7 +114,7 @@ Compiled 1 Solidity file successfully
 
 ### Update Hardhat Config
 
-Before working with the contracts, there are a few basic configurations that need to be set up. Replace the default **`hardhat.config`** file with the following content. This configuration includes the Crab network RPC information and adds a test account:
+Before working with the contracts, there are a few basic configurations that need to be set up. Replace the default **`hardhat.config`** file with the following content. This configuration includes the Darwinia network RPC information and adds a test account:
 
 ```jsx linenums="1" title="hardhat.config"
 require("@nomicfoundation/hardhat-toolbox");
@@ -122,17 +122,17 @@ require("@nomicfoundation/hardhat-toolbox");
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.19",
-  defaultNetwork: "crab",
+  defaultNetwork: "darwinia",
   networks: {
-    crab: {
-      url: "https://crab-rpc.darwinia.network",
+    darwinia: {
+      url: "https://rpc.darwinia.network",
       accounts: ["0xd5cef12c5641455ad949c3ce8f9056478eeda53dcbade335b06467e8d6b2accc"]
     }
   }
 };
 ```
 
-By updating the **`hardhat.config`** file with this content, you will have the necessary configurations in place to interact with the Crab network and use the test account for testing purposes.
+By updating the **`hardhat.config`** file with this content, you will have the necessary configurations in place to interact with the Darwinia network and use the test account for testing purposes.
 
 ### Deploy Storage Contract
 
@@ -158,7 +158,7 @@ main().catch((error) => {
 Start the deployment by running the command:
 
 ```jsx
-npx hardhat run --network crab scripts/deploy.js
+npx hardhat run --network darwinia scripts/deploy.js
 ```
 
 The output like this:
@@ -206,7 +206,7 @@ ContractTransactionResponse {
       _initializingPromise: [Promise],
       provider: [BackwardsCompatibilityProviderAdapter]
     },
-    _networkName: 'crab',
+    _networkName: 'darwinia',
     _blockListeners: [],
     _transactionHashListeners: Map(0) {},
     _eventListeners: []
@@ -225,7 +225,7 @@ ContractTransactionResponse {
   maxFeePerGas: 182721978177n,
   data: '0x6057361d0000000000000000000000000000000000000000000000000000000000000003',
   value: 0n,
-  chainId: 43n,
+  chainId: 46n,
   signature: Signature { r: "0x191e493eed26c34426522a9e29d913dd0c5a94ae62b44e398b8e0eb72d597b90", s: "0x474e5f1b1f363047b9a7c8c99bdd9f9429946a12acb876c8741ac5ce04a77438", yParity: 0, networkV: null },
   accessList: []
 }

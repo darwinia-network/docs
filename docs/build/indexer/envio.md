@@ -12,7 +12,7 @@ Designed to optimize the developer experience, Envio offers automatic code gener
 
 **Envio HyperSync**
 
-Envio [HyperSync](https://docs.envio.dev/docs/hypersync) is supported on Darwinia Chain and Crab Chain.  
+Envio [HyperSync](https://docs.envio.dev/docs/hypersync) is supported on the Darwinia chain.  
 
 HyperSync is a real-time data query layer for Darwinia Network, providing APIs that bypass traditional JSON-RPC for up to 1000x faster syncing of historical data. HyperSync is used by default in Envio's indexing framework (HyperIndex), with RPC being optional for data retrieval. 
 
@@ -97,7 +97,6 @@ Choosing `Local ABI` option will allow you to point to a JSON file containing th
   optimism
   base
   bsc
-  crab
   darwinia
 v polygon
 [↑↓ to move, enter to select, type to filter]

@@ -1,4 +1,8 @@
 
+---
+description: "High-level overview of Darwinia's purpose and cross-chain focus."
+---
+
 # What is Darwinia?
 
 ![home](./images/home.png)

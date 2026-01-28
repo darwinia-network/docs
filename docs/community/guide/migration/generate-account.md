@@ -5,7 +5,7 @@
     This article only covers the migration of general accounts. For guidance on migrating a multisig account, please consult [this tutorial](./multisig-account.md).
 
 
-This tutorial will walk you through the steps of migrating your accounts from `Darwinia 1.0` to the current Darwinia using the [Account Migration Dapp](https://migration.darwinia.network/#/?network=Darwinia). It's important to note that this tutorial is also applicable for the Crab chain.
+This tutorial will walk you through the steps of migrating your accounts from `Darwinia 1.0` to the current Darwinia using the [Account Migration Dapp](https://migration.darwinia.network/#/?network=Darwinia).
 
 ## Get Started With The Dashboard
 
@@ -55,7 +55,7 @@ The current version of [Subscan](https://darwinia.subscan.io/) supports Darwinia
 ![evm-tutorial-migrate-general-8](../../../images/evm-tutorial-migrate-general-8.png)
 ![evm-tutorial-migrate-general-9](../../../images/evm-tutorial-migrate-general-9.png)
 
-Also, you can refer to [here](../../../build/getting-started/networks/darwinia.md#network-info) and add the darwinia RPC to your wallet. Then you can see the transferrable `RING` on MetaMask.
+Also, you can refer to [here](../../../build/getting-started/networks/darwinia.md#network-information) and add the Darwinia RPC to your wallet. Then you can see the transferrable `RING` on MetaMask.
 
 ![evm-tutorial-migrate-general-10](../../../images/evm-tutorial-migrate-general-10.png)
 
@@ -76,6 +76,6 @@ Please navigate to [staking.darwinia.network](https://staking.darwinia.network/
 
 MetaMask will pop up and ask you to sign in. Once signed in, you will be prompted to select the account to connect to the Dapp and accept permissions.
 
-Upon accepting permissions and changing the network to `Darwinia`, you will be directed to the main dashboard. There, you will find the details of the stake you had on Darwinia 1.0, including Bonded, Unbonding, Unbonded, and Deposits. You can continue to use these to participate in staking on the Darwinia. Please refer to [this tutorial](../../../learn/collator-staking.md#staking-design) for instructions on how to stake and earn staking rewards on the Darwinia.
+Upon accepting permissions and changing the network to `Darwinia`, you will be directed to the main dashboard. There, you will find the details of the stake you had on Darwinia 1.0, including Bonded, Unbonding, Unbonded, and Deposits. You can continue to use these to participate in staking on the Darwinia. Please refer to [this tutorial](../../../learn/collator-staking.md#how-to-staking) for instructions on how to stake and earn staking rewards on Darwinia.
 
 ![evm-tutorial-migrate-general-13](../../../images/evm-tutorial-migrate-general-13.png)

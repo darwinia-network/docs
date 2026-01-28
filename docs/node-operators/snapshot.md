@@ -7,12 +7,8 @@ The existing architecture of Polkadot consists of a relay chain node and a parac
 ## Available Snapshots
 
 - Darwinia2 Parachain: [https://snapshots.darwinia.network](https://snapshots.darwinia.network/)
-- Crab2 Parachain: [https://snapshots.crab.network](https://snapshots.crab.network/)
 
 ## Usage
-
-!!! note
-    The tutorial is originally based on the Darwinia chain, but it is also applicable to the Crab chain. To use the tutorial for the Crab chain, you just need to choose the correct snapshot resource.
 
 ### Install [zstd](https://github.com/facebook/zstd)
 

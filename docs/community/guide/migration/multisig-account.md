@@ -4,7 +4,7 @@
     This article specifically addresses the migration of multisig accounts. If you are looking for information on user interfaces for general accounts or a corresponding migration tutorial, please click [here](https://www.notion.so/Migrate-Generate-Account-66167771afba4768b6878907eb4e86bd?pvs=21).
 
 
-This tutorial will walk you through the steps of migrating your accounts from `Darwinia 1.0` to the current Darwinia using the [Multisig Account Migration Dapp](https://migration.darwinia.network/#/multisig-home?network=Darwinia). It's important to note that this tutorial is also applicable for the Crab chain.
+This tutorial will walk you through the steps of migrating your accounts from `Darwinia 1.0` to the current Darwinia using the [Multisig Account Migration Dapp](https://migration.darwinia.network/#/multisig-home?network=Darwinia).
 
 ## Get Started With The Dashboard
 

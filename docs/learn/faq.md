@@ -2,13 +2,9 @@
 
 Welcome to our Frequently Asked Questions (FAQs) section This page is designed to provide clear and concise answers to common questions we receive regarding the Darwinia networks. Our goal is to make navigating the complexities of the Darwinia as straightforward as possible. If you have any further questions not covered here, feel free to reach out to us directly. We're always here to help!
 
-## What distinguishes the Darwinia and Crab networks from each other?
-
-See [Chains](../build/getting-started/networks/overview.md) 
-
 ## Why is there a Darwinia 2.0?
 
-Great question! Before the [Merge](https://medium.com/darwinianetwork/darwinia-2-0-merge-overview-96af96d668aa), the Darwinia 1.0 era included six networks within the Darwinia Ecosystem: the Darwinia Solo Network, Crab Solo Network, Darwinia Parachain Network, Crab Parachain Network, and two test networks. However, having so many networks caused confusion among users, making it difficult to understand their relationships. To address this, we decided to merge the Darwinia Solo Network into the Darwinia Parachain Network, and the Crab Solo Network into the Crab Parachain Network. This merge not only simplified the network structure but also resolved technical issues such as account system and crypto primitive compatibility with Ethereum. If you have an account in the Darwinia 1.0 network, we have developed a user-friendly application to assist you with migrating your assets to the Darwinia 2.0 network. Be sure to check out our [tutorial](../community/guide/migration/generate-account.md) for more information.
+Great question! Before the [Merge](https://medium.com/darwinianetwork/darwinia-2-0-merge-overview-96af96d668aa), the Darwinia 1.0 era included several parallel networks within the Darwinia ecosystem: dedicated solo chains, parachain deployments, and multiple test networks. However, having so many networks caused confusion among users, making it difficult to understand their relationships. To address this, we merged the legacy deployments into a single Darwinia parachain. This merge not only simplified the network structure but also resolved technical issues such as account system and crypto primitive compatibility with Ethereum. If you have an account in the Darwinia 1.0 network, we have developed a user-friendly application to assist you with migrating your assets to the Darwinia 2.0 network. Be sure to check out our [tutorial](../community/guide/migration/generate-account.md) for more information.
 
 ## Where can I buy Darwinia Tokens?
 

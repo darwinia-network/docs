@@ -49,20 +49,3 @@ tar xvf darwinia-x86_64-linux-gnu.tar.bz2
         --sync=warp
     ```
     
-- For Crab Chain
-    
-    ```bash
-    ./darwinia \
-        --chain=crab \
-        --base-path=/data/crab-archive-node \
-        --state-pruning=archive \
-        --blocks-pruning=archive \
-        --frontier-backend-type=sql \
-        --rpc-external \
-        --rpc-cors=all \
-        --rpc-max-connections=1000 \
-        --runtime-cache-size=64 \
-        -- \
-        --chain=kusama \
-        --sync=warp
-    ```
