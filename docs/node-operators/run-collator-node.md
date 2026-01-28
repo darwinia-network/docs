@@ -4,9 +4,6 @@ Darwinia Collators play a crucial role in the Darwinia Network as they are respo
 
 To learn more about Collators and their functions, you can click [here](https://wiki.polkadot.network/docs/learn-collator). This resource will provide you with detailed information on the topic.
 
-!!! note
-    The steps outlined below are based on Darwinia, and the steps for Crab are similar.
-
 ## Recommended Hardware
 
 - **RAM:**  8 GB:

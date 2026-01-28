@@ -1,8 +1,7 @@
 # Overview
 
-The Darwinia ecosystem consists of four official long-term networks:
+The Darwinia ecosystem currently focuses on the following long-term network:
 
 |               Chain               |                                                                        Introduction                                                                         |
 | :-------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **[Darwinia](./darwinia.md)** |                                EVM-compatible blockchain using the Substrate framework, featuring cross-chain capabilities.                                 |
-|     **[Crab](./crab.md)**     |                              Incentivized testnet network for Darwinia, similar to Kusama for Polkadot, designed to expect and handle chaos.                              |

@@ -1,6 +1,6 @@
 # Run Development Testnet
 
-While there is an established test network, namely the [Crab network](./crab.md), which serves as an ideal sandbox for your applications, eliminating any concern about initiating and connecting nodes, among other things. The official test network is designed to fulfill application developers' requirements. However, there may be scenarios where you want to perform low-level tasks. In such cases, creating your own development network can significantly enhance your development, testing, or debugging efficiency. This guide will walk you through the process of establishing a single-node development network.
+Darwinia no longer maintains a public testnet, so spinning up a local development network is the best way to experiment without risking production funds. Creating your own development network significantly enhances your ability to test or debug low-level features. This guide walks you through the process of establishing a single-node development network.
 
 ## Compile darwinia node
 
@@ -61,17 +61,17 @@ While there is an established test network, namely the [Crab network](./crab.md)
 
 ## Start the development node
 
-After your node compiles, you are ready to start exploring what it does using the darwinia development node.
+After your node compiles, you are ready to start exploring what it does using the Darwinia development node.
 
-To start the local Crab testnet node:
+To start the local development node:
 
 1. In the same terminal where you compiled your node, you can now start the node in development mode by running the following command:
     
 	```bash
-	./target/release/darwinia --chain crab-dev --alice --tmp --rpc-external --rpc-cors all --unsafe-force-node-key-generation
+	./target/release/darwinia --dev --alice --tmp --rpc-external --rpc-cors all --unsafe-force-node-key-generation
 	```
 
-	The darwinia command-line options specify how you want the running node to operate. In this case, the `--chain crab-dev` option specifies that the node runs in development mode using the predefined Crab development chain specification. By default, this option also deletes all active data—such as keys, the blockchain database, and networking information—when you stop the node by pressing Ctrl-C. Using the `--tmp` option ensures that you have a clean working state any time you stop and restart the node.
+	The darwinia command-line options specify how you want the running node to operate. In this case, the `--dev` option runs an ephemeral single-node network with predefined accounts. By default, this option also deletes all active data—such as keys, the blockchain database, and networking information—when you stop the node by pressing Ctrl-C. Using the `--tmp` option ensures that you have a clean working state any time you stop and restart the node.
     
 2. Verify your node is up and running successfully by reviewing the output displayed in the terminal. The terminal should display output similar to this:
     
@@ -79,11 +79,11 @@ To start the local Crab testnet node:
     2025-01-14 17:46:13 darwinia    
     2025-01-14 17:46:13 ✌️  version 6.8.1-8476af2e40e    
     2025-01-14 17:46:13 ❤️  by Darwinia Network <hello@darwinia.network>, 2018-2025    
-    2025-01-14 17:46:13 📋 Chain specification: Crab2 D    
+    2025-01-14 17:46:13 📋 Chain specification: Development    
     2025-01-14 17:46:13 🏷  Node name: Alice    
     2025-01-14 17:46:13 👤 Role: AUTHORITY    
-    2025-01-14 17:46:13 💾 Database: RocksDb at /tmp/substraterhaReX/chains/crab2-d/db/full    
-    2025-01-14 17:46:13 🪪 Parachain id: Id(2105)    
+    2025-01-14 17:46:13 💾 Database: RocksDb at /tmp/substraterhaReX/chains/dev/db/full    
+    2025-01-14 17:46:13 🪪 Parachain id: Id(2046)    
     2025-01-14 17:46:13 🧾 Parachain Account: 5Ec4AhNxga1JYLioRBNxfRnovheDELVbZTRSnKMgvSVPvNcN    
     2025-01-14 17:46:13 ✍️ Is collating: yes    
     2025-01-14 17:46:14 assembling new collators for new session 0 at #0    
